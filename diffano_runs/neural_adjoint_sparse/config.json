@@ -1,0 +1,25 @@
+{
+  "train_dobs_root": "Datasets_test/AI4Scup2_simulated_CBS_sparse/dobs_500k/train",
+  "train_speed_root": "Datasets_test/AI4Scup2_simulated_CBS_sparse/speed/train",
+  "eval_dobs_root": "Datasets_test/AI4Scup2_simulated_CBS_sparse/dobs_500k/eval",
+  "eval_speed_root": "Datasets_test/AI4Scup2_simulated_CBS_sparse/speed/eval",
+  "output_dir": "diffano_runs/neural_adjoint_sparse",
+  "max_train_samples": 512,
+  "max_eval_samples": 64,
+  "batch_size": 4,
+  "num_epochs": 30,
+  "lr": 0.0002,
+  "weight_decay": 0.0001,
+  "width": 64,
+  "modes": 16,
+  "depth": 4,
+  "dropout": 0.0,
+  "num_workers": 0,
+  "seed": 42,
+  "device": "cuda",
+  "dobs_scale": 0.6275776624679565,
+  "measurement_shape": [
+    64,
+    64
+  ]
+}

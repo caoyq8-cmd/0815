@@ -1,0 +1,25 @@
+{
+  "device": "cuda",
+  "inversion_ckpt": "./2080Ti/ablation_runs/inversionnet_cbs_aligned_b32/checkpoints/best.pth",
+  "base_dir_dobs_eval": "Datasets_test/AI4Scup2_simulated_CBS_sparse/dobs_500k/eval",
+  "base_dir_speed_eval": "Datasets_test/AI4Scup2_simulated_CBS_sparse/speed/eval",
+  "aux_dir": "auxiliary_data",
+  "output_dir": "2080Ti/ablation_runs/inversion_cbs_bridge_sweep_aligned_v1/sample_000_step_1p0",
+  "eval_index": 0,
+  "measurement_mode": "sparse",
+  "frequency_hz": 500000.0,
+  "num_iters": 4,
+  "step_size": 1.0,
+  "grad_smooth_kernel": 9,
+  "clip_min": 1400.0,
+  "clip_max": 1605.0,
+  "boundary_width": [
+    300,
+    300
+  ],
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "use_roi_mask": true,
+  "save_each_iter": true,
+  "seed": 42
+}

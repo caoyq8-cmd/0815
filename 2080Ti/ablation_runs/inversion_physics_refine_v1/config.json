@@ -1,0 +1,15 @@
+{
+  "data_root": "/home/featurize/datasets/90024ebe-ceca-4e0d-aab7-55f496b4b5f5",
+  "inversion_ckpt": "./ablation_runs/inversionnet_b32/checkpoints/best.pth",
+  "output_dir": "./ablation_runs/inversion_physics_refine_v1",
+  "device": "cuda",
+  "num_workers": 0,
+  "target_min": 1400.0,
+  "target_max": 1600.0,
+  "num_steps": 20,
+  "step_size": 0.03,
+  "tv_weight": 0.001,
+  "clamp_each_step": true,
+  "eval_indices": "1,2,3,4,5,6,7,8,9,10",
+  "seed": 42
+}

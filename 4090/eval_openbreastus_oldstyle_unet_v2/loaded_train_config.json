@@ -1,0 +1,21 @@
+{
+  "data_root": "D:\\OpenBreastUS_processed_oldstyle_2x256x256_fullresize",
+  "save_dir": "./results_openbreastus_oldstyle_unet_v2",
+  "batch_size": 8,
+  "num_epochs": 80,
+  "lr": 0.0002,
+  "weight_decay": 1e-05,
+  "num_workers": 4,
+  "normalize_input": true,
+  "target_mode": "global_minmax",
+  "target_min": 1408.692,
+  "target_max": 1595.1279,
+  "target_mean": 1500.0,
+  "target_std": 50.0,
+  "device": "cuda",
+  "seed": 42,
+  "print_freq": 50,
+  "vis_count": 4,
+  "amp": true,
+  "scheduler_tmax": 80
+}

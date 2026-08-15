@@ -1,0 +1,20 @@
+{
+  "sample_path": "self_consistent_cbs/sparse_64_dobs_train300_test50/test/test_27.npz",
+  "condition_path": "condition_cache/inversionnet_b32_blocks2_epoch67/test/test_27.npz",
+  "output_dir": "self_consistent_cbs/sparse_64_dobs_train300_test50/cbs_correction_backtracking_tether0p1/test_27",
+  "num_iters": 8,
+  "step_size_mps": 1.0,
+  "prior_tether": 0.1,
+  "try_both_signs": true,
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "adjoint_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "smooth_kernel": 9,
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "device": "cuda:0",
+  "save_every": 1000000
+}

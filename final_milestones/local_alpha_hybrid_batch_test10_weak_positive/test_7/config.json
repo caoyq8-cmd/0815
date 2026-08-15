@@ -1,0 +1,28 @@
+{
+  "sample_path": "self_consistent_cbs/sparse_64_dobs_train300_test50/test/test_7.npz",
+  "condition_path": "condition_cache/inversionnet_b32_blocks2_epoch67/test/test_7.npz",
+  "ckpt_path": "./dobs_matrix_residual_no_runs/local_alpha_residual_matrix_b32_240_train100_test20/checkpoints/best.pth",
+  "mean_dobs_path": "./dobs_mean_baseline/local_alpha_train100_test20/mean_dobs_train.npz",
+  "output_dir": "hybrid_correction_runs/local_alpha_batch_test10_no_tether_fine_step/test_7",
+  "num_iters": 6,
+  "step_size_mps": 0.5,
+  "prior_tether": 0.0,
+  "step_factors": [
+    1.0,
+    0.5,
+    0.25,
+    0.1,
+    0.05,
+    0.02
+  ],
+  "lambda_l1": 1.0,
+  "lambda_mse": 1.0,
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "frequency": 500000.0,
+  "cbs_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "device": "cuda:0"
+}

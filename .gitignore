@@ -1,0 +1,33 @@
+# 模型权重
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# npz数据集
+*.npz
+
+# 各类实验输出、checkpoint文件夹
+2080Ti/
+self_consistent_cbs/
+dobs_matrix_residual_no_runs/
+final_forward_no_results/
+ddpm_prior_runs/
+mini_score_ckpt_sparse/
+mini_score_ckpt_sparse_fixednorm/
+mini_score_ckpt_sparse_fixednorm_e100/
+results_train_inversionnet_small/
+results_train_inversionnet_weighted/
+final_checkpoints/
+
+# 通用git忽略
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+logs/
+output/
+runs/
+.env
+*.zip
+*.tar.gz

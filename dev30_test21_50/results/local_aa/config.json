@@ -1,0 +1,31 @@
+{
+  "data_root": "./dev30_test21_50/local_alpha01",
+  "split": "test",
+  "ckpt_path": "./adjoint_aware_runs/clean_reverse_train20_val10_lf1_lg3/checkpoints/epoch_001.pth",
+  "mean_dobs_path": "./dobs_mean_baseline/local_alpha_train100_test20/mean_dobs_train.npz",
+  "output_dir": "./dev30_test21_50/results/local_aa",
+  "max_base": -1,
+  "base_start": 1,
+  "base_end": -1,
+  "init_alpha": 0.0,
+  "gt_alpha": 1.0,
+  "num_steps": 8,
+  "base_step_mps": 0.5,
+  "step_factors": [
+    1.0,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "candidate_validation": "cbs",
+  "fallback_opposite": true,
+  "stop_on_no_update": true,
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "device": "cuda:0"
+}

@@ -1,0 +1,334 @@
+==============================================================================================================
+Adjoint-aware multi-step correction
+==============================================================================================================
+device = cuda:0
+image_size = 240
+num bases = 30
+candidate_validation = cbs
+fallback_opposite = True
+num_steps = 8
+base_step_mps = 0.5
+step_factors = [1.0, 0.5, 0.25, 0.1]
+==============================================================================================================
+[01/30] test_21 INIT | CBS-MSE=2.648876e-04 | imgMSE240=217.643
+    iter=01 | choose=-1 | CBS-MSE=2.448269e-04 | imgMSE240=216.495
+    iter=02 | choose=-1 | CBS-MSE=2.362949e-04 | imgMSE240=215.826
+    iter=03 | choose=-0.25 | CBS-MSE=2.360009e-04 | imgMSE240=215.733
+    iter=04 | choose=zero0 | CBS-MSE=2.360009e-04 | imgMSE240=215.733
+    early stop: no improving candidate
+[test_21] FINAL | CBS reduction=10.91% | MSE240 reduction=0.88% | CBS-fw=21 | NN-grad=4 | time=24.1s
+[02/30] test_22 INIT | CBS-MSE=3.423064e-04 | imgMSE240=267.280
+    iter=01 | choose=-1 | CBS-MSE=3.260775e-04 | imgMSE240=265.987
+    iter=02 | choose=-1 | CBS-MSE=3.199738e-04 | imgMSE240=265.154
+    iter=03 | choose=-0.1 | CBS-MSE=3.199300e-04 | imgMSE240=265.094
+    iter=04 | choose=zero0 | CBS-MSE=3.199300e-04 | imgMSE240=265.094
+    early stop: no improving candidate
+[test_22] FINAL | CBS reduction=6.54% | MSE240 reduction=0.82% | CBS-fw=21 | NN-grad=4 | time=23.7s
+[03/30] test_23 INIT | CBS-MSE=2.293484e-04 | imgMSE240=188.214
+    iter=01 | choose=+1 | CBS-MSE=2.134789e-04 | imgMSE240=187.086
+    iter=02 | choose=+1 | CBS-MSE=2.022600e-04 | imgMSE240=186.300
+    iter=03 | choose=+1 | CBS-MSE=1.973386e-04 | imgMSE240=185.873
+    iter=04 | choose=+0.25 | CBS-MSE=1.971803e-04 | imgMSE240=185.816
+    iter=05 | choose=zero0 | CBS-MSE=1.971803e-04 | imgMSE240=185.816
+    early stop: no improving candidate
+[test_23] FINAL | CBS reduction=14.03% | MSE240 reduction=1.27% | CBS-fw=41 | NN-grad=5 | time=45.9s
+[04/30] test_24 INIT | CBS-MSE=1.587630e-04 | imgMSE240=124.952
+    iter=01 | choose=-1 | CBS-MSE=1.428371e-04 | imgMSE240=123.956
+    iter=02 | choose=-1 | CBS-MSE=1.364023e-04 | imgMSE240=123.431
+    iter=03 | choose=-0.1 | CBS-MSE=1.362898e-04 | imgMSE240=123.404
+    iter=04 | choose=-0.1 | CBS-MSE=1.362722e-04 | imgMSE240=123.381
+    iter=05 | choose=zero0 | CBS-MSE=1.362722e-04 | imgMSE240=123.381
+    early stop: no improving candidate
+[test_24] FINAL | CBS reduction=14.17% | MSE240 reduction=1.26% | CBS-fw=25 | NN-grad=5 | time=44.4s
+[05/30] test_25 INIT | CBS-MSE=9.797409e-05 | imgMSE240=90.552
+    iter=01 | choose=-1 | CBS-MSE=9.270733e-05 | imgMSE240=90.220
+    iter=02 | choose=+0.1 | CBS-MSE=9.258022e-05 | imgMSE240=90.231
+    iter=03 | choose=zero0 | CBS-MSE=9.258022e-05 | imgMSE240=90.231
+    early stop: no improving candidate
+[test_25] FINAL | CBS reduction=5.51% | MSE240 reduction=0.35% | CBS-fw=21 | NN-grad=3 | time=23.7s
+[06/30] test_26 INIT | CBS-MSE=1.236769e-04 | imgMSE240=100.356
+    iter=01 | choose=-1 | CBS-MSE=1.080849e-04 | imgMSE240=99.658
+    iter=02 | choose=-1 | CBS-MSE=1.037452e-04 | imgMSE240=99.444
+    iter=03 | choose=+0.1 | CBS-MSE=1.036579e-04 | imgMSE240=99.442
+    iter=04 | choose=zero0 | CBS-MSE=1.036579e-04 | imgMSE240=99.442
+    early stop: no improving candidate
+[test_26] FINAL | CBS reduction=16.19% | MSE240 reduction=0.91% | CBS-fw=25 | NN-grad=4 | time=28.2s
+[07/30] test_27 INIT | CBS-MSE=1.225822e-04 | imgMSE240=91.376
+    iter=01 | choose=-1 | CBS-MSE=1.084763e-04 | imgMSE240=90.795
+    iter=02 | choose=-0.5 | CBS-MSE=1.061751e-04 | imgMSE240=90.709
+    iter=03 | choose=-0.1 | CBS-MSE=1.060838e-04 | imgMSE240=90.709
+    iter=04 | choose=zero0 | CBS-MSE=1.060838e-04 | imgMSE240=90.709
+    early stop: no improving candidate
+[test_27] FINAL | CBS reduction=13.46% | MSE240 reduction=0.73% | CBS-fw=21 | NN-grad=4 | time=23.7s
+[08/30] test_28 INIT | CBS-MSE=2.299067e-04 | imgMSE240=196.297
+    iter=01 | choose=-1 | CBS-MSE=2.288706e-04 | imgMSE240=196.952
+    iter=02 | choose=+0.25 | CBS-MSE=2.287536e-04 | imgMSE240=196.745
+    iter=03 | choose=zero0 | CBS-MSE=2.287536e-04 | imgMSE240=196.745
+    early stop: no improving candidate
+[test_28] FINAL | CBS reduction=0.50% | MSE240 reduction=-0.23% | CBS-fw=21 | NN-grad=3 | time=23.7s
+[09/30] test_29 INIT | CBS-MSE=3.296165e-04 | imgMSE240=163.691
+    iter=01 | choose=-1 | CBS-MSE=2.839059e-04 | imgMSE240=161.240
+    iter=02 | choose=-1 | CBS-MSE=2.495184e-04 | imgMSE240=159.284
+    iter=03 | choose=-1 | CBS-MSE=2.274467e-04 | imgMSE240=157.825
+    iter=04 | choose=-1 | CBS-MSE=2.182179e-04 | imgMSE240=156.863
+    iter=05 | choose=-0.25 | CBS-MSE=2.179601e-04 | imgMSE240=156.701
+    iter=06 | choose=zero0 | CBS-MSE=2.179601e-04 | imgMSE240=156.701
+    early stop: no improving candidate
+[test_29] FINAL | CBS reduction=33.87% | MSE240 reduction=4.27% | CBS-fw=29 | NN-grad=6 | time=39.5s
+[10/30] test_30 INIT | CBS-MSE=3.760179e-04 | imgMSE240=199.598
+    iter=01 | choose=-1 | CBS-MSE=3.246253e-04 | imgMSE240=196.633
+    iter=02 | choose=-1 | CBS-MSE=2.833899e-04 | imgMSE240=194.142
+    iter=03 | choose=-1 | CBS-MSE=2.536095e-04 | imgMSE240=192.127
+    iter=04 | choose=-1 | CBS-MSE=2.362283e-04 | imgMSE240=190.590
+    iter=05 | choose=-1 | CBS-MSE=2.317930e-04 | imgMSE240=189.529
+    iter=06 | choose=+0.1 | CBS-MSE=2.316504e-04 | imgMSE240=189.615
+    iter=07 | choose=+0.1 | CBS-MSE=2.316382e-04 | imgMSE240=189.705
+    iter=08 | choose=zero0 | CBS-MSE=2.316382e-04 | imgMSE240=189.705
+    early stop: no improving candidate
+[test_30] FINAL | CBS reduction=38.40% | MSE240 reduction=4.96% | CBS-fw=45 | NN-grad=8 | time=51.4s
+[11/30] test_31 INIT | CBS-MSE=1.347680e-04 | imgMSE240=56.073
+    iter=01 | choose=-1 | CBS-MSE=1.036634e-04 | imgMSE240=54.991
+    iter=02 | choose=-1 | CBS-MSE=8.932392e-05 | imgMSE240=54.401
+    iter=03 | choose=-0.25 | CBS-MSE=8.841173e-05 | imgMSE240=54.330
+    iter=04 | choose=-0.1 | CBS-MSE=8.834649e-05 | imgMSE240=54.310
+    iter=05 | choose=zero0 | CBS-MSE=8.834649e-05 | imgMSE240=54.310
+    early stop: no improving candidate
+[test_31] FINAL | CBS reduction=34.45% | MSE240 reduction=3.14% | CBS-fw=25 | NN-grad=5 | time=50.9s
+[12/30] test_32 INIT | CBS-MSE=8.116719e-05 | imgMSE240=50.388
+    iter=01 | choose=-1 | CBS-MSE=6.724745e-05 | imgMSE240=49.726
+    iter=02 | choose=-0.25 | CBS-MSE=6.665873e-05 | imgMSE240=49.637
+    iter=03 | choose=zero0 | CBS-MSE=6.665873e-05 | imgMSE240=49.637
+    early stop: no improving candidate
+[test_32] FINAL | CBS reduction=17.87% | MSE240 reduction=1.49% | CBS-fw=17 | NN-grad=3 | time=19.3s
+[13/30] test_33 INIT | CBS-MSE=1.090208e-04 | imgMSE240=54.410
+    iter=01 | choose=-1 | CBS-MSE=8.048635e-05 | imgMSE240=53.272
+    iter=02 | choose=-1 | CBS-MSE=6.943251e-05 | imgMSE240=52.625
+    iter=03 | choose=-0.1 | CBS-MSE=6.931270e-05 | imgMSE240=52.587
+    iter=04 | choose=zero0 | CBS-MSE=6.931270e-05 | imgMSE240=52.587
+    early stop: no improving candidate
+[test_33] FINAL | CBS reduction=36.42% | MSE240 reduction=3.35% | CBS-fw=21 | NN-grad=4 | time=23.8s
+[14/30] test_34 INIT | CBS-MSE=1.522186e-04 | imgMSE240=52.981
+    iter=01 | choose=-1 | CBS-MSE=1.089430e-04 | imgMSE240=51.435
+    iter=02 | choose=-1 | CBS-MSE=8.270488e-05 | imgMSE240=50.385
+    iter=03 | choose=-1 | CBS-MSE=7.452580e-05 | imgMSE240=49.830
+    iter=04 | choose=+0.1 | CBS-MSE=7.451291e-05 | imgMSE240=49.864
+    iter=05 | choose=zero0 | CBS-MSE=7.451291e-05 | imgMSE240=49.864
+    early stop: no improving candidate
+[test_34] FINAL | CBS reduction=51.05% | MSE240 reduction=5.88% | CBS-fw=29 | NN-grad=5 | time=32.7s
+[15/30] test_35 INIT | CBS-MSE=2.456649e-04 | imgMSE240=189.930
+    iter=01 | choose=-1 | CBS-MSE=2.378012e-04 | imgMSE240=189.588
+    iter=02 | choose=-0.5 | CBS-MSE=2.369679e-04 | imgMSE240=189.637
+    iter=03 | choose=+0.1 | CBS-MSE=2.369265e-04 | imgMSE240=189.613
+    iter=04 | choose=zero0 | CBS-MSE=2.369265e-04 | imgMSE240=189.613
+    early stop: no improving candidate
+[test_35] FINAL | CBS reduction=3.56% | MSE240 reduction=0.17% | CBS-fw=25 | NN-grad=4 | time=28.1s
+[16/30] test_36 INIT | CBS-MSE=3.634925e-04 | imgMSE240=404.891
+    iter=01 | choose=-1 | CBS-MSE=3.557692e-04 | imgMSE240=404.032
+    iter=02 | choose=-0.5 | CBS-MSE=3.543383e-04 | imgMSE240=403.777
+    iter=03 | choose=-0.1 | CBS-MSE=3.542560e-04 | imgMSE240=403.739
+    iter=04 | choose=-0.1 | CBS-MSE=3.542419e-04 | imgMSE240=403.707
+    iter=05 | choose=zero0 | CBS-MSE=3.542419e-04 | imgMSE240=403.707
+    early stop: no improving candidate
+[test_36] FINAL | CBS reduction=2.54% | MSE240 reduction=0.29% | CBS-fw=25 | NN-grad=5 | time=28.1s
+[17/30] test_37 INIT | CBS-MSE=5.322261e-04 | imgMSE240=548.372
+    iter=01 | choose=-1 | CBS-MSE=5.201361e-04 | imgMSE240=546.301
+    iter=02 | choose=-1 | CBS-MSE=5.113756e-04 | imgMSE240=544.667
+    iter=03 | choose=-1 | CBS-MSE=5.063064e-04 | imgMSE240=543.466
+    iter=04 | choose=-1 | CBS-MSE=5.052069e-04 | imgMSE240=542.695
+    iter=05 | choose=+0.25 | CBS-MSE=5.051018e-04 | imgMSE240=542.857
+    iter=06 | choose=zero0 | CBS-MSE=5.051018e-04 | imgMSE240=542.857
+    early stop: no improving candidate
+[test_37] FINAL | CBS reduction=5.10% | MSE240 reduction=1.01% | CBS-fw=33 | NN-grad=6 | time=37.0s
+[18/30] test_38 INIT | CBS-MSE=3.531669e-04 | imgMSE240=293.711
+    iter=01 | choose=-1 | CBS-MSE=3.257653e-04 | imgMSE240=291.674
+    iter=02 | choose=-1 | CBS-MSE=3.060128e-04 | imgMSE240=290.115
+    iter=03 | choose=-1 | CBS-MSE=2.948861e-04 | imgMSE240=289.034
+    iter=04 | choose=-0.5 | CBS-MSE=2.928249e-04 | imgMSE240=288.673
+    iter=05 | choose=-0.1 | CBS-MSE=2.927056e-04 | imgMSE240=288.615
+    iter=06 | choose=-0.1 | CBS-MSE=2.926847e-04 | imgMSE240=288.561
+    iter=07 | choose=zero0 | CBS-MSE=2.926847e-04 | imgMSE240=288.561
+    early stop: no improving candidate
+[test_38] FINAL | CBS reduction=17.13% | MSE240 reduction=1.75% | CBS-fw=33 | NN-grad=7 | time=39.6s
+[19/30] test_39 INIT | CBS-MSE=3.628997e-04 | imgMSE240=346.220
+    iter=01 | choose=-1 | CBS-MSE=3.546227e-04 | imgMSE240=344.527
+    iter=02 | choose=-0.5 | CBS-MSE=3.531073e-04 | imgMSE240=343.861
+    iter=03 | choose=-0.1 | CBS-MSE=3.530261e-04 | imgMSE240=343.742
+    iter=04 | choose=-0.1 | CBS-MSE=3.530195e-04 | imgMSE240=343.628
+    iter=05 | choose=zero0 | CBS-MSE=3.530195e-04 | imgMSE240=343.628
+    early stop: no improving candidate
+[test_39] FINAL | CBS reduction=2.72% | MSE240 reduction=0.75% | CBS-fw=25 | NN-grad=5 | time=30.2s
+[20/30] test_40 INIT | CBS-MSE=1.888661e-04 | imgMSE240=202.044
+    iter=01 | choose=-1 | CBS-MSE=1.760789e-04 | imgMSE240=201.306
+    iter=02 | choose=-0.5 | CBS-MSE=1.741363e-04 | imgMSE240=201.114
+    iter=03 | choose=-0.1 | CBS-MSE=1.741147e-04 | imgMSE240=201.090
+    iter=04 | choose=zero0 | CBS-MSE=1.741147e-04 | imgMSE240=201.090
+    early stop: no improving candidate
+[test_40] FINAL | CBS reduction=7.81% | MSE240 reduction=0.47% | CBS-fw=21 | NN-grad=4 | time=25.3s
+[21/30] test_41 INIT | CBS-MSE=1.868586e-04 | imgMSE240=65.949
+    iter=01 | choose=-1 | CBS-MSE=1.504835e-04 | imgMSE240=64.807
+    iter=02 | choose=-1 | CBS-MSE=1.286426e-04 | imgMSE240=64.157
+    iter=03 | choose=-1 | CBS-MSE=1.218583e-04 | imgMSE240=64.002
+    iter=04 | choose=+0.1 | CBS-MSE=1.218490e-04 | imgMSE240=63.995
+    iter=05 | choose=zero0 | CBS-MSE=1.218490e-04 | imgMSE240=63.995
+    early stop: no improving candidate
+[test_41] FINAL | CBS reduction=34.79% | MSE240 reduction=2.96% | CBS-fw=29 | NN-grad=5 | time=32.6s
+[22/30] test_42 INIT | CBS-MSE=1.266807e-04 | imgMSE240=52.683
+    iter=01 | choose=-1 | CBS-MSE=9.499872e-05 | imgMSE240=51.744
+    iter=02 | choose=-1 | CBS-MSE=8.052001e-05 | imgMSE240=51.305
+    iter=03 | choose=-0.25 | CBS-MSE=7.963974e-05 | imgMSE240=51.273
+    iter=04 | choose=-0.1 | CBS-MSE=7.959402e-05 | imgMSE240=51.270
+    iter=05 | choose=zero0 | CBS-MSE=7.959402e-05 | imgMSE240=51.270
+    early stop: no improving candidate
+[test_42] FINAL | CBS reduction=37.17% | MSE240 reduction=2.68% | CBS-fw=25 | NN-grad=5 | time=28.3s
+[23/30] test_43 INIT | CBS-MSE=1.593355e-04 | imgMSE240=48.803
+    iter=01 | choose=-1 | CBS-MSE=1.176272e-04 | imgMSE240=47.279
+    iter=02 | choose=-1 | CBS-MSE=9.203030e-05 | imgMSE240=46.261
+    iter=03 | choose=-1 | CBS-MSE=8.357737e-05 | imgMSE240=45.750
+    iter=04 | choose=zero0 | CBS-MSE=8.357737e-05 | imgMSE240=45.750
+    early stop: no improving candidate
+[test_43] FINAL | CBS reduction=47.55% | MSE240 reduction=6.26% | CBS-fw=21 | NN-grad=4 | time=23.7s
+[24/30] test_44 INIT | CBS-MSE=1.646304e-04 | imgMSE240=62.617
+    iter=01 | choose=-1 | CBS-MSE=1.247999e-04 | imgMSE240=61.285
+    iter=02 | choose=-1 | CBS-MSE=1.012048e-04 | imgMSE240=60.427
+    iter=03 | choose=-1 | CBS-MSE=9.471409e-05 | imgMSE240=60.045
+    iter=04 | choose=+0.1 | CBS-MSE=9.459024e-05 | imgMSE240=60.063
+    iter=05 | choose=zero0 | CBS-MSE=9.459024e-05 | imgMSE240=60.063
+    early stop: no improving candidate
+[test_44] FINAL | CBS reduction=42.54% | MSE240 reduction=4.08% | CBS-fw=29 | NN-grad=5 | time=32.6s
+[25/30] test_45 INIT | CBS-MSE=4.844861e-04 | imgMSE240=394.464
+    iter=01 | choose=-1 | CBS-MSE=4.788394e-04 | imgMSE240=392.898
+    iter=02 | choose=-0.5 | CBS-MSE=4.776869e-04 | imgMSE240=392.297
+    iter=03 | choose=-0.25 | CBS-MSE=4.775544e-04 | imgMSE240=392.042
+    iter=04 | choose=zero0 | CBS-MSE=4.775544e-04 | imgMSE240=392.042
+    early stop: no improving candidate
+[test_45] FINAL | CBS reduction=1.43% | MSE240 reduction=0.61% | CBS-fw=21 | NN-grad=4 | time=23.6s
+[26/30] test_46 INIT | CBS-MSE=3.664070e-04 | imgMSE240=266.923
+    iter=01 | choose=-1 | CBS-MSE=3.347608e-04 | imgMSE240=265.013
+    iter=02 | choose=-1 | CBS-MSE=3.110680e-04 | imgMSE240=263.580
+    iter=03 | choose=-1 | CBS-MSE=2.963757e-04 | imgMSE240=262.625
+    iter=04 | choose=-1 | CBS-MSE=2.914874e-04 | imgMSE240=262.148
+    iter=05 | choose=zero0 | CBS-MSE=2.914874e-04 | imgMSE240=262.148
+    early stop: no improving candidate
+[test_46] FINAL | CBS reduction=20.45% | MSE240 reduction=1.79% | CBS-fw=25 | NN-grad=5 | time=40.2s
+[27/30] test_47 INIT | CBS-MSE=3.879892e-04 | imgMSE240=242.872
+    iter=01 | choose=-1 | CBS-MSE=3.519882e-04 | imgMSE240=240.708
+    iter=02 | choose=-1 | CBS-MSE=3.231841e-04 | imgMSE240=239.032
+    iter=03 | choose=-1 | CBS-MSE=3.027114e-04 | imgMSE240=237.843
+    iter=04 | choose=-1 | CBS-MSE=2.914620e-04 | imgMSE240=237.143
+    iter=05 | choose=-0.5 | CBS-MSE=2.895182e-04 | imgMSE240=236.975
+    iter=06 | choose=-0.1 | CBS-MSE=2.894330e-04 | imgMSE240=236.956
+    iter=07 | choose=zero0 | CBS-MSE=2.894330e-04 | imgMSE240=236.956
+    early stop: no improving candidate
+[test_47] FINAL | CBS reduction=25.40% | MSE240 reduction=2.44% | CBS-fw=33 | NN-grad=7 | time=37.2s
+[28/30] test_48 INIT | CBS-MSE=2.340466e-04 | imgMSE240=173.864
+    iter=01 | choose=-1 | CBS-MSE=2.118207e-04 | imgMSE240=172.304
+    iter=02 | choose=-1 | CBS-MSE=1.986412e-04 | imgMSE240=171.236
+    iter=03 | choose=-1 | CBS-MSE=1.952303e-04 | imgMSE240=170.662
+    iter=04 | choose=+0.1 | CBS-MSE=1.951102e-04 | imgMSE240=170.696
+    iter=05 | choose=+0.1 | CBS-MSE=1.950926e-04 | imgMSE240=170.736
+    iter=06 | choose=zero0 | CBS-MSE=1.950926e-04 | imgMSE240=170.736
+    early stop: no improving candidate
+[test_48] FINAL | CBS reduction=16.64% | MSE240 reduction=1.80% | CBS-fw=37 | NN-grad=6 | time=41.5s
+[29/30] test_49 INIT | CBS-MSE=2.002343e-04 | imgMSE240=103.146
+    iter=01 | choose=-1 | CBS-MSE=1.858274e-04 | imgMSE240=102.745
+    iter=02 | choose=-1 | CBS-MSE=1.794006e-04 | imgMSE240=102.885
+    iter=03 | choose=-0.25 | CBS-MSE=1.791103e-04 | imgMSE240=103.011
+    iter=04 | choose=zero0 | CBS-MSE=1.791103e-04 | imgMSE240=103.011
+    early stop: no improving candidate
+[test_49] FINAL | CBS reduction=10.55% | MSE240 reduction=0.13% | CBS-fw=21 | NN-grad=4 | time=23.6s
+[30/30] test_50 INIT | CBS-MSE=2.461253e-04 | imgMSE240=96.065
+    iter=01 | choose=-1 | CBS-MSE=1.988214e-04 | imgMSE240=94.010
+    iter=02 | choose=-1 | CBS-MSE=1.638090e-04 | imgMSE240=92.436
+    iter=03 | choose=-1 | CBS-MSE=1.420308e-04 | imgMSE240=91.341
+    iter=04 | choose=-1 | CBS-MSE=1.339843e-04 | imgMSE240=90.722
+    iter=05 | choose=-0.1 | CBS-MSE=1.339389e-04 | imgMSE240=90.687
+    iter=06 | choose=zero0 | CBS-MSE=1.339389e-04 | imgMSE240=90.687
+    early stop: no improving candidate
+[test_50] FINAL | CBS reduction=45.58% | MSE240 reduction=5.60% | CBS-fw=29 | NN-grad=6 | time=32.6s
+
+==============================================================================================================
+[DONE]
+{
+  "num_samples": 30,
+  "true_cbs_mse_rel_reduction": {
+    "mean": 0.20477058282775307,
+    "std": 0.15399795551700188,
+    "min": 0.005015233178973998,
+    "max": 0.5104875223020037
+  },
+  "mse240_rel_reduction": {
+    "mean": 0.0206251491394085,
+    "std": 0.018272849262060374,
+    "min": -0.0022837252916104753,
+    "max": 0.06256450084523807
+  },
+  "mse480_rel_reduction": {
+    "mean": 0.020236321942052774,
+    "std": 0.01769336984860988,
+    "min": -0.0022446483091173738,
+    "max": 0.05983719727072699
+  },
+  "init_mse_240": {
+    "mean": 178.2121676127116,
+    "std": 123.46836650528256,
+    "min": 48.8030891418457,
+    "max": 548.3715209960938
+  },
+  "final_mse_240": {
+    "mean": 175.53569831848145,
+    "std": 122.84783073437704,
+    "min": 45.74974822998047,
+    "max": 542.857177734375
+  },
+  "init_mse_480": {
+    "mean": 179.45935910542806,
+    "std": 123.10377856549916,
+    "min": 50.756507873535156,
+    "max": 547.2918090820312
+  },
+  "final_mse_480": {
+    "mean": 176.77546412150065,
+    "std": 122.46232520455487,
+    "min": 47.95698928833008,
+    "max": 541.6949462890625
+  },
+  "init_psnr_240": {
+    "mean": 24.774711436844914,
+    "std": 3.0834516040010884,
+    "min": 18.844328299608573,
+    "max": 29.350604092318168
+  },
+  "final_psnr_240": {
+    "mean": 24.865986734384855,
+    "std": 3.126233029708268,
+    "min": 18.888221376066063,
+    "max": 29.631190137118967
+  },
+  "cbs_forward_calls_algorithm": {
+    "mean": 26.466666666666665,
+    "std": 6.40694068092478,
+    "min": 17.0,
+    "max": 45.0
+  },
+  "cbs_adjoint_calls": {
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+  },
+  "neural_grad_calls": {
+    "mean": 4.833333333333333,
+    "std": 1.1855612829185826,
+    "min": 3.0,
+    "max": 8.0
+  },
+  "runtime_sec": {
+    "mean": 31.980548890431724,
+    "std": 8.740428138641638,
+    "min": 19.26878786087036,
+    "max": 51.43061089515686
+  },
+  "num_physics_improved": 30,
+  "num_image240_improved": 29
+}
+saved to: /home/featurize/work/USCT_repro/USCT_download/dev30_test21_50/results/local_aa

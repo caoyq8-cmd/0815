@@ -1,0 +1,30 @@
+{
+  "sample_path": "self_consistent_cbs/sparse_64_dobs_train300_test50/test/test_36.npz",
+  "condition_path": "condition_cache/inversionnet_b32_blocks2_epoch67/test/test_36.npz",
+  "output_dir": "paper_ablation_sparse64/single_direction/test_36",
+  "num_iters": 8,
+  "step_size_mps": 1.0,
+  "prior_tether": 0.1,
+  "step_factors": [
+    1.0,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "direction_mode": "minus",
+  "candidate_validation": "cbs",
+  "include_no_update": true,
+  "try_both_signs": false,
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "adjoint_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "smooth_kernel": 9,
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "device": "cuda:0",
+  "save_every": 1000000,
+  "skip_initial_vis": true
+}

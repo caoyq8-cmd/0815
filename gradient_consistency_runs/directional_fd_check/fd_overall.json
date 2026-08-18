@@ -1,0 +1,16 @@
+{
+  "num_point_epsilon_checks": 9,
+  "num_detail_rows": 45,
+  "neural_directional_cosine_mean": 0.9999620451280702,
+  "neural_directional_cosine_min": 0.9997656286738696,
+  "neural_rel_residual_after_scale_mean": 0.006618581560625138,
+  "neural_sign_agreement_mean": 1.0,
+  "cbs_directional_cosine_mean": 0.9999789586475116,
+  "cbs_directional_cosine_min": 0.9999343249324214,
+  "cbs_rel_residual_after_scale_mean": 0.004609105837787869,
+  "cbs_sign_agreement_mean": 1.0,
+  "interpretation": {
+    "neural": "Expect directional cosine near +1, sign agreement near 1, residual small, and kappa close to 1 if eval_neural_np and compute_neural_grad use exactly the same MSE normalization.",
+    "cbs": "Expect directional cosine near +1 and sign agreement near 1. The fitted kappa need not equal 1 because the legacy CBS adjoint uses source/adjoint scaling and may correspond to a differently normalized least-squares objective."
+  }
+}

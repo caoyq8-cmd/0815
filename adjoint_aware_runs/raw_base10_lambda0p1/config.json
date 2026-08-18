@@ -1,0 +1,23 @@
+{
+  "init_ckpt": "./dobs_matrix_residual_pairwise_no_runs/local_alpha_pairwise_b32_delta2_train100_test20/checkpoints/best.pth",
+  "train_cache_root": "./adjoint_teacher_cache/train_base10",
+  "val_cache_root": "./adjoint_teacher_cache/test_base3",
+  "mean_dobs_path": "./dobs_mean_baseline/local_alpha_train100_test20/mean_dobs_train.npz",
+  "output_dir": "./adjoint_aware_runs/raw_base10_lambda0p1",
+  "teacher_mode": "raw",
+  "lambda_grad": 0.1,
+  "lambda_forward": 1.0,
+  "lambda_l1": 1.0,
+  "lambda_mse": 1.0,
+  "epochs": 5,
+  "batch_size": 1,
+  "eval_batch_size": 1,
+  "lr": 1e-05,
+  "weight_decay": 1e-05,
+  "grad_clip": 1.0,
+  "num_workers": 0,
+  "max_train_files": -1,
+  "max_val_files": -1,
+  "log_every": 10,
+  "device": "cuda:0"
+}

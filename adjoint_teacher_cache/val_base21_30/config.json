@@ -1,0 +1,24 @@
+{
+  "data_root": "./self_consistent_cbs/sparse_64_local_alpha_train100_test20",
+  "split": "train",
+  "output_root": "./adjoint_teacher_cache/val_base21_30",
+  "image_size": 240,
+  "max_base": -1,
+  "base_start": 21,
+  "base_end": 30,
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "adjoint_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "smooth_kernel": 9,
+  "device": "cuda:0",
+  "resume": false
+}

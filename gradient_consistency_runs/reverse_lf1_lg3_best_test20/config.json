@@ -1,0 +1,35 @@
+{
+  "data_root": "./self_consistent_cbs/sparse_64_local_alpha_train100_test20",
+  "split": "test",
+  "ckpt_path": "./adjoint_aware_runs/reverse_mix_lf1_lg3/checkpoints/best_gradcos.pth",
+  "mean_dobs_path": "./dobs_mean_baseline/local_alpha_train100_test20/mean_dobs_train.npz",
+  "output_dir": "./gradient_consistency_runs/reverse_lf1_lg3_best_test20",
+  "max_base": 20,
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "neural_lambda_l1": 0.0,
+  "neural_lambda_mse": 1.0,
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "adjoint_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "smooth_kernel": 9,
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "descent_test": true,
+  "descent_step_mps": 0.5,
+  "descent_factors": [
+    1.0,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "device": "cuda:0"
+}

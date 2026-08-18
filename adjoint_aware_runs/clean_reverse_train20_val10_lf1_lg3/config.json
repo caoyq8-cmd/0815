@@ -1,0 +1,23 @@
+{
+  "init_ckpt": "./adjoint_aware_runs/smooth_train20_val10_gradonly/checkpoints/best_gradcos.pth",
+  "train_cache_root": "./adjoint_teacher_cache/train_base1_20",
+  "val_cache_root": "./adjoint_teacher_cache/val_base21_30",
+  "mean_dobs_path": "./dobs_mean_baseline/local_alpha_train100_test20/mean_dobs_train.npz",
+  "output_dir": "./adjoint_aware_runs/clean_reverse_train20_val10_lf1_lg3",
+  "teacher_mode": "smooth",
+  "lambda_grad": 3.0,
+  "lambda_forward": 1.0,
+  "lambda_l1": 1.0,
+  "lambda_mse": 1.0,
+  "epochs": 12,
+  "batch_size": 1,
+  "eval_batch_size": 1,
+  "lr": 1e-05,
+  "weight_decay": 1e-05,
+  "grad_clip": 1.0,
+  "num_workers": 0,
+  "max_train_files": -1,
+  "max_val_files": -1,
+  "log_every": 10,
+  "device": "cuda:0"
+}

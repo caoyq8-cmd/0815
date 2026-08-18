@@ -1,0 +1,140 @@
+{
+  "sample_path": "/home/featurize/work/USCT_repro/USCT_download/self_consistent_cbs/sparse_64_dobs_train300_test50/test/test_13.npz",
+  "condition_path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_b32_blocks2_epoch67/test/test_13.npz",
+  "output_dir": "/home/featurize/work/USCT_repro/USCT_download/paper_ablation_sparse64/no_smoothing/test_13",
+  "num_iters": 8,
+  "runtime_seconds": 101.22192721700048,
+  "initial": {
+    "iter": 0,
+    "image_mse_256": 226.21719360351562,
+    "image_mae_256": 4.555836200714111,
+    "image_rmse_256": 15.040518395438225,
+    "image_psnr_256": 22.68982111781328,
+    "image_ssim_256": 0.8566970825195312,
+    "image_mse_480": 212.43695068359375,
+    "image_mae_480": 4.42957878112793,
+    "image_rmse_480": 14.575217002967529,
+    "image_psnr_480": 22.962776631753357,
+    "image_ssim_480": 0.888925313949585,
+    "dobs_rel_l1": 0.2550356090068817,
+    "dobs_rel_l2": 0.17273734509944916,
+    "dobs_abs_loss": 0.011433642357587814,
+    "chosen_candidate": "init",
+    "chosen_sign": "init",
+    "chosen_step_used": 0.0,
+    "chosen_step_factor": 0.0,
+    "candidate_selection_forward_evals": 0,
+    "post_update_eval_forward_evals": 0,
+    "target_alignment_mse": 0.0
+  },
+  "final": {
+    "iter": 8,
+    "image_mse_256": 200.63462829589844,
+    "image_mae_256": 6.601048469543457,
+    "image_rmse_256": 14.164555351153753,
+    "image_psnr_256": 23.21101830416426,
+    "image_ssim_256": 0.6948239207267761,
+    "image_mse_480": 194.4844512939453,
+    "image_mae_480": 6.890693187713623,
+    "image_rmse_480": 13.945768221720355,
+    "image_psnr_480": 23.346228361781485,
+    "image_ssim_480": 0.681799590587616,
+    "dobs_rel_l1": 0.0771646574139595,
+    "dobs_rel_l2": 0.04586418718099594,
+    "dobs_abs_loss": 0.003459411207586527,
+    "loss_before_from_adjoint": 0.003770497627556324,
+    "loss_before_abs": 0.003770497627556324,
+    "loss_after": 0.003459411207586527,
+    "loss_decreased": 1.0,
+    "chosen_candidate": "-0.25",
+    "chosen_sign": "-",
+    "chosen_step_used": 0.25,
+    "chosen_step_factor": 0.25,
+    "grad_rms": 2.148582935333252,
+    "prior_rms": 4.574429512023926,
+    "total_grad_rms": 0.9216383618374493,
+    "update_abs_mean": 0.17867182195186615,
+    "update_abs_max": 2.62939453125,
+    "dobs_rel_l1_after": 0.0771646574139595,
+    "dobs_rel_l2_after": 0.04586418718099594,
+    "candidate_validation": "cbs",
+    "direction_mode": "both",
+    "candidate_selection_forward_evals": 8,
+    "post_update_eval_forward_evals": 0,
+    "candidate_count": 9,
+    "candidate_records": [
+      {
+        "name": "zero",
+        "sign": "0",
+        "step_used": 0.0,
+        "step_factor": 0.0,
+        "dobs_abs_loss": 0.003770497627556324
+      },
+      {
+        "name": "-1",
+        "sign": "-",
+        "step_used": 1.0,
+        "step_factor": 1.0,
+        "dobs_abs_loss": 0.0037852225359529257
+      },
+      {
+        "name": "+1",
+        "sign": "+",
+        "step_used": 1.0,
+        "step_factor": 1.0,
+        "dobs_abs_loss": 0.006448360625654459
+      },
+      {
+        "name": "-0.5",
+        "sign": "-",
+        "step_used": 0.5,
+        "step_factor": 0.5,
+        "dobs_abs_loss": 0.0034860435407608747
+      },
+      {
+        "name": "+0.5",
+        "sign": "+",
+        "step_used": 0.5,
+        "step_factor": 0.5,
+        "dobs_abs_loss": 0.005053771194070578
+      },
+      {
+        "name": "-0.25",
+        "sign": "-",
+        "step_used": 0.25,
+        "step_factor": 0.25,
+        "dobs_abs_loss": 0.003459411207586527
+      },
+      {
+        "name": "+0.25",
+        "sign": "+",
+        "step_used": 0.25,
+        "step_factor": 0.25,
+        "dobs_abs_loss": 0.004378498997539282
+      },
+      {
+        "name": "-0.1",
+        "sign": "-",
+        "step_used": 0.1,
+        "step_factor": 0.1,
+        "dobs_abs_loss": 0.003591344226151705
+      },
+      {
+        "name": "+0.1",
+        "sign": "+",
+        "step_used": 0.1,
+        "step_factor": 0.1,
+        "dobs_abs_loss": 0.0039972225204110146
+      }
+    ],
+    "step_runtime_seconds": 11.060597308998695
+  },
+  "mse256_improve_ratio": 0.11308850976400539,
+  "mse480_improve_ratio": 0.08450742364677899,
+  "dobs_abs_improve_ratio": 0.6974357689272866,
+  "initial_forward_evals": 1,
+  "adjoint_step_forward_evals": 8,
+  "candidate_selection_forward_evals": 64,
+  "post_update_eval_forward_evals": 0,
+  "total_forward_like_evals_excluding_adjoint_solve": 73
+}

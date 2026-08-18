@@ -1,0 +1,32 @@
+{
+  "num_rows": 100,
+  "num_base": 20,
+  "note_gradient_magnitude": "Raw NN/CBS RMS ratios are scale-dependent because CBS adjoint and neural MSE use different normalization/constants. Use cosine and normalized descent tests as the primary gradient-quality evidence.",
+  "forward_rrmse": {
+    "n": 100,
+    "mean": 0.17832143276929854,
+    "std": 0.020337407810937368
+  },
+  "grad_cos_raw": {
+    "n": 100,
+    "mean": 0.4126274581366699,
+    "std": 0.528909177095697
+  },
+  "grad_cos_smooth": {
+    "n": 100,
+    "mean": 0.44897966497137687,
+    "std": 0.5987506822121743
+  },
+  "grad_rms_ratio_nn_over_cbs_raw": {
+    "n": 100,
+    "mean": 2.440037243442222e-11,
+    "std": 4.66784903172648e-11
+  },
+  "grad_rms_ratio_nn_over_cbs_smooth": {
+    "n": 100,
+    "mean": 3.149087970527187e-11,
+    "std": 6.297619747127647e-11
+  },
+  "nn_descent_success_rate_l2": 0.75,
+  "cbs_descent_success_rate_l2": 1.0
+}

@@ -1,0 +1,13 @@
+[Dataset] split=train n=8 IDs=1..8 augment=False
+[Dataset] split=test n=4 IDs=1..4 augment=False
+====================================================================================================
+IC-RFM training
+device             = cuda:0
+parameters (M)     = 5.422945
+train / validation= 8 4
+primary sampler    = 4 heun
+start sigma max    = 0.0
+====================================================================================================
+[epoch 001] loss=0.024985 | MSE 134.254->134.244 | MAE 3.3356->3.3364 | SSIM 0.874730->0.874716 | guard=True | 8.8s
+[epoch 002] loss=0.031939 | MSE 134.254->134.241 | MAE 3.3356->3.3366 | SSIM 0.874730->0.874696 | guard=True | 0.4s
+[DONE] /home/featurize/work/USCT_repro/USCT_download/generative_runs/icrfm_oof_v2_smoke

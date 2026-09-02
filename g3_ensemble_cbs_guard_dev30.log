@@ -1,0 +1,80 @@
+[Dataset] split=test n=30 IDs=21..50 augment=False
+==============================================================================================================================
+Frozen G3-Ensemble generation on DEV30
+IDs                = test21..50
+flow               = 4-step Heun, alpha=0.03
+DDPM               = t25, NFE5, five-seed mean, alpha=0.15
+selection/tuning   = disabled
+==============================================================================================================================
+[generated] test_21
+[generated] test_22
+[generated] test_23
+[generated] test_24
+[generated] test_25
+[generated] test_26
+[generated] test_27
+[generated] test_28
+[generated] test_29
+[generated] test_30
+[generated] test_31
+[generated] test_32
+[generated] test_33
+[generated] test_34
+[generated] test_35
+[generated] test_36
+[generated] test_37
+[generated] test_38
+[generated] test_39
+[generated] test_40
+[generated] test_41
+[generated] test_42
+[generated] test_43
+[generated] test_44
+[generated] test_45
+[generated] test_46
+[generated] test_47
+[generated] test_48
+[generated] test_49
+[generated] test_50
+[01/30] test_21 | align=0.00e+00 | CBS 2.677253e-04->2.667261e-04 | guard=G3
+[02/30] test_22 | align=0.00e+00 | CBS 3.452901e-04->3.439571e-04 | guard=G3
+[03/30] test_23 | align=0.00e+00 | CBS 2.313854e-04->2.298851e-04 | guard=G3
+[04/30] test_24 | align=0.00e+00 | CBS 1.591563e-04->1.593000e-04 | guard=Original
+[05/30] test_25 | align=0.00e+00 | CBS 9.913163e-05->9.918948e-05 | guard=Original
+[06/30] test_26 | align=0.00e+00 | CBS 1.242818e-04->1.244025e-04 | guard=Original
+[07/30] test_27 | align=0.00e+00 | CBS 1.231721e-04->1.232810e-04 | guard=Original
+[08/30] test_28 | align=0.00e+00 | CBS 2.320327e-04->2.306979e-04 | guard=G3
+[09/30] test_29 | align=0.00e+00 | CBS 3.313706e-04->3.296607e-04 | guard=G3
+[10/30] test_30 | align=0.00e+00 | CBS 3.780848e-04->3.767292e-04 | guard=G3
+[11/30] test_31 | align=0.00e+00 | CBS 1.359819e-04->1.349912e-04 | guard=G3
+[12/30] test_32 | align=0.00e+00 | CBS 8.218871e-05->8.185497e-05 | guard=G3
+[13/30] test_33 | align=0.00e+00 | CBS 1.092107e-04->1.085292e-04 | guard=G3
+[14/30] test_34 | align=0.00e+00 | CBS 1.530758e-04->1.521636e-04 | guard=G3
+[15/30] test_35 | align=0.00e+00 | CBS 2.467552e-04->2.472721e-04 | guard=Original
+[16/30] test_36 | align=0.00e+00 | CBS 3.654600e-04->3.653251e-04 | guard=G3
+[17/30] test_37 | align=0.00e+00 | CBS 5.324380e-04->5.327730e-04 | guard=Original
+[18/30] test_38 | align=0.00e+00 | CBS 3.539138e-04->3.543364e-04 | guard=Original
+[19/30] test_39 | align=0.00e+00 | CBS 3.638501e-04->3.637300e-04 | guard=G3
+[20/30] test_40 | align=0.00e+00 | CBS 1.893091e-04->1.892776e-04 | guard=G3
+[21/30] test_41 | align=0.00e+00 | CBS 1.884782e-04->1.869327e-04 | guard=G3
+[22/30] test_42 | align=0.00e+00 | CBS 1.272705e-04->1.259323e-04 | guard=G3
+[23/30] test_43 | align=0.00e+00 | CBS 1.598197e-04->1.583260e-04 | guard=G3
+[24/30] test_44 | align=0.00e+00 | CBS 1.647808e-04->1.635492e-04 | guard=G3
+[25/30] test_45 | align=0.00e+00 | CBS 4.848319e-04->4.842642e-04 | guard=G3
+[26/30] test_46 | align=0.00e+00 | CBS 3.665276e-04->3.665558e-04 | guard=Original
+[27/30] test_47 | align=0.00e+00 | CBS 3.877456e-04->3.876633e-04 | guard=G3
+[28/30] test_48 | align=0.00e+00 | CBS 2.345333e-04->2.344145e-04 | guard=G3
+[29/30] test_49 | align=0.00e+00 | CBS 2.013349e-04->2.001957e-04 | guard=G3
+[30/30] test_50 | align=0.00e+00 | CBS 2.478269e-04->2.467159e-04 | guard=G3
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/run_g3_ensemble_cbs_guard_dev30_frozen.py", line 530, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/run_g3_ensemble_cbs_guard_dev30_frozen.py", line 492, in main
+    write_csv(out / "dev30_method_summary.csv", method_summary_rows(summary))
+  File "/home/featurize/work/USCT_repro/USCT_download/train_icrfm_oof_v2.py", line 74, in write_csv
+    writer.writerows(rows)
+  File "/home/featurize/work/usct/lib/python3.10/csv.py", line 157, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+  File "/home/featurize/work/usct/lib/python3.10/csv.py", line 149, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'image_mse_wins_vs_original', 'physics_mse_wins_vs_original'

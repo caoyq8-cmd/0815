@@ -1,0 +1,72 @@
+{
+  "baseline_csv": "/home/featurize/work/USCT_repro/USCT_download/dev30_test21_50/results/local_aa/sample_results.csv",
+  "num_pairs": 10,
+  "positive_delta_means_structure_better": true,
+  "metrics": {
+    "final_true_cbs_mse": {
+      "mean": -9.282684186473488e-06,
+      "sample_std": 1.7811696689811113e-05,
+      "min": -5.178827268537134e-05,
+      "max": -1.6152625903487206e-08,
+      "bootstrap_mean_95ci": [
+        -2.132876494215452e-05,
+        -8.676347351865847e-07
+      ],
+      "wins": 0,
+      "losses": 10,
+      "wilcoxon_two_sided_p": 0.001953125
+    },
+    "final_mse_240": {
+      "mean": -0.8174018859863281,
+      "sample_std": 1.4851217160391093,
+      "min": -4.4214630126953125,
+      "max": -0.0076904296875,
+      "bootstrap_mean_95ci": [
+        -1.7759636878967284,
+        -0.11573562622070313
+      ],
+      "wins": 0,
+      "losses": 10,
+      "wilcoxon_two_sided_p": 0.001953125
+    },
+    "final_mae_240": {
+      "mean": 0.1784728765487671,
+      "sample_std": 0.2281950280633039,
+      "min": -0.00849151611328125,
+      "max": 0.6673827171325684,
+      "bootstrap_mean_95ci": [
+        0.05953681886196137,
+        0.32520401954650874
+      ],
+      "wins": 9,
+      "losses": 1,
+      "wilcoxon_two_sided_p": 0.005859375
+    },
+    "final_psnr_240": {
+      "mean": -0.019997901129620032,
+      "sample_std": 0.03531610297411426,
+      "min": -0.10005968825730704,
+      "max": -0.00037013518338469,
+      "bootstrap_mean_95ci": [
+        -0.0430729921848889,
+        -0.0029672019179460924
+      ],
+      "wins": 0,
+      "losses": 10,
+      "wilcoxon_two_sided_p": 0.001953125
+    },
+    "final_ssim_240": {
+      "mean": 7.599723676769976e-05,
+      "sample_std": 0.0001593381434547395,
+      "min": -3.304616029542462e-05,
+      "max": 0.0003982660175132491,
+      "bootstrap_mean_95ci": [
+        -4.74552270493006e-06,
+        0.00018170828050783738
+      ],
+      "wins": 5,
+      "losses": 5,
+      "wilcoxon_two_sided_p": 0.556640625
+    }
+  }
+}

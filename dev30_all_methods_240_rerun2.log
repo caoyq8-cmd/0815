@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/evaluate_dev30_all_methods_240.py", line 497, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/evaluate_dev30_all_methods_240.py", line 468, in main
+    g3, audit = recompute_g3(args, original_csv_rows)
+  File "/home/featurize/work/USCT_repro/USCT_download/evaluate_dev30_all_methods_240.py", line 310, in recompute_g3
+    raise RuntimeError(
+RuntimeError: test_21 Original MSE240 alignment failed: recomputed=223.691199864, frozen=217.642654419, abs_error=6.049e+00. Do not merge tables until interpolation/array keys are corrected.

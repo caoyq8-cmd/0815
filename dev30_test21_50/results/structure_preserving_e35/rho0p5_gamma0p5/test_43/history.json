@@ -1,0 +1,585 @@
+[
+  {
+    "iter": 0,
+    "selected_direction": "init",
+    "selected_factor": 0.0,
+    "true_cbs_mse": 0.00015933548274915665,
+    "true_cbs_mae": 0.00761317228898406,
+    "true_cbs_rrmse": 0.12088123708963394,
+    "image_mse_240": 48.8030891418457,
+    "image_mae_240": 1.53195321559906,
+    "image_psnr_240": 29.350604092318168,
+    "image_ssim_240": 0.9189885646369556,
+    "value_drift": 0.0,
+    "grad_drift": 0.0,
+    "candidate_records": []
+  },
+  {
+    "iter": 1,
+    "neural_loss": 0.0003913072287105024,
+    "raw_grad_rms": 2.6768575759523755e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.5,
+    "updated": 1,
+    "best_available_physics_gain": 4.170832107774913e-05,
+    "required_physics_gain": 2.0854160538874567e-05,
+    "num_eligible": 2,
+    "true_cbs_mse": 0.0001365610514767468,
+    "true_cbs_mae": 0.007089610211551189,
+    "true_cbs_rrmse": 0.11190927028656006,
+    "image_mse_240": 47.979209899902344,
+    "image_mae_240": 1.5939667224884033,
+    "image_psnr_240": 29.42454630187438,
+    "image_ssim_240": 0.9189549545515534,
+    "image_mse_480": 50.18558883666992,
+    "value_drift": 0.1935480386018753,
+    "grad_drift": 0.0054211122915148735,
+    "structure_score": 0.7500141811883562,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 0.00015933548274915665,
+        "value_drift": 0.0,
+        "grad_drift": 0.0,
+        "structure_score": 0.0,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 0.00011762716167140752,
+        "value_drift": 0.3870958387851715,
+        "grad_drift": 0.010841622948646545,
+        "structure_score": 1.499999999951298,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 0.0001365610514767468,
+        "value_drift": 0.1935480386018753,
+        "grad_drift": 0.0054211122915148735,
+        "structure_score": 0.7500141811883562,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 0.00014748130342923105,
+        "value_drift": 0.09677401185035706,
+        "grad_drift": 0.002710170578211546,
+        "structure_score": 0.3749892895281684,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 0.0001544835395179689,
+        "value_drift": 0.03870951384305954,
+        "grad_drift": 0.0010842136107385159,
+        "structure_score": 0.15000218568378584,
+        "eligible": 0
+      }
+    ]
+  },
+  {
+    "iter": 2,
+    "neural_loss": 0.000387525768019259,
+    "raw_grad_rms": 2.605957416651403e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.5,
+    "updated": 1,
+    "best_available_physics_gain": 3.382089198566973e-05,
+    "required_physics_gain": 1.6910445992834866e-05,
+    "num_eligible": 2,
+    "true_cbs_mse": 0.00011763825023081154,
+    "true_cbs_mae": 0.006752170156687498,
+    "true_cbs_rrmse": 0.10386683791875839,
+    "image_mse_240": 47.28176498413086,
+    "image_mae_240": 1.693422555923462,
+    "image_psnr_240": 29.488140421282814,
+    "image_ssim_240": 0.9190186084205846,
+    "image_mse_480": 49.48836898803711,
+    "value_drift": 0.38689741492271423,
+    "grad_drift": 0.010830611921846867,
+    "structure_score": 1.0002405723495247,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 0.0001365610514767468,
+        "value_drift": 0.1935480386018753,
+        "grad_drift": 0.0054211122915148735,
+        "structure_score": 0.5004702430272906,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 0.00010274015949107707,
+        "value_drift": 0.5802471041679382,
+        "grad_drift": 0.016239739954471588,
+        "structure_score": 1.499999999967488,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 0.00011763825023081154,
+        "value_drift": 0.38689741492271423,
+        "grad_drift": 0.010830611921846867,
+        "structure_score": 1.0002405723495247,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 0.0001266074541490525,
+        "value_drift": 0.2902225852012634,
+        "grad_drift": 0.008125649765133858,
+        "structure_score": 0.7503486260077122,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 0.00013246299931779504,
+        "value_drift": 0.23221801221370697,
+        "grad_drift": 0.006503156386315823,
+        "structure_score": 0.6004289171481065,
+        "eligible": 0
+      }
+    ]
+  },
+  {
+    "iter": 3,
+    "neural_loss": 0.0003838624688796699,
+    "raw_grad_rms": 2.536575848133107e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.5,
+    "updated": 1,
+    "best_available_physics_gain": 2.559902350185439e-05,
+    "required_physics_gain": 1.2799511750927195e-05,
+    "num_eligible": 2,
+    "true_cbs_mse": 0.00010275244130752981,
+    "true_cbs_mae": 0.0065686507150530815,
+    "true_cbs_rrmse": 0.09707306325435638,
+    "image_mse_240": 46.710792541503906,
+    "image_mae_240": 1.8101351261138916,
+    "image_psnr_240": 29.540904860915003,
+    "image_ssim_240": 0.9189498216631782,
+    "image_mse_480": 48.9176139831543,
+    "value_drift": 0.5800209045410156,
+    "grad_drift": 0.016228782013058662,
+    "structure_score": 1.1253913952227537,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 0.00011763825023081154,
+        "value_drift": 0.38689741492271423,
+        "grad_drift": 0.010830611921846867,
+        "structure_score": 0.7508054596897109,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 9.203922672895715e-05,
+        "value_drift": 0.7731441259384155,
+        "grad_drift": 0.021627947688102722,
+        "structure_score": 1.4999999999755884,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 0.00010275244130752981,
+        "value_drift": 0.5800209045410156,
+        "grad_drift": 0.016228782013058662,
+        "structure_score": 1.1253913952227537,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 0.00010968243441311643,
+        "value_drift": 0.483458936214447,
+        "grad_drift": 0.013529710471630096,
+        "structure_score": 0.9380984505471146,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 0.00011433403415139765,
+        "value_drift": 0.4255220890045166,
+        "grad_drift": 0.01191018708050251,
+        "structure_score": 0.8257212552289663,
+        "eligible": 0
+      }
+    ]
+  },
+  {
+    "iter": 4,
+    "neural_loss": 0.0003802893334068358,
+    "raw_grad_rms": 2.4679363511721914e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.5,
+    "updated": 1,
+    "best_available_physics_gain": 1.7118582036346197e-05,
+    "required_physics_gain": 8.559291018173099e-06,
+    "num_eligible": 2,
+    "true_cbs_mse": 9.205186506733298e-05,
+    "true_cbs_mae": 0.0065231965854763985,
+    "true_cbs_rrmse": 0.09187956154346466,
+    "image_mse_240": 46.26644515991211,
+    "image_mae_240": 1.938219666481018,
+    "image_psnr_240": 29.58241589949894,
+    "image_ssim_240": 0.9189341734328729,
+    "image_mse_480": 48.47346878051758,
+    "value_drift": 0.7728967666625977,
+    "grad_drift": 0.02161743864417076,
+    "structure_score": 1.2005159568396344,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 0.00010275244130752981,
+        "value_drift": 0.5800209045410156,
+        "grad_drift": 0.016228782013058662,
+        "structure_score": 0.9010383698222202,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 8.563385927118361e-05,
+        "value_drift": 0.9657737016677856,
+        "grad_drift": 0.02700638398528099,
+        "structure_score": 1.4999999999804505,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 9.205186506733298e-05,
+        "value_drift": 0.7728967666625977,
+        "grad_drift": 0.02161743864417076,
+        "structure_score": 1.2005159568396344,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 9.687314741313457e-05,
+        "value_drift": 0.6764585971832275,
+        "grad_drift": 0.018922671675682068,
+        "structure_score": 1.0507687951807436,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 0.00010027473035734147,
+        "value_drift": 0.6185960173606873,
+        "grad_drift": 0.017306577414274216,
+        "structure_score": 0.9609350118021691,
+        "eligible": 0
+      }
+    ]
+  },
+  {
+    "iter": 5,
+    "neural_loss": 0.000376813841285184,
+    "raw_grad_rms": 2.4003813157796724e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.5,
+    "updated": 1,
+    "best_available_physics_gain": 8.458722732029855e-06,
+    "required_physics_gain": 4.229361366014928e-06,
+    "num_eligible": 2,
+    "true_cbs_mse": 8.564592280890793e-05,
+    "true_cbs_mae": 0.006607697810977697,
+    "true_cbs_rrmse": 0.08862495422363281,
+    "image_mse_240": 45.948829650878906,
+    "image_mae_240": 2.0736706256866455,
+    "image_psnr_240": 29.612332680354672,
+    "image_ssim_240": 0.9189154896057976,
+    "image_mse_480": 48.15604019165039,
+    "value_drift": 0.9655004739761353,
+    "grad_drift": 0.026996426284313202,
+    "structure_score": 1.2505952766948258,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 9.205186506733298e-05,
+        "value_drift": 0.7728967666625977,
+        "grad_drift": 0.02161743864417076,
+        "structure_score": 1.0012182976744284,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 8.359314233530313e-05,
+        "value_drift": 1.158105731010437,
+        "grad_drift": 0.03237712383270264,
+        "structure_score": 1.4999999999836935,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 8.564592280890793e-05,
+        "value_drift": 0.9655004739761353,
+        "grad_drift": 0.026996426284313202,
+        "structure_score": 1.2505952766948258,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 8.830868318909779e-05,
+        "value_drift": 0.869198203086853,
+        "grad_drift": 0.024306796491146088,
+        "structure_score": 1.1259043270802644,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 9.0425593953114e-05,
+        "value_drift": 0.8114174604415894,
+        "grad_drift": 0.02269287034869194,
+        "structure_score": 1.0510880028913308,
+        "eligible": 0
+      }
+    ]
+  },
+  {
+    "iter": 6,
+    "neural_loss": 0.000373435381334275,
+    "raw_grad_rms": 2.3337525717929157e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.25,
+    "updated": 1,
+    "best_available_physics_gain": 2.0429870346561074e-06,
+    "required_physics_gain": 1.0214935173280537e-06,
+    "num_eligible": 2,
+    "true_cbs_mse": 8.407789573539048e-05,
+    "true_cbs_mae": 0.006695601157844067,
+    "true_cbs_rrmse": 0.08780991286039352,
+    "image_mse_240": 45.837894439697266,
+    "image_mae_240": 2.1432902812957764,
+    "image_psnr_240": 29.62283061979013,
+    "image_ssim_240": 0.9188902780887569,
+    "image_mse_480": 48.045196533203125,
+    "value_drift": 1.061657428741455,
+    "grad_drift": 0.029681548476219177,
+    "structure_score": 1.1795752533480888,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 8.564592280890793e-05,
+        "value_drift": 0.9655004739761353,
+        "grad_drift": 0.026996426284313202,
+        "structure_score": 1.0727807092808153,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 8.594383689342067e-05,
+        "value_drift": 1.3501322269439697,
+        "grad_drift": 0.03773979842662811,
+        "structure_score": 1.4999999999860107,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 8.360293577425182e-05,
+        "value_drift": 1.1578149795532227,
+        "grad_drift": 0.032367244362831116,
+        "structure_score": 1.2863778395473906,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 8.407789573539048e-05,
+        "value_drift": 1.061657428741455,
+        "grad_drift": 0.029681548476219177,
+        "structure_score": 1.1795752533480888,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 8.488789171678945e-05,
+        "value_drift": 1.0039632320404053,
+        "grad_drift": 0.02807055599987507,
+        "structure_score": 1.1154995802508225,
+        "eligible": 0
+      }
+    ]
+  },
+  {
+    "iter": 7,
+    "neural_loss": 0.0003717730869539082,
+    "raw_grad_rms": 2.3009154054203896e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.1,
+    "updated": 1,
+    "best_available_physics_gain": 4.7210778575390577e-07,
+    "required_physics_gain": 2.3605389287695289e-07,
+    "num_eligible": 2,
+    "true_cbs_mse": 8.375776815228164e-05,
+    "true_cbs_mae": 0.006738440133631229,
+    "true_cbs_rrmse": 0.08764258772134781,
+    "image_mse_240": 45.802490234375,
+    "image_mae_240": 2.171478748321533,
+    "image_psnr_240": 29.626186313205714,
+    "image_ssim_240": 0.9188348675059396,
+    "image_mse_480": 48.00983428955078,
+    "value_drift": 1.1000887155532837,
+    "grad_drift": 0.03075474128127098,
+    "structure_score": 1.1412555346028477,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 8.407789573539048e-05,
+        "value_drift": 1.061657428741455,
+        "grad_drift": 0.029681548476219177,
+        "structure_score": 1.1014011315145071,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 8.876447100192308e-05,
+        "value_drift": 1.445975422859192,
+        "grad_drift": 0.0404176227748394,
+        "structure_score": 1.4999999999869376,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 8.422925748163834e-05,
+        "value_drift": 1.2538150548934937,
+        "grad_drift": 0.035048551857471466,
+        "structure_score": 1.3006868290856022,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 8.360578794963658e-05,
+        "value_drift": 1.1577359437942505,
+        "grad_drift": 0.03236512094736099,
+        "structure_score": 1.2010446498092686,
+        "eligible": 1
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 8.375776815228164e-05,
+        "value_drift": 1.1000887155532837,
+        "grad_drift": 0.03075474128127098,
+        "structure_score": 1.1412555346028477,
+        "eligible": 1
+      }
+    ]
+  },
+  {
+    "iter": 8,
+    "neural_loss": 0.0003711269237101078,
+    "raw_grad_rms": 2.2880358105715784e-10,
+    "rho": 0.5,
+    "gamma": 0.5,
+    "selected_direction": "-",
+    "selected_factor": 0.1,
+    "updated": 1,
+    "best_available_physics_gain": 1.4461693353950977e-07,
+    "required_physics_gain": 7.230846676975489e-08,
+    "num_eligible": 1,
+    "true_cbs_mse": 8.361315121874213e-05,
+    "true_cbs_mae": 0.0067856209352612495,
+    "true_cbs_rrmse": 0.08756689727306366,
+    "image_mse_240": 45.77215576171875,
+    "image_mae_240": 2.1997861862182617,
+    "image_psnr_240": 29.62906354945918,
+    "image_ssim_240": 0.9188740088206094,
+    "image_mse_480": 47.97954177856445,
+    "value_drift": 1.1385078430175781,
+    "grad_drift": 0.03182759881019592,
+    "structure_score": 1.1506150026581738,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "physics_loss": 8.375776815228164e-05,
+        "value_drift": 1.1000887155532837,
+        "grad_drift": 0.03075474128127098,
+        "structure_score": 1.1118014155607625,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "physics_loss": 9.019799472298473e-05,
+        "value_drift": 1.4842857122421265,
+        "grad_drift": 0.041488200426101685,
+        "structure_score": 1.4999999999872746,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "physics_loss": 8.478735253447667e-05,
+        "value_drift": 1.2921857833862305,
+        "grad_drift": 0.03612055629491806,
+        "structure_score": 1.3058887220888835,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "physics_loss": 8.372464799322188e-05,
+        "value_drift": 1.1961370706558228,
+        "grad_drift": 0.033437371253967285,
+        "structure_score": 1.208841603617788,
+        "eligible": 0
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "physics_loss": 8.361315121874213e-05,
+        "value_drift": 1.1385078430175781,
+        "grad_drift": 0.03182759881019592,
+        "structure_score": 1.1506150026581738,
+        "eligible": 1
+      }
+    ]
+  }
+]

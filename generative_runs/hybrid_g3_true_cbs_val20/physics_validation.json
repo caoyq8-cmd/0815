@@ -1,0 +1,126 @@
+{
+  "status": "CBS_GUARDED_PASS",
+  "reason": "CBS-guarded G3 preserves image guards and guarantees nonworsening physics",
+  "alignment_pass": true,
+  "alignment_rrmse_max": 0.0,
+  "raw_physics_pass": true,
+  "raw_physics_mse_improvement_mean": 6.903281246195385e-07,
+  "raw_image_guard": {
+    "mse_gain": 0.10729589462278,
+    "mae_gain": 0.0018356382846831387,
+    "ssim_gain": 0.00022313674516660775,
+    "mse_wins": 17,
+    "pass": true
+  },
+  "guarded_image_guard": {
+    "mse_gain": 0.07078771591184818,
+    "mae_gain": 0.0013337671756743497,
+    "ssim_gain": 0.00018989960250359594,
+    "mse_wins": 13,
+    "pass": true
+  },
+  "summary": {
+    "num_samples": 20,
+    "original_physics_mse": {
+      "mean": 0.00023199333754746475,
+      "std": 0.0001245124602504046
+    },
+    "original_physics_mae": {
+      "mean": 0.009401047707069666,
+      "std": 0.0027912913858195404
+    },
+    "original_physics_rrmse": {
+      "mean": 0.1406752483919263,
+      "std": 0.03963997478700729
+    },
+    "original_image_mse": {
+      "mean": 149.91654939651488,
+      "std": 87.35736271262856
+    },
+    "original_image_mae": {
+      "mean": 3.5936990857124327,
+      "std": 1.450409822913137
+    },
+    "original_image_psnr": {
+      "mean": 25.32698993318609,
+      "std": 2.9523552385513874
+    },
+    "original_image_ssim": {
+      "mean": 0.863375712303799,
+      "std": 0.035406829923076324
+    },
+    "raw_g3_physics_mse": {
+      "mean": 0.0002313030094228452,
+      "std": 0.00012482605210883483
+    },
+    "raw_g3_physics_mae": {
+      "mean": 0.009382036596070975,
+      "std": 0.0027994016849418888
+    },
+    "raw_g3_physics_rrmse": {
+      "mean": 0.140414235368371,
+      "std": 0.03977314514521546
+    },
+    "raw_g3_image_mse": {
+      "mean": 149.8092535018921,
+      "std": 87.31954277544506
+    },
+    "raw_g3_image_mae": {
+      "mean": 3.5918634474277495,
+      "std": 1.4510563673117975
+    },
+    "raw_g3_image_psnr": {
+      "mean": 25.330642217061733,
+      "std": 2.953369299052483
+    },
+    "raw_g3_image_ssim": {
+      "mean": 0.8635988490489656,
+      "std": 0.03546160017732902
+    },
+    "guarded_physics_mse": {
+      "mean": 0.0002312798529601423,
+      "std": 0.00012478534535638236
+    },
+    "guarded_physics_mae": {
+      "mean": 0.009382345422636718,
+      "std": 0.0028000059541573668
+    },
+    "guarded_physics_rrmse": {
+      "mean": 0.14040892235934735,
+      "std": 0.03976477877284521
+    },
+    "guarded_image_mse": {
+      "mean": 149.84576168060303,
+      "std": 87.36275624481814
+    },
+    "guarded_image_mae": {
+      "mean": 3.5923653185367583,
+      "std": 1.4516461323084744
+    },
+    "guarded_image_psnr": {
+      "mean": 25.329998308119983,
+      "std": 2.9540561632577482
+    },
+    "guarded_image_ssim": {
+      "mean": 0.8635656119063025,
+      "std": 0.03550011518521669
+    },
+    "raw_g3_physics_mse_wins": 16,
+    "guarded_selected_g3": 16,
+    "guarded_selected_original": 4
+  },
+  "config": {
+    "prediction_root": "/home/featurize/work/USCT_repro/USCT_download/generative_runs/hybrid_g3_multiseed_val20/ensemble_predictions",
+    "data_root": "/home/featurize/work/USCT_repro/USCT_download/self_consistent_cbs/sparse_64_local_alpha_train100_test20",
+    "split": "test",
+    "base_start": 1,
+    "base_end": 20,
+    "frequency": 500000.0,
+    "forward_iters": 80,
+    "boundary_width": 300,
+    "boundary_strength": 225.0,
+    "boundary_type": "PML3",
+    "speed_min": 1400.0,
+    "speed_max": 1605.0
+  }
+}

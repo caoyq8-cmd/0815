@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/build_inversionnet_oof5_conditions.py", line 386, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/build_inversionnet_oof5_conditions.py", line 380, in main
+    train_fold(args)
+  File "/home/featurize/work/USCT_repro/USCT_download/build_inversionnet_oof5_conditions.py", line 168, in train_fold
+    raise RuntimeError(
+RuntimeError: Fold output already exists: /home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/fold_0. Use --resume or a new output_root.
+====================================================================================================
+OOF InversionNet fold 0
+device / AMP      = cuda:0 True
+fit / holdout     = 717 180
+epochs            = 67
+base / blocks     = 32 2
+====================================================================================================
+[fold 0 epoch 039/067] loss=0.062098 l1=0.053910 grad=0.039263 time=11.6s
+[fold 0 epoch 040/067] loss=0.061953 l1=0.053812 grad=0.039396 time=5.1s
+[fold 0 epoch 041/067] loss=0.060351 l1=0.052327 grad=0.038935 time=5.4s
+[fold 0 epoch 042/067] loss=0.060265 l1=0.052204 grad=0.038890 time=5.2s
+[fold 0 epoch 043/067] loss=0.061108 l1=0.053023 grad=0.039055 time=5.2s
+[fold 0 epoch 044/067] loss=0.058162 l1=0.050251 grad=0.038575 time=5.2s
+[fold 0 epoch 045/067] loss=0.057325 l1=0.049468 grad=0.038246 time=5.2s
+[fold 0 epoch 046/067] loss=0.057052 l1=0.049173 grad=0.038456 time=5.1s
+[fold 0 epoch 047/067] loss=0.056764 l1=0.048924 grad=0.038325 time=5.1s
+[fold 0 epoch 048/067] loss=0.055320 l1=0.047607 grad=0.037845 time=5.2s
+[fold 0 epoch 049/067] loss=0.055440 l1=0.047739 grad=0.037800 time=5.2s
+[fold 0 epoch 050/067] loss=0.055194 l1=0.047542 grad=0.037591 time=5.3s
+[fold 0 epoch 051/067] loss=0.054503 l1=0.046918 grad=0.037533 time=5.4s
+[fold 0 epoch 052/067] loss=0.054587 l1=0.047011 grad=0.037533 time=5.3s
+[fold 0 epoch 053/067] loss=0.053489 l1=0.046005 grad=0.037197 time=5.4s
+[fold 0 epoch 054/067] loss=0.052414 l1=0.045012 grad=0.036977 time=5.3s
+[fold 0 epoch 055/067] loss=0.052602 l1=0.045195 grad=0.037020 time=5.4s
+[fold 0 epoch 056/067] loss=0.052124 l1=0.044769 grad=0.036834 time=5.4s
+[fold 0 epoch 057/067] loss=0.052234 l1=0.044884 grad=0.036820 time=5.4s
+[fold 0 epoch 058/067] loss=0.051679 l1=0.044398 grad=0.036599 time=5.3s
+[fold 0 epoch 059/067] loss=0.051363 l1=0.044089 grad=0.036602 time=5.4s
+[fold 0 epoch 060/067] loss=0.051512 l1=0.044226 grad=0.036624 time=5.1s
+[fold 0 epoch 061/067] loss=0.051468 l1=0.044183 grad=0.036572 time=5.1s
+[fold 0 epoch 062/067] loss=0.050929 l1=0.043702 grad=0.036415 time=5.1s
+[fold 0 epoch 063/067] loss=0.051226 l1=0.043964 grad=0.036535 time=5.3s
+[fold 0 epoch 064/067] loss=0.050702 l1=0.043488 grad=0.036392 time=5.4s
+[fold 0 epoch 065/067] loss=0.050703 l1=0.043484 grad=0.036377 time=5.3s
+[fold 0 epoch 066/067] loss=0.050624 l1=0.043430 grad=0.036432 time=5.4s
+[fold 0 epoch 067/067] loss=0.051373 l1=0.044101 grad=0.036505 time=5.3s
+[DONE fold 0] wrote 180 unseen predictions to /home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/train

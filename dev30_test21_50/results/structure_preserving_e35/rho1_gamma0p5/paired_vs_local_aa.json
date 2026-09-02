@@ -1,0 +1,72 @@
+{
+  "baseline_csv": "/home/featurize/work/USCT_repro/USCT_download/dev30_test21_50/results/local_aa/sample_results.csv",
+  "num_pairs": 10,
+  "positive_delta_means_structure_better": true,
+  "metrics": {
+    "final_true_cbs_mse": {
+      "mean": -2.837623469531536e-11,
+      "sample_std": 1.1357384253677927e-10,
+      "min": -2.3283064365386963e-10,
+      "max": 1.7462298274040222e-10,
+      "bootstrap_mean_95ci": [
+        -9.604264050722122e-11,
+        3.710738383233547e-11
+      ],
+      "wins": 3,
+      "losses": 5,
+      "wilcoxon_two_sided_p": 0.40625
+    },
+    "final_mse_240": {
+      "mean": -1.220703125e-05,
+      "sample_std": 2.1639045599551035e-05,
+      "min": -6.103515625e-05,
+      "max": 7.62939453125e-06,
+      "bootstrap_mean_95ci": [
+        -2.593994140625e-05,
+        -7.62939453125e-07
+      ],
+      "wins": 1,
+      "losses": 4,
+      "wilcoxon_two_sided_p": 0.1875
+    },
+    "final_mae_240": {
+      "mean": 1.6689300537109374e-07,
+      "sample_std": 3.9014618265258717e-07,
+      "min": -4.76837158203125e-07,
+      "max": 9.5367431640625e-07,
+      "bootstrap_mean_95ci": [
+        -4.76837158203125e-08,
+        4.0531158447265624e-07
+      ],
+      "wins": 4,
+      "losses": 1,
+      "wilcoxon_two_sided_p": 0.3125
+    },
+    "final_psnr_240": {
+      "mean": -2.3921826652895106e-07,
+      "sample_std": 4.078255698399826e-07,
+      "min": -9.99916728972039e-07,
+      "max": 2.685498898813421e-07,
+      "bootstrap_mean_95ci": [
+        -4.907319046498771e-07,
+        -1.2929810111472761e-08
+      ],
+      "wins": 1,
+      "losses": 4,
+      "wilcoxon_two_sided_p": 0.125
+    },
+    "final_ssim_240": {
+      "mean": -2.3514254633094645e-06,
+      "sample_std": 1.3292419079458708e-05,
+      "min": -2.4696698554649288e-05,
+      "max": 1.428871349551386e-05,
+      "bootstrap_mean_95ci": [
+        -1.0299256539242073e-05,
+        5.260486156651034e-06
+      ],
+      "wins": 4,
+      "losses": 6,
+      "wilcoxon_two_sided_p": 0.6953125
+    }
+  }
+}

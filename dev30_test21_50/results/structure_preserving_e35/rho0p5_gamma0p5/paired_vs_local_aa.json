@@ -1,0 +1,72 @@
+{
+  "baseline_csv": "/home/featurize/work/USCT_repro/USCT_download/dev30_test21_50/results/local_aa/sample_results.csv",
+  "num_pairs": 30,
+  "positive_delta_means_structure_better": true,
+  "metrics": {
+    "final_true_cbs_mse": {
+      "mean": -3.794896959637602e-07,
+      "sample_std": 9.48564532075899e-07,
+      "min": -4.549816367216408e-06,
+      "max": 7.857452146708965e-07,
+      "bootstrap_mean_95ci": [
+        -7.518377788073849e-07,
+        -9.966164119153596e-08
+      ],
+      "wins": 3,
+      "losses": 27,
+      "wilcoxon_two_sided_p": 5.144625902175903e-06
+    },
+    "final_mse_240": {
+      "mean": -0.07116305033365886,
+      "sample_std": 0.1687536173614446,
+      "min": -0.86517333984375,
+      "max": 0.021026611328125,
+      "bootstrap_mean_95ci": [
+        -0.14087344169616697,
+        -0.024403886795043944
+      ],
+      "wins": 7,
+      "losses": 23,
+      "wilcoxon_two_sided_p": 0.0003449581563472748
+    },
+    "final_mae_240": {
+      "mean": 0.025658384958902995,
+      "sample_std": 0.04896913786570349,
+      "min": -0.020051956176757812,
+      "max": 0.19628286361694336,
+      "bootstrap_mean_95ci": [
+        0.010133235653241476,
+        0.044052218198776236
+      ],
+      "wins": 18,
+      "losses": 12,
+      "wilcoxon_two_sided_p": 0.009301122277975082
+    },
+    "final_psnr_240": {
+      "mean": -0.0017620888663830196,
+      "sample_std": 0.004104468439711188,
+      "min": -0.019761523198635444,
+      "max": 0.0015477644710415461,
+      "bootstrap_mean_95ci": [
+        -0.003378009618787188,
+        -0.000548784200468422
+      ],
+      "wins": 7,
+      "losses": 23,
+      "wilcoxon_two_sided_p": 0.0012321043759584427
+    },
+    "final_ssim_240": {
+      "mean": 1.1194584832063814e-05,
+      "sample_std": 6.402823784555463e-05,
+      "min": -7.862533941294103e-05,
+      "max": 0.00024461667406605603,
+      "bootstrap_mean_95ci": [
+        -9.566241784284371e-06,
+        3.5622123204968504e-05
+      ],
+      "wins": 14,
+      "losses": 16,
+      "wilcoxon_two_sided_p": 0.9676735773682594
+    }
+  }
+}

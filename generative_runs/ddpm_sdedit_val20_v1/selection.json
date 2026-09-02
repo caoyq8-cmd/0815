@@ -1,0 +1,214 @@
+{
+  "status": "REJECT",
+  "reason": "no nonzero setting satisfies the MSE, MAE, and SSIM guards",
+  "selected_setting": {
+    "t_start": 25,
+    "ddim_steps": 5,
+    "ddim_nfe": 5,
+    "alpha": 0.0,
+    "num_samples": 20,
+    "condition_mse_mean": 149.91654939651488,
+    "condition_mse_std": 87.35736271262856,
+    "condition_mae_mean": 3.5936990857124327,
+    "condition_mae_std": 1.450409822913137,
+    "condition_psnr_mean": 25.32698993318609,
+    "condition_psnr_std": 2.9523552385513874,
+    "condition_ssim_mean": 0.863375712303799,
+    "condition_ssim_std": 0.035406829923076324,
+    "sdedit_mse_mean": 149.91654939651488,
+    "sdedit_mse_std": 87.35736271262856,
+    "sdedit_mae_mean": 3.5936990857124327,
+    "sdedit_mae_std": 1.450409822913137,
+    "sdedit_psnr_mean": 25.32698993318609,
+    "sdedit_psnr_std": 2.9523552385513874,
+    "sdedit_ssim_mean": 0.863375712303799,
+    "sdedit_ssim_std": 0.035406829923076324,
+    "mse_improvement_mean": 0.0,
+    "mse_wins": 0,
+    "mae_improvement_mean": 0.0,
+    "mae_wins": 0,
+    "psnr_improvement_mean": 0.0,
+    "psnr_wins": 0,
+    "ssim_improvement_mean": 0.0,
+    "ssim_wins": 0,
+    "update_rms_mps_mean": 0.0,
+    "mse_guard_pass": true,
+    "mae_guard_pass": true,
+    "ssim_guard_pass": true,
+    "all_guards_pass": true
+  },
+  "checkpoint_epoch": 146,
+  "checkpoint_best_val_loss": 0.005669147689611866,
+  "checkpoint_state": "ema_model",
+  "checkpoint": "/home/featurize/work/USCT_repro/USCT_download/ddpm_prior_runs/speed_ddpm_b48_e200_v73/checkpoints/best.pth",
+  "checkpoint_architecture": {
+    "base_ch": 48,
+    "time_dim": 192,
+    "timesteps": 1000,
+    "norm_min": 1400.0,
+    "norm_max": 1605.0
+  },
+  "eval_files": [
+    {
+      "sample_id": 1,
+      "name": "test_1.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_1.npz",
+      "size": 479407
+    },
+    {
+      "sample_id": 2,
+      "name": "test_2.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_2.npz",
+      "size": 401212
+    },
+    {
+      "sample_id": 3,
+      "name": "test_3.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_3.npz",
+      "size": 428399
+    },
+    {
+      "sample_id": 4,
+      "name": "test_4.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_4.npz",
+      "size": 462773
+    },
+    {
+      "sample_id": 5,
+      "name": "test_5.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_5.npz",
+      "size": 398416
+    },
+    {
+      "sample_id": 6,
+      "name": "test_6.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_6.npz",
+      "size": 413167
+    },
+    {
+      "sample_id": 7,
+      "name": "test_7.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_7.npz",
+      "size": 476197
+    },
+    {
+      "sample_id": 8,
+      "name": "test_8.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_8.npz",
+      "size": 420465
+    },
+    {
+      "sample_id": 9,
+      "name": "test_9.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_9.npz",
+      "size": 465076
+    },
+    {
+      "sample_id": 10,
+      "name": "test_10.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_10.npz",
+      "size": 430456
+    },
+    {
+      "sample_id": 11,
+      "name": "test_11.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_11.npz",
+      "size": 490897
+    },
+    {
+      "sample_id": 12,
+      "name": "test_12.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_12.npz",
+      "size": 431678
+    },
+    {
+      "sample_id": 13,
+      "name": "test_13.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_13.npz",
+      "size": 412060
+    },
+    {
+      "sample_id": 14,
+      "name": "test_14.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_14.npz",
+      "size": 492350
+    },
+    {
+      "sample_id": 15,
+      "name": "test_15.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_15.npz",
+      "size": 405029
+    },
+    {
+      "sample_id": 16,
+      "name": "test_16.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_16.npz",
+      "size": 420677
+    },
+    {
+      "sample_id": 17,
+      "name": "test_17.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_17.npz",
+      "size": 447398
+    },
+    {
+      "sample_id": 18,
+      "name": "test_18.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_18.npz",
+      "size": 396578
+    },
+    {
+      "sample_id": 19,
+      "name": "test_19.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_19.npz",
+      "size": 506565
+    },
+    {
+      "sample_id": 20,
+      "name": "test_20.npz",
+      "path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/test/test_20.npz",
+      "size": 498623
+    }
+  ],
+  "guards": {
+    "mae_tolerance": 0.0,
+    "ssim_guard": 0.001,
+    "min_mse_gain": 0.0
+  },
+  "config": {
+    "condition_root": "./condition_cache/inversionnet_oof5_b32_blocks2_e67",
+    "ckpt_path": "./ddpm_prior_runs/speed_ddpm_b48_e200_v73/checkpoints/best.pth",
+    "output_dir": "./generative_runs/ddpm_sdedit_val20_v1",
+    "eval_split": "test",
+    "eval_start": 1,
+    "eval_end": 20,
+    "t_starts": [
+      25,
+      50,
+      100,
+      200
+    ],
+    "ddim_steps": [
+      5,
+      10,
+      20
+    ],
+    "alphas": [
+      0.0,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "batch_size": 4,
+    "num_workers": 0,
+    "device": "cuda:0",
+    "mae_tolerance": 0.0,
+    "ssim_guard": 0.001,
+    "min_mse_gain": 0.0,
+    "bootstrap_samples": 10000,
+    "seed": 20260902
+  }
+}

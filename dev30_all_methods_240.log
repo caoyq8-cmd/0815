@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/evaluate_dev30_all_methods_240.py", line 496, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/evaluate_dev30_all_methods_240.py", line 467, in main
+    g3, audit = recompute_g3(args, original_csv_rows)
+  File "/home/featurize/work/USCT_repro/USCT_download/evaluate_dev30_all_methods_240.py", line 295, in recompute_g3
+    raw_g3, pred_path, pred_key = load_g3_prediction(args.g3_output_root, sid, cond_path)
+  File "/home/featurize/work/USCT_repro/USCT_download/evaluate_dev30_all_methods_240.py", line 223, in load_g3_prediction
+    raise RuntimeError(f"Cannot load G3 prediction for test_{sid} under {root}:\n{message}")
+RuntimeError: Cannot load G3 prediction for test_21 under dev30_test21_50/results/g3_ensemble_cbs_guard_frozen:
+dev30_test21_50/results/g3_ensemble_cbs_guard_frozen/ensemble_predictions/test_21.npz: Cannot identify G3 in dev30_test21_50/results/g3_ensemble_cbs_guard_frozen/ensemble_predictions/test_21.npz. keys=['sample_id', 'seeds', 'condition_norm', 'target_speed', 'flow_endpoint_norm', 'ddpm_endpoint_mean_norm', 'hybrid_norm', 'hybrid_speed'], 2-D candidates=['condition_norm', 'target_speed', 'flow_endpoint_norm', 'ddpm_endpoint_mean_norm', 'hybrid_norm', 'hybrid_speed']. Add its exact key to the G3 alias list at the top of this script.
+dev30_test21_50/results/g3_ensemble_cbs_guard_frozen/guarded_predictions/test_21.npz: Cannot identify G3 in dev30_test21_50/results/g3_ensemble_cbs_guard_frozen/guarded_predictions/test_21.npz. keys=['sample_id', 'selected_g3', 'selected_speed_image', 'original_speed_image', 'raw_g3_speed_image', 'target_speed_image', 'original_physics_mse', 'raw_g3_physics_mse'], 2-D candidates=['selected_speed_image', 'original_speed_image', 'raw_g3_speed_image', 'target_speed_image']. Add its exact key to the G3 alias list at the top of this script.
+dev30_test21_50/results/g3_ensemble_cbs_guard_frozen/forward_cache/test_21.npz: Cannot identify G3 in dev30_test21_50/results/g3_ensemble_cbs_guard_frozen/forward_cache/test_21.npz. keys=['original_dobs', 'raw_g3_dobs', 'target_dobs'], 2-D candidates=[]. Add its exact key to the G3 alias list at the top of this script.

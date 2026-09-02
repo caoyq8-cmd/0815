@@ -1,0 +1,72 @@
+{
+  "baseline_csv": "/home/featurize/work/USCT_repro/USCT_download/dev30_test21_50/results/local_aa/sample_results.csv",
+  "num_pairs": 10,
+  "positive_delta_means_structure_better": true,
+  "metrics": {
+    "final_true_cbs_mse": {
+      "mean": -6.920890882611275e-09,
+      "sample_std": 3.811240989193283e-08,
+      "min": -1.0792427929118276e-07,
+      "max": 3.199966158717871e-08,
+      "bootstrap_mean_95ci": [
+        -3.226314220228232e-08,
+        1.0837593436008319e-08
+      ],
+      "wins": 5,
+      "losses": 5,
+      "wilcoxon_two_sided_p": 1.0
+    },
+    "final_mse_240": {
+      "mean": -0.0003448486328125,
+      "sample_std": 0.020413541208928618,
+      "min": -0.0300140380859375,
+      "max": 0.051605224609375,
+      "bootstrap_mean_95ci": [
+        -0.010808639526367188,
+        0.013178253173828125
+      ],
+      "wins": 3,
+      "losses": 7,
+      "wilcoxon_two_sided_p": 0.193359375
+    },
+    "final_mae_240": {
+      "mean": 0.002619314193725586,
+      "sample_std": 0.006815294220597957,
+      "min": -0.011441230773925781,
+      "max": 0.011673927307128906,
+      "bootstrap_mean_95ci": [
+        -0.0015110731124877929,
+        0.006442404985427857
+      ],
+      "wins": 6,
+      "losses": 2,
+      "wilcoxon_two_sided_p": 0.25
+    },
+    "final_psnr_240": {
+      "mean": -5.786606100670611e-05,
+      "sample_std": 0.0005100749982043956,
+      "min": -0.0008317532899155822,
+      "max": 0.0011815673691835116,
+      "bootstrap_mean_95ci": [
+        -0.00032612970248454334,
+        0.0002651392840125135
+      ],
+      "wins": 3,
+      "losses": 7,
+      "wilcoxon_two_sided_p": 0.232421875
+    },
+    "final_ssim_240": {
+      "mean": -5.072488837032374e-06,
+      "sample_std": 1.4018695344189937e-05,
+      "min": -1.447063459214526e-05,
+      "max": 3.137398767261157e-05,
+      "bootstrap_mean_95ci": [
+        -1.1513755432392969e-05,
+        3.911144592894931e-06
+      ],
+      "wins": 2,
+      "losses": 8,
+      "wilcoxon_two_sided_p": 0.10546875
+    }
+  }
+}

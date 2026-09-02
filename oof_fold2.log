@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/build_inversionnet_oof5_conditions.py", line 386, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/build_inversionnet_oof5_conditions.py", line 380, in main
+    train_fold(args)
+  File "/home/featurize/work/USCT_repro/USCT_download/build_inversionnet_oof5_conditions.py", line 168, in train_fold
+    raise RuntimeError(
+RuntimeError: Fold output already exists: /home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_oof5_b32_blocks2_e67/fold_2. Use --resume or a new output_root.

@@ -1,0 +1,34 @@
+========================================================================================================================
+Frozen G3-Ensemble true-CBS validation
+bases             = test_1 .. test_20
+CBS               = 500000.0 80 PML3
+candidate policy  = Original vs G3 by true-CBS MSE; GT is evaluation-only
+========================================================================================================================
+[01/20] test_1 | align=0.000e+00 | CBS 9.722327e-05->9.639122e-05 | guard=G3
+[02/20] test_2 | align=0.000e+00 | CBS 3.834348e-05->3.789551e-05 | guard=G3
+[03/20] test_3 | align=0.000e+00 | CBS 2.342516e-04->2.331581e-04 | guard=G3
+[04/20] test_4 | align=0.000e+00 | CBS 3.191048e-04->3.189911e-04 | guard=G3
+[05/20] test_5 | align=0.000e+00 | CBS 2.265762e-04->2.248713e-04 | guard=G3
+[06/20] test_6 | align=0.000e+00 | CBS 2.073082e-04->2.056854e-04 | guard=G3
+[07/20] test_7 | align=0.000e+00 | CBS 2.031538e-04->2.024292e-04 | guard=G3
+[08/20] test_8 | align=0.000e+00 | CBS 1.308403e-04->1.296613e-04 | guard=G3
+[09/20] test_9 | align=0.000e+00 | CBS 2.258754e-04->2.243807e-04 | guard=G3
+[10/20] test_10 | align=0.000e+00 | CBS 2.141922e-04->2.140406e-04 | guard=G3
+[11/20] test_11 | align=0.000e+00 | CBS 4.270927e-04->4.273090e-04 | guard=Original
+[12/20] test_12 | align=0.000e+00 | CBS 4.607609e-04->4.608712e-04 | guard=Original
+[13/20] test_13 | align=0.000e+00 | CBS 3.252614e-04->3.253057e-04 | guard=Original
+[14/20] test_14 | align=0.000e+00 | CBS 4.987412e-04->4.988334e-04 | guard=Original
+[15/20] test_15 | align=0.000e+00 | CBS 1.513225e-04->1.504559e-04 | guard=G3
+[16/20] test_16 | align=0.000e+00 | CBS 1.062998e-04->1.056418e-04 | guard=G3
+[17/20] test_17 | align=0.000e+00 | CBS 1.130218e-04->1.123069e-04 | guard=G3
+[18/20] test_18 | align=0.000e+00 | CBS 1.308308e-04->1.300036e-04 | guard=G3
+[19/20] test_19 | align=0.000e+00 | CBS 2.562620e-04->2.556614e-04 | guard=G3
+[20/20] test_20 | align=0.000e+00 | CBS 2.734043e-04->2.721668e-04 | guard=G3
+========================================================================================================================
+status                    = CBS_GUARDED_PASS
+alignment max RRMSE       = 0.000e+00
+raw G3 physics MSE        = 2.319933e-04 -> 2.313030e-04 wins=16/20
+CBS Guard selected G3    = 16/20
+raw image guard           = {'mse_gain': 0.10729589462278, 'mae_gain': 0.0018356382846831387, 'ssim_gain': 0.00022313674516660775, 'mse_wins': 17, 'pass': True}
+guarded image guard       = {'mse_gain': 0.07078771591184818, 'mae_gain': 0.0013337671756743497, 'ssim_gain': 0.00018989960250359594, 'mse_wins': 13, 'pass': True}
+saved to: /home/featurize/work/USCT_repro/USCT_download/generative_runs/hybrid_g3_true_cbs_val20

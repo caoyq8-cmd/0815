@@ -1,0 +1,15 @@
+[Dataset] split=test n=20 IDs=1..20 augment=False
+===========================================================================================================================================
+G3 frozen-setting multi-seed confirmation
+status             = ENSEMBLE_PASS_ONLY
+confirmation pass  = 2 / 4
+ensemble pass      = True
+===========================================================================================================================================
+        role       seed       dMSE   MSE+       dMAE   MAE+       dSSIM   SSIM+   PASS
+   selection   20260902    0.10128     17   0.000506     11   0.0001791      18   True
+confirmation   20260903    0.07897     16  -0.000068     10   0.0001694      17  False
+confirmation   20260904    0.09465     18   0.000692     11   0.0001664      16   True
+confirmation   20260905    0.08408     16   0.000144     10   0.0001104      14   True
+confirmation   20260906    0.08660     16  -0.000609      9   0.0001773      18  False
+    ensemble       mean    0.10730     17   0.001836     11   0.0002231      19   True
+saved to: /home/featurize/work/USCT_repro/USCT_download/generative_runs/hybrid_g3_multiseed_val20

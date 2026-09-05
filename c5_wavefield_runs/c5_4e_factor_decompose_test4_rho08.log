@@ -1,0 +1,31 @@
+========================================================================================================================
+C5.4e TX / BASIS / SOURCE-COVERAGE DECOMPOSITION
+========================================================================================================================
+TX full RRMSE = 0.535516
+measurement RRMSE = 0.161028
+residual RRMSE = 1.457085
+
+method                                     raw      crop32     smooth5     smooth9
+Exact everything                      1.000000    1.000000    1.000000    1.000000
+Neural residual only                  0.567124    0.606170    0.815904    0.884867
+Neural TX only                        0.830845    0.832568    0.906386    0.928002
+Neural basis64 only                   0.726177    0.750113    0.832966    0.867934
+Neural unseen56 basis only            0.754334    0.774721    0.847920    0.879947
+Neural seen8 basis only               0.986889    0.986975    0.995175    0.997231
+Neural TX + basis                     0.358662    0.386446    0.547381    0.637330
+Full neural ANO                      -0.019466   -0.028073   -0.097443   -0.150925
+
+========================================================================================================================
+DIAGNOSTIC GUIDE
+========================================================================================================================
+If TX-only is much worse than basis64-only:
+  -> hard-medium transmitter forward accuracy is the main problem.
+
+If basis64-only is much worse than TX-only:
+  -> adjoint basis quality is the main problem.
+
+If unseen56-only is much worse than seen8-basis-only:
+  -> 8-source -> 64-source training is strongly justified.
+
+If unseen56-only remains good but basis64-only is poor:
+  -> source coverage is NOT the main issue; medium generalization is.

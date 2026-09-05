@@ -1,0 +1,194 @@
+====================================================================================================
+C5.1i FNO-BG OPERATOR GENERALIZATION
+====================================================================================================
+train images = 20
+val images   = 5
+estimated train wave_scale = 3.72042429e-02
+locked wave_scale          = 3.72290883e-02
+relative scale difference  = 6.673657e-04
+[Background] keys = ['mean_field', 'background_field', 'src_indices', 'rec_indices']
+[Background] selected key = background_field shape = (8, 480, 480)
+[Background] source-index key = src_indices shape = (8, 2)
+[Split] images=20 sources=8 pairs=160
+[Split] speed_norm = (20, 1, 480, 480)
+[Split] wave_norm  = (20, 8, 2, 480, 480)
+[Background] keys = ['mean_field', 'background_field', 'src_indices', 'rec_indices']
+[Background] selected key = background_field shape = (8, 480, 480)
+[Background] source-index key = src_indices shape = (8, 2)
+[Split] images=5 sources=8 pairs=40
+[Split] speed_norm = (5, 1, 480, 480)
+[Split] wave_norm  = (5, 8, 2, 480, 480)
+
+modes       = 25
+width       = 32
+depth       = 4
+parameters  = 5,125,730
+epochs      = 200
+lr          = 0.001
+accum_pairs = 4
+train pairs       = 160
+val pairs         = 40
+updates / epoch   = 40
+total updates     = 8000
+
+INITIAL VALIDATION
+val full           mean=1.096443 std=0.012685 median=1.096138 min=1.073172 max=1.121386
+val receiver       mean=1.243308 std=0.045890 median=1.223764 min=1.183221 max=1.320176
+[epoch 001/200] update=0040/8000 loss=2.729512e-01 lr=9.999e-04 | val_full=0.642481 (max=0.715334) | val_rec=0.208591 (max=0.251213)
+[epoch 002/200] update=0080/8000 loss=1.878375e-01 lr=9.998e-04 | val_full=0.623805 (max=0.730688) | val_rec=0.232521 (max=0.275445)
+[epoch 004/200] update=0160/8000 loss=1.654680e-01 lr=9.990e-04 | val_full=0.600988 (max=0.731107) | val_rec=0.236065 (max=0.278664)
+[epoch 006/200] update=0240/8000 loss=1.513944e-01 lr=9.978e-04 | val_full=0.587189 (max=0.750877) | val_rec=0.224439 (max=0.268312)
+[epoch 008/200] update=0320/8000 loss=1.388851e-01 lr=9.961e-04 | val_full=0.574778 (max=0.740516) | val_rec=0.224739 (max=0.268272)
+[epoch 010/200] update=0400/8000 loss=1.263167e-01 lr=9.939e-04 | val_full=0.571917 (max=0.742505) | val_rec=0.217746 (max=0.263014)
+[epoch 012/200] update=0480/8000 loss=1.143099e-01 lr=9.912e-04 | val_full=0.566291 (max=0.753368) | val_rec=0.201618 (max=0.250565)
+[epoch 014/200] update=0560/8000 loss=9.958018e-02 lr=9.881e-04 | val_full=0.564471 (max=0.776245) | val_rec=0.203278 (max=0.265724)
+[epoch 016/200] update=0640/8000 loss=8.758233e-02 lr=9.844e-04 | val_full=0.555707 (max=0.790208) | val_rec=0.202829 (max=0.267530)
+[epoch 018/200] update=0720/8000 loss=7.580033e-02 lr=9.803e-04 | val_full=0.551782 (max=0.780705) | val_rec=0.192650 (max=0.266709)
+[epoch 020/200] update=0800/8000 loss=6.601930e-02 lr=9.758e-04 | val_full=0.559582 (max=0.812550) | val_rec=0.194939 (max=0.280001)
+[epoch 022/200] update=0880/8000 loss=5.584530e-02 lr=9.707e-04 | val_full=0.558310 (max=0.826083) | val_rec=0.194365 (max=0.279178)
+[epoch 024/200] update=0960/8000 loss=4.864113e-02 lr=9.652e-04 | val_full=0.560949 (max=0.815092) | val_rec=0.184626 (max=0.271448)
+[epoch 026/200] update=1040/8000 loss=4.173148e-02 lr=9.593e-04 | val_full=0.560912 (max=0.832304) | val_rec=0.192092 (max=0.276083)
+[epoch 028/200] update=1120/8000 loss=3.629929e-02 lr=9.529e-04 | val_full=0.563241 (max=0.847477) | val_rec=0.193921 (max=0.283843)
+[epoch 030/200] update=1200/8000 loss=3.190428e-02 lr=9.460e-04 | val_full=0.573765 (max=0.855784) | val_rec=0.188525 (max=0.285888)
+[epoch 032/200] update=1280/8000 loss=2.815186e-02 lr=9.388e-04 | val_full=0.566264 (max=0.846923) | val_rec=0.186915 (max=0.273411)
+[epoch 034/200] update=1360/8000 loss=2.532217e-02 lr=9.311e-04 | val_full=0.572383 (max=0.864867) | val_rec=0.186704 (max=0.276394)
+[epoch 036/200] update=1440/8000 loss=2.240920e-02 lr=9.229e-04 | val_full=0.565452 (max=0.853141) | val_rec=0.183731 (max=0.273110)
+[epoch 038/200] update=1520/8000 loss=1.994536e-02 lr=9.144e-04 | val_full=0.571810 (max=0.867579) | val_rec=0.183910 (max=0.280554)
+[epoch 040/200] update=1600/8000 loss=1.876583e-02 lr=9.055e-04 | val_full=0.574636 (max=0.868721) | val_rec=0.187985 (max=0.285644)
+[epoch 042/200] update=1680/8000 loss=1.747228e-02 lr=8.961e-04 | val_full=0.576101 (max=0.868612) | val_rec=0.182100 (max=0.275984)
+[epoch 044/200] update=1760/8000 loss=1.627862e-02 lr=8.864e-04 | val_full=0.572133 (max=0.858500) | val_rec=0.182508 (max=0.278553)
+[epoch 046/200] update=1840/8000 loss=1.483107e-02 lr=8.763e-04 | val_full=0.574631 (max=0.875096) | val_rec=0.184190 (max=0.282167)
+[epoch 048/200] update=1920/8000 loss=1.415588e-02 lr=8.658e-04 | val_full=0.573035 (max=0.870514) | val_rec=0.181517 (max=0.279326)
+[epoch 050/200] update=2000/8000 loss=1.333317e-02 lr=8.550e-04 | val_full=0.577153 (max=0.867944) | val_rec=0.184760 (max=0.285324)
+[epoch 052/200] update=2080/8000 loss=1.283561e-02 lr=8.439e-04 | val_full=0.574416 (max=0.874581) | val_rec=0.181304 (max=0.280201)
+[epoch 054/200] update=2160/8000 loss=1.213972e-02 lr=8.323e-04 | val_full=0.574415 (max=0.881446) | val_rec=0.181668 (max=0.284907)
+[epoch 056/200] update=2240/8000 loss=1.127295e-02 lr=8.205e-04 | val_full=0.577349 (max=0.876138) | val_rec=0.183135 (max=0.287163)
+[epoch 058/200] update=2320/8000 loss=1.097751e-02 lr=8.084e-04 | val_full=0.574651 (max=0.878453) | val_rec=0.183238 (max=0.284678)
+[epoch 060/200] update=2400/8000 loss=1.042938e-02 lr=7.960e-04 | val_full=0.576122 (max=0.882257) | val_rec=0.180392 (max=0.282716)
+[epoch 062/200] update=2480/8000 loss=1.021769e-02 lr=7.832e-04 | val_full=0.576006 (max=0.870752) | val_rec=0.180886 (max=0.283530)
+[epoch 064/200] update=2560/8000 loss=9.620293e-03 lr=7.702e-04 | val_full=0.576187 (max=0.875525) | val_rec=0.181727 (max=0.285625)
+[epoch 066/200] update=2640/8000 loss=8.858175e-03 lr=7.570e-04 | val_full=0.578368 (max=0.880214) | val_rec=0.181149 (max=0.284542)
+[epoch 068/200] update=2720/8000 loss=8.880509e-03 lr=7.435e-04 | val_full=0.577246 (max=0.884567) | val_rec=0.182100 (max=0.283871)
+[epoch 070/200] update=2800/8000 loss=8.739051e-03 lr=7.297e-04 | val_full=0.576938 (max=0.877667) | val_rec=0.182175 (max=0.280824)
+[epoch 072/200] update=2880/8000 loss=8.572348e-03 lr=7.158e-04 | val_full=0.576206 (max=0.873330) | val_rec=0.182065 (max=0.280249)
+[epoch 074/200] update=2960/8000 loss=8.267060e-03 lr=7.016e-04 | val_full=0.576709 (max=0.874286) | val_rec=0.181047 (max=0.283658)
+[epoch 076/200] update=3040/8000 loss=7.797038e-03 lr=6.872e-04 | val_full=0.576355 (max=0.876949) | val_rec=0.179530 (max=0.281155)
+[epoch 078/200] update=3120/8000 loss=7.577639e-03 lr=6.727e-04 | val_full=0.579703 (max=0.879298) | val_rec=0.180712 (max=0.282012)
+[epoch 080/200] update=3200/8000 loss=7.139834e-03 lr=6.580e-04 | val_full=0.577569 (max=0.878691) | val_rec=0.178790 (max=0.281449)
+[epoch 082/200] update=3280/8000 loss=6.982610e-03 lr=6.431e-04 | val_full=0.577630 (max=0.872977) | val_rec=0.179779 (max=0.283598)
+[epoch 084/200] update=3360/8000 loss=7.018174e-03 lr=6.281e-04 | val_full=0.578766 (max=0.878934) | val_rec=0.179192 (max=0.280555)
+[epoch 086/200] update=3440/8000 loss=6.738007e-03 lr=6.130e-04 | val_full=0.581008 (max=0.878388) | val_rec=0.180304 (max=0.281002)
+[epoch 088/200] update=3520/8000 loss=6.557920e-03 lr=5.978e-04 | val_full=0.578820 (max=0.878462) | val_rec=0.180183 (max=0.278880)
+[epoch 090/200] update=3600/8000 loss=6.245604e-03 lr=5.824e-04 | val_full=0.579343 (max=0.879205) | val_rec=0.179436 (max=0.279750)
+[epoch 092/200] update=3680/8000 loss=6.075505e-03 lr=5.670e-04 | val_full=0.578746 (max=0.875991) | val_rec=0.179564 (max=0.284904)
+[epoch 094/200] update=3760/8000 loss=5.997442e-03 lr=5.516e-04 | val_full=0.579969 (max=0.878912) | val_rec=0.179291 (max=0.279993)
+[epoch 096/200] update=3840/8000 loss=5.844156e-03 lr=5.361e-04 | val_full=0.581749 (max=0.882223) | val_rec=0.179951 (max=0.281582)
+[epoch 098/200] update=3920/8000 loss=5.881021e-03 lr=5.205e-04 | val_full=0.582229 (max=0.878856) | val_rec=0.180358 (max=0.281252)
+[epoch 100/200] update=4000/8000 loss=5.660476e-03 lr=5.050e-04 | val_full=0.581559 (max=0.882001) | val_rec=0.179312 (max=0.279859)
+[epoch 102/200] update=4080/8000 loss=5.347872e-03 lr=4.895e-04 | val_full=0.580744 (max=0.882829) | val_rec=0.179895 (max=0.279859)
+[epoch 104/200] update=4160/8000 loss=5.201593e-03 lr=4.739e-04 | val_full=0.582301 (max=0.882402) | val_rec=0.179724 (max=0.278150)
+[epoch 106/200] update=4240/8000 loss=5.112764e-03 lr=4.584e-04 | val_full=0.583120 (max=0.885741) | val_rec=0.179285 (max=0.279724)
+[epoch 108/200] update=4320/8000 loss=5.010075e-03 lr=4.430e-04 | val_full=0.582102 (max=0.883298) | val_rec=0.179490 (max=0.280543)
+[epoch 110/200] update=4400/8000 loss=4.851946e-03 lr=4.276e-04 | val_full=0.582711 (max=0.885124) | val_rec=0.179546 (max=0.280357)
+[epoch 112/200] update=4480/8000 loss=4.735138e-03 lr=4.122e-04 | val_full=0.583234 (max=0.884410) | val_rec=0.179830 (max=0.281080)
+[epoch 114/200] update=4560/8000 loss=4.622917e-03 lr=3.970e-04 | val_full=0.584806 (max=0.885655) | val_rec=0.179966 (max=0.281210)
+[epoch 116/200] update=4640/8000 loss=4.547146e-03 lr=3.819e-04 | val_full=0.583505 (max=0.886566) | val_rec=0.179788 (max=0.279947)
+[epoch 118/200] update=4720/8000 loss=4.435362e-03 lr=3.669e-04 | val_full=0.584626 (max=0.885153) | val_rec=0.180051 (max=0.280564)
+[epoch 120/200] update=4800/8000 loss=4.355616e-03 lr=3.520e-04 | val_full=0.584326 (max=0.886441) | val_rec=0.179911 (max=0.281009)
+[epoch 122/200] update=4880/8000 loss=4.289810e-03 lr=3.373e-04 | val_full=0.585012 (max=0.887855) | val_rec=0.179903 (max=0.281016)
+[epoch 124/200] update=4960/8000 loss=4.220483e-03 lr=3.228e-04 | val_full=0.585935 (max=0.889414) | val_rec=0.180447 (max=0.283660)
+[epoch 126/200] update=5040/8000 loss=4.166159e-03 lr=3.084e-04 | val_full=0.585936 (max=0.888529) | val_rec=0.180297 (max=0.283068)
+[epoch 128/200] update=5120/8000 loss=4.067002e-03 lr=2.942e-04 | val_full=0.585521 (max=0.889282) | val_rec=0.180041 (max=0.282191)
+[epoch 130/200] update=5200/8000 loss=4.015353e-03 lr=2.803e-04 | val_full=0.587223 (max=0.890116) | val_rec=0.180419 (max=0.282433)
+[epoch 132/200] update=5280/8000 loss=3.963027e-03 lr=2.665e-04 | val_full=0.586891 (max=0.889310) | val_rec=0.180391 (max=0.282156)
+[epoch 134/200] update=5360/8000 loss=3.914264e-03 lr=2.530e-04 | val_full=0.586991 (max=0.889867) | val_rec=0.180309 (max=0.281318)
+[epoch 136/200] update=5440/8000 loss=3.856246e-03 lr=2.398e-04 | val_full=0.586812 (max=0.889069) | val_rec=0.180325 (max=0.282384)
+[epoch 138/200] update=5520/8000 loss=3.798237e-03 lr=2.268e-04 | val_full=0.588519 (max=0.890927) | val_rec=0.180804 (max=0.283088)
+[epoch 140/200] update=5600/8000 loss=3.750798e-03 lr=2.140e-04 | val_full=0.587867 (max=0.890537) | val_rec=0.180475 (max=0.281973)
+[epoch 142/200] update=5680/8000 loss=3.701194e-03 lr=2.016e-04 | val_full=0.588709 (max=0.892408) | val_rec=0.180849 (max=0.283089)
+[epoch 144/200] update=5760/8000 loss=3.669484e-03 lr=1.895e-04 | val_full=0.589146 (max=0.892933) | val_rec=0.180771 (max=0.283143)
+[epoch 146/200] update=5840/8000 loss=3.628481e-03 lr=1.777e-04 | val_full=0.589164 (max=0.891752) | val_rec=0.180918 (max=0.283138)
+[epoch 148/200] update=5920/8000 loss=3.597510e-03 lr=1.661e-04 | val_full=0.589593 (max=0.893395) | val_rec=0.180752 (max=0.282932)
+[epoch 150/200] update=6000/8000 loss=3.565313e-03 lr=1.550e-04 | val_full=0.590032 (max=0.893358) | val_rec=0.180989 (max=0.283280)
+[epoch 152/200] update=6080/8000 loss=3.536474e-03 lr=1.442e-04 | val_full=0.590186 (max=0.893699) | val_rec=0.180868 (max=0.282747)
+[epoch 154/200] update=6160/8000 loss=3.508793e-03 lr=1.337e-04 | val_full=0.590285 (max=0.893607) | val_rec=0.180985 (max=0.283111)
+[epoch 156/200] update=6240/8000 loss=3.481769e-03 lr=1.236e-04 | val_full=0.590463 (max=0.894415) | val_rec=0.181046 (max=0.283059)
+[epoch 158/200] update=6320/8000 loss=3.456605e-03 lr=1.139e-04 | val_full=0.590756 (max=0.894562) | val_rec=0.181116 (max=0.283375)
+[epoch 160/200] update=6400/8000 loss=3.435288e-03 lr=1.045e-04 | val_full=0.591012 (max=0.895325) | val_rec=0.181020 (max=0.283082)
+[epoch 162/200] update=6480/8000 loss=3.414026e-03 lr=9.560e-05 | val_full=0.591234 (max=0.895118) | val_rec=0.181174 (max=0.283250)
+[epoch 164/200] update=6560/8000 loss=3.395045e-03 lr=8.706e-05 | val_full=0.591337 (max=0.895541) | val_rec=0.181272 (max=0.283407)
+[epoch 166/200] update=6640/8000 loss=3.376815e-03 lr=7.893e-05 | val_full=0.591791 (max=0.895835) | val_rec=0.181361 (max=0.283412)
+[epoch 168/200] update=6720/8000 loss=3.360743e-03 lr=7.123e-05 | val_full=0.591668 (max=0.895482) | val_rec=0.181285 (max=0.283098)
+[epoch 170/200] update=6800/8000 loss=3.346244e-03 lr=6.395e-05 | val_full=0.592075 (max=0.896108) | val_rec=0.181505 (max=0.283425)
+[epoch 172/200] update=6880/8000 loss=3.332572e-03 lr=5.711e-05 | val_full=0.591950 (max=0.896203) | val_rec=0.181307 (max=0.283229)
+[epoch 174/200] update=6960/8000 loss=3.319499e-03 lr=5.071e-05 | val_full=0.592188 (max=0.896301) | val_rec=0.181435 (max=0.283460)
+[epoch 176/200] update=7040/8000 loss=3.308509e-03 lr=4.476e-05 | val_full=0.592282 (max=0.896494) | val_rec=0.181384 (max=0.283410)
+[epoch 178/200] update=7120/8000 loss=3.297863e-03 lr=3.926e-05 | val_full=0.592227 (max=0.896374) | val_rec=0.181481 (max=0.283459)
+[epoch 180/200] update=7200/8000 loss=3.289223e-03 lr=3.423e-05 | val_full=0.592449 (max=0.896605) | val_rec=0.181386 (max=0.283241)
+[epoch 182/200] update=7280/8000 loss=3.281052e-03 lr=2.965e-05 | val_full=0.592425 (max=0.896578) | val_rec=0.181536 (max=0.283451)
+[epoch 184/200] update=7360/8000 loss=3.273749e-03 lr=2.555e-05 | val_full=0.592707 (max=0.896921) | val_rec=0.181522 (max=0.283393)
+[epoch 186/200] update=7440/8000 loss=3.267576e-03 lr=2.192e-05 | val_full=0.592713 (max=0.896837) | val_rec=0.181600 (max=0.283475)
+[epoch 188/200] update=7520/8000 loss=3.261997e-03 lr=1.877e-05 | val_full=0.592793 (max=0.897062) | val_rec=0.181557 (max=0.283471)
+[epoch 190/200] update=7600/8000 loss=3.256830e-03 lr=1.609e-05 | val_full=0.592833 (max=0.897088) | val_rec=0.181579 (max=0.283480)
+[epoch 192/200] update=7680/8000 loss=3.252979e-03 lr=1.390e-05 | val_full=0.592872 (max=0.896994) | val_rec=0.181612 (max=0.283538)
+[epoch 194/200] update=7760/8000 loss=3.248992e-03 lr=1.220e-05 | val_full=0.592889 (max=0.897136) | val_rec=0.181585 (max=0.283450)
+[epoch 196/200] update=7840/8000 loss=3.245972e-03 lr=1.098e-05 | val_full=0.592971 (max=0.897233) | val_rec=0.181605 (max=0.283533)
+[epoch 198/200] update=7920/8000 loss=3.243210e-03 lr=1.024e-05 | val_full=0.592990 (max=0.897249) | val_rec=0.181649 (max=0.283561)
+[epoch 200/200] update=8000/8000 loss=3.240667e-03 lr=1.000e-05 | val_full=0.593059 (max=0.897395) | val_rec=0.181663 (max=0.283663)
+
+====================================================================================================
+BEST CHECKPOINT FULL AUDIT
+====================================================================================================
+best epoch  = 18
+best update = 720
+
+TRAIN
+train full         mean=0.361141 std=0.070898 median=0.363967 min=0.227806 max=0.595899
+train receiver     mean=0.129587 std=0.024073 median=0.126475 min=0.094037 max=0.230237
+
+VALIDATION
+val full           mean=0.551782 std=0.154546 median=0.547076 min=0.293371 max=0.780705
+val receiver       mean=0.192650 std=0.048117 median=0.192350 min=0.108334 max=0.266709
+
+====================================================================================================
+VALIDATION PER-SOURCE AUDIT
+====================================================================================================
+source 00 | full=0.590082±0.119596 max=0.720273 | rec=0.194204±0.038313 max=0.244767
+source 01 | full=0.542162±0.157990 max=0.716154 | rec=0.196665±0.052815 max=0.255255
+source 02 | full=0.552566±0.180082 max=0.759764 | rec=0.193429±0.058575 max=0.266709
+source 03 | full=0.537885±0.140896 max=0.680582 | rec=0.194813±0.048695 max=0.248961
+source 04 | full=0.588567±0.150368 max=0.780705 | rec=0.197635±0.040093 max=0.248783
+source 05 | full=0.558010±0.163609 max=0.744063 | rec=0.194186±0.046187 max=0.245085
+source 06 | full=0.536848±0.158365 max=0.714404 | rec=0.180081±0.046738 max=0.236609
+source 07 | full=0.508133±0.140706 max=0.667491 | rec=0.190187±0.048193 max=0.246289
+
+====================================================================================================
+VALIDATION PER-IMAGE AUDIT
+====================================================================================================
+val image 00 | full=0.473801±0.055848 max=0.574953 | rec=0.182845±0.021348 max=0.208239
+val image 01 | full=0.320189±0.032463 max=0.392245 | rec=0.120675±0.009276 max=0.138249
+val image 02 | full=0.716191±0.038941 max=0.780705 | rec=0.241234±0.012365 max=0.257431
+val image 03 | full=0.536457±0.017625 max=0.558665 | rec=0.174306±0.008926 max=0.187582
+val image 04 | full=0.712271±0.026144 max=0.759764 | rec=0.244191±0.013120 max=0.266709
+
+====================================================================================================
+C5.1i FINAL SUMMARY
+====================================================================================================
+best epoch       = 18
+best update      = 720
+train full mean  = 0.361141
+train rec mean   = 0.129587
+val full mean    = 0.551782
+val full std     = 0.154546
+val full max     = 0.780705
+val rec mean     = 0.192650
+val rec std      = 0.048117
+val rec max      = 0.266709
+
+[FAIL] severe unseen-image generalization failure.
+
+best checkpoint = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/fno_truebg_train20_val5_e200/best.pt
+summary         = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/fno_truebg_train20_val5_e200/summary.json
+val pair audit  = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/fno_truebg_train20_val5_e200/val_per_pair_best.csv
+val source audit= /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/fno_truebg_train20_val5_e200/val_per_source_best.csv
+val image audit = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/fno_truebg_train20_val5_e200/val_per_image_best.csv

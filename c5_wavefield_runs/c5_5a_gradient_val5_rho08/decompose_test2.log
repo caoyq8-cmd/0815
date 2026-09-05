@@ -1,0 +1,67 @@
+========================================================================================================================
+C5.4d ANO FAILURE DECOMPOSITION
+========================================================================================================================
+sample            = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train20_val5/val/test_2.npz
+candidate range   = 1461.8221435546875 1533.76220703125
+frequency         = 500000.0
+CBS config        = 80 300 225.0 PML3
+
+########################################################################################################################
+1. EXACT 64-SOURCE CANDIDATE WAVEFIELDS
+########################################################################################################################
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+exact64 transmitter alignment vs C5.3 = 0.00000000e+00
+
+########################################################################################################################
+2. MgNO-I 64-SOURCE WAVEFIELDS
+########################################################################################################################
+MgNO config = C24/V6
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+
+SOURCE-WAVEFIELD QUALITY
+------------------------------------------------------------------------------------------------------------------------
+seen8 full = 0.394595 rec = 0.129785
+unseen56 full = 0.392621 rec = 0.127590
+
+MEASUREMENT / RESIDUAL QUALITY
+------------------------------------------------------------------------------------------------------------------------
+measurement surrogate RRMSE = 0.130963
+residual RRMSE              = 1.121516
+
+########################################################################################################################
+3. FIXED-CONVENTION ANO ERROR DECOMPOSITION
+########################################################################################################################
+
+========================================================================================================================
+C5.4d FINAL DECOMPOSITION
+========================================================================================================================
+method                             raw      crop32     smooth5     smooth9
+Exact formula                 1.000000    1.000000    1.000000    1.000000
+Neural residual only          0.630124    0.661006    0.859135    0.912479
+Neural basis only             0.809710    0.828404    0.923098    0.942512
+Full neural ANO               0.317412    0.349028    0.578956    0.659436
+Direct autograd               0.205066    0.234605    0.334038    0.413933
+
+DIAGNOSIS
+------------------------------------------------------------------------------------------------------------------------
+COMPOUND ERROR: individual components remain directionally reasonable, but their errors compound in the full ANO.
+
+full ANO raw cosine = +0.317412
+
+saved JSON = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_5a_gradient_val5_rho08/decompose_test2.json
+saved NPZ  = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_5a_gradient_val5_rho08/decompose_test2.npz

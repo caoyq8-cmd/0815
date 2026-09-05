@@ -1,0 +1,140 @@
+==============================================================================================================
+C5.4a MgNO-I 64-SOURCE LOCATION GENERALIZATION AUDIT
+==============================================================================================================
+sample            = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train20_val5/val/test_1.npz
+seen sources      = 8
+all receiver srcs = 64
+source_positions  = [0, 8, 16, 24, 32, 40, 48, 56]
+candidate range   = 1460.5760498046875 1540.609619140625
+CBS config        = 500000.0 80 300 225.0 PML3
+
+##############################################################################################################
+1. 64-SOURCE HOMOGENEOUS BACKGROUND
+##############################################################################################################
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+SEEN-8 BACKGROUND ALIGNMENT
+seen 00 -> source64 00 | RRMSE=0.00000000e+00
+seen 01 -> source64 08 | RRMSE=0.00000000e+00
+seen 02 -> source64 16 | RRMSE=0.00000000e+00
+seen 03 -> source64 24 | RRMSE=0.00000000e+00
+seen 04 -> source64 32 | RRMSE=0.00000000e+00
+seen 05 -> source64 40 | RRMSE=0.00000000e+00
+seen 06 -> source64 48 | RRMSE=0.00000000e+00
+seen 07 -> source64 56 | RRMSE=0.00000000e+00
+background alignment mean/max = 0.00000000e+00 0.00000000e+00
+
+##############################################################################################################
+2. EXACT 64-SOURCE CANDIDATE WAVEFIELDS
+##############################################################################################################
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+##############################################################################################################
+3. MgNO-I 64-SOURCE PREDICTION
+##############################################################################################################
+MgNO config = C12/V4
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+
+==============================================================================================================
+PER-SOURCE RESULTS
+==============================================================================================================
+source 00 | SEEN   | full=0.393995 | rec=0.126396
+source 01 | UNSEEN | full=0.449925 | rec=0.147565
+source 02 | UNSEEN | full=0.467633 | rec=0.148071
+source 03 | UNSEEN | full=0.414052 | rec=0.151955
+source 04 | UNSEEN | full=0.462814 | rec=0.174484
+source 05 | UNSEEN | full=0.379203 | rec=0.120539
+source 06 | UNSEEN | full=0.373997 | rec=0.126197
+source 07 | UNSEEN | full=0.387733 | rec=0.141488
+source 08 | SEEN   | full=0.417301 | rec=0.138508
+source 09 | UNSEEN | full=0.417832 | rec=0.141352
+source 10 | UNSEEN | full=0.457387 | rec=0.163311
+source 11 | UNSEEN | full=0.459387 | rec=0.124349
+source 12 | UNSEEN | full=0.501428 | rec=0.145151
+source 13 | UNSEEN | full=0.475510 | rec=0.147967
+source 14 | UNSEEN | full=0.438052 | rec=0.152666
+source 15 | UNSEEN | full=0.444643 | rec=0.157740
+source 16 | SEEN   | full=0.490545 | rec=0.165690
+source 17 | UNSEEN | full=0.470258 | rec=0.142697
+source 18 | UNSEEN | full=0.463035 | rec=0.148476
+source 19 | UNSEEN | full=0.493449 | rec=0.169116
+source 20 | UNSEEN | full=0.421747 | rec=0.144540
+source 21 | UNSEEN | full=0.469694 | rec=0.157879
+source 22 | UNSEEN | full=0.445866 | rec=0.146907
+source 23 | UNSEEN | full=0.448208 | rec=0.155852
+source 24 | SEEN   | full=0.409418 | rec=0.122636
+source 25 | UNSEEN | full=0.457945 | rec=0.159728
+source 26 | UNSEEN | full=0.449814 | rec=0.165818
+source 27 | UNSEEN | full=0.449919 | rec=0.172077
+source 28 | UNSEEN | full=0.399065 | rec=0.140164
+source 29 | UNSEEN | full=0.414605 | rec=0.152953
+source 30 | UNSEEN | full=0.430493 | rec=0.162296
+source 31 | UNSEEN | full=0.446602 | rec=0.174379
+source 32 | SEEN   | full=0.365448 | rec=0.126109
+source 33 | UNSEEN | full=0.412936 | rec=0.154666
+source 34 | UNSEEN | full=0.436126 | rec=0.170174
+source 35 | UNSEEN | full=0.421824 | rec=0.159466
+source 36 | UNSEEN | full=0.415569 | rec=0.135142
+source 37 | UNSEEN | full=0.460796 | rec=0.163514
+source 38 | UNSEEN | full=0.414047 | rec=0.161447
+source 39 | UNSEEN | full=0.420404 | rec=0.147465
+source 40 | SEEN   | full=0.372228 | rec=0.118866
+source 41 | UNSEEN | full=0.371710 | rec=0.117750
+source 42 | UNSEEN | full=0.363157 | rec=0.117706
+source 43 | UNSEEN | full=0.382249 | rec=0.120032
+source 44 | UNSEEN | full=0.389866 | rec=0.121147
+source 45 | UNSEEN | full=0.363868 | rec=0.102250
+source 46 | UNSEEN | full=0.374823 | rec=0.111565
+source 47 | UNSEEN | full=0.411235 | rec=0.103228
+source 48 | SEEN   | full=0.426462 | rec=0.129659
+source 49 | UNSEEN | full=0.473475 | rec=0.129222
+source 50 | UNSEEN | full=0.485266 | rec=0.121472
+source 51 | UNSEEN | full=0.489612 | rec=0.158230
+source 52 | UNSEEN | full=0.432214 | rec=0.129139
+source 53 | UNSEEN | full=0.493815 | rec=0.139849
+source 54 | UNSEEN | full=0.442263 | rec=0.156161
+source 55 | UNSEEN | full=0.449393 | rec=0.146549
+source 56 | SEEN   | full=0.414991 | rec=0.125151
+source 57 | UNSEEN | full=0.436215 | rec=0.150402
+source 58 | UNSEEN | full=0.412183 | rec=0.142624
+source 59 | UNSEEN | full=0.441857 | rec=0.156793
+source 60 | UNSEEN | full=0.393573 | rec=0.152658
+source 61 | UNSEEN | full=0.413106 | rec=0.153416
+source 62 | UNSEEN | full=0.417829 | rec=0.158371
+source 63 | UNSEEN | full=0.390544 | rec=0.113605
+
+==============================================================================================================
+C5.4a FINAL SUMMARY
+==============================================================================================================
+seen8      | full=0.411298±0.036214 | rec=0.131627±0.013941
+unseen56   | full=0.432147±0.035343 | rec=0.145174±0.018074
+all64      | full=0.429541±0.036117 | rec=0.143481±0.018172
+
+unseen/seen full gap = +5.07%
+unseen/seen rec gap  = +10.29%
+
+[PASS] source-location generalization is adequate for a paper-style ANO pilot.
+
+saved JSON = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_4a_mgnoI_source64_test1_rho08.json
+saved NPZ  = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_4a_mgnoI_source64_test1_rho08.npz

@@ -1,0 +1,113 @@
+==============================================================================================================
+C5.4b-0 EXACT FORMULA CALIBRATION + PAPER-STYLE MgNO-I ANO
+==============================================================================================================
+sample             = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train20_val5/val/test_1.npz
+frequency          = 500000.0
+source_positions   = [0, 8, 16, 24, 32, 40, 48, 56]
+true64 shape       = (64, 480, 480)
+pred64 shape       = (64, 480, 480)
+candidate max diff = 0.00000000e+00
+exact tx vs C5.3a CBS RRMSE = 0.00000000e+00
+
+exact measurement RRMSE vs dobs = 0.16127484
+neural measurement RRMSE vs dobs= 0.16735281
+neural residual vs exact residual RRMSE = 0.82051557
+
+##############################################################################################################
+A. EXACT-WAVEFIELD COMPLEX-CONVENTION CALIBRATION
+##############################################################################################################
+r=plain,B=plain,T=plain,out=real                       | cos=+0.05078468 | err=0.99870963
+r=plain,B=plain,T=plain,out=imag                       | cos=+0.17326680 | err=0.98487492
+r=plain,B=plain,T=conj,out=real                        | cos=+0.00169849 | err=0.99999856
+r=plain,B=plain,T=conj,out=imag                        | cos=+0.00522560 | err=0.99998635
+r=plain,B=conj,T=plain,out=real                        | cos=+0.01931709 | err=0.99981341
+r=plain,B=conj,T=plain,out=imag                        | cos=+0.01843864 | err=0.99982999
+r=plain,B=conj,T=conj,out=real                         | cos=-1.00000000 | err=0.00000024
+r=plain,B=conj,T=conj,out=imag                         | cos=-0.40521060 | err=0.91422337
+r=conj,B=plain,T=plain,out=real                        | cos=-1.00000000 | err=0.00000024
+r=conj,B=plain,T=plain,out=imag                        | cos=+0.40521060 | err=0.91422337
+r=conj,B=plain,T=conj,out=real                         | cos=+0.01931709 | err=0.99981341
+r=conj,B=plain,T=conj,out=imag                         | cos=-0.01843864 | err=0.99982999
+r=conj,B=conj,T=plain,out=real                         | cos=+0.00169849 | err=0.99999856
+r=conj,B=conj,T=plain,out=imag                         | cos=-0.00522560 | err=0.99998635
+r=conj,B=conj,T=conj,out=real                          | cos=+0.05078468 | err=0.99870963
+r=conj,B=conj,T=conj,out=imag                          | cos=-0.17326680 | err=0.98487492
+
+==============================================================================================================
+FORMULA CALIBRATION SUMMARY
+==============================================================================================================
+paper-direct cosine = +0.05078468
+best convention     = r=plain,B=conj,T=conj,out=real
+best cosine         = -1.00000000
+best aligned error  = 0.00000024
+calibrated sign     = -1.0
+
+##############################################################################################################
+B. ANO ERROR DECOMPOSITION
+##############################################################################################################
+
+==============================================================================================================
+EXACT residual + EXACT wavefields
+==============================================================================================================
+full     | cos=+1.00000000 | scale=+9.99999974e-01 | aligned_err=0.00000024
+crop16   | cos=+1.00000000 | scale=+9.99999973e-01 | aligned_err=0.00000024
+crop32   | cos=+1.00000000 | scale=+9.99999973e-01 | aligned_err=0.00000023
+smooth3  | cos=+1.00000000
+smooth5  | cos=+1.00000000
+smooth9  | cos=+1.00000000
+
+==============================================================================================================
+NEURAL residual + EXACT wavefields
+==============================================================================================================
+full     | cos=+0.81191246 | scale=+8.20428083e-01 | aligned_err=0.58377920
+crop16   | cos=+0.82184145 | scale=+8.34672507e-01 | aligned_err=0.56971628
+crop32   | cos=+0.83125669 | scale=+8.53875354e-01 | aligned_err=0.55588876
+smooth3  | cos=+0.89786097
+smooth5  | cos=+0.93136126
+smooth9  | cos=+0.95457679
+
+==============================================================================================================
+EXACT residual + NEURAL wavefields
+==============================================================================================================
+full     | cos=+0.79520962 | scale=+1.25473089e+00 | aligned_err=0.60633461
+crop16   | cos=+0.80874032 | scale=+1.27041474e+00 | aligned_err=0.58816587
+crop32   | cos=+0.83212973 | scale=+1.28634019e+00 | aligned_err=0.55458103
+smooth3  | cos=+0.87254695
+smooth5  | cos=+0.91447978
+smooth9  | cos=+0.94209271
+
+==============================================================================================================
+FULL MgNO-I PAPER-STYLE ANO
+==============================================================================================================
+full     | cos=+0.60464977 | scale=+9.83373566e-01 | aligned_err=0.79649147
+crop16   | cos=+0.61698678 | scale=+1.01068122e+00 | aligned_err=0.78697352
+crop32   | cos=+0.63466966 | scale=+1.03877009e+00 | aligned_err=0.77278355
+smooth3  | cos=+0.72631388
+smooth5  | cos=+0.81058002
+smooth9  | cos=+0.87015720
+
+==============================================================================================================
+MgNO-I DIRECT INPUT-AUTOGRAD
+==============================================================================================================
+full     | cos=+0.18699296 | scale=+1.56210306e+09 | aligned_err=0.98236125
+crop16   | cos=+0.19501004 | scale=+1.59052182e+09 | aligned_err=0.98080125
+crop32   | cos=+0.21936893 | scale=+1.71833227e+09 | aligned_err=0.97564198
+smooth3  | cos=+0.26377545
+smooth5  | cos=+0.30489683
+smooth9  | cos=+0.37642082
+
+==============================================================================================================
+C5.4b PAPER-STYLE ANO FINAL SUMMARY
+==============================================================================================================
+method                       raw_cos      crop32     smooth5     smooth9
+Exact formula               1.000000    1.000000    1.000000    1.000000
+Neural residual only        0.811912    0.831257    0.931361    0.954577
+Neural basis only           0.795210    0.832130    0.914480    0.942093
+Full neural ANO             0.604650    0.634670    0.810580    0.870157
+Direct autograd             0.186993    0.219369    0.304897    0.376421
+
+[PASS] exact forward-only ANO formula reproduces the validated CBS adjoint direction.
+[GAIN] paper-style neural ANO improves gradient direction over direct network input-autograd.
+
+saved JSON = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_4b_paper_ano_test1_rho08.json
+saved NPZ  = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_4b_paper_ano_test1_rho08.npz

@@ -1,0 +1,85 @@
+/home/featurize/work/.local/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:1263: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+====================================================================================================
+C5.2a MgNO-I TRUE-BG OPERATOR GENERALIZATION
+====================================================================================================
+train images = 20
+val images   = 5
+estimated wave_scale = 3.72042429e-02
+locked wave_scale    = 3.72290883e-02
+[Background] keys = ['mean_field', 'background_field', 'src_indices', 'rec_indices']
+[Background] selected key = background_field shape = (8, 480, 480)
+[Background] source-index key = src_indices shape = (8, 2)
+[Split] images=20 sources=8 pairs=160
+[Split] speed_norm = (20, 1, 480, 480)
+[Split] wave_norm  = (20, 8, 2, 480, 480)
+[Background] keys = ['mean_field', 'background_field', 'src_indices', 'rec_indices']
+[Background] selected key = background_field shape = (8, 480, 480)
+[Background] source-index key = src_indices shape = (8, 2)
+[Split] images=5 sources=8 pairs=40
+[Split] speed_norm = (5, 1, 480, 480)
+[Split] wave_norm  = (5, 8, 2, 480, 480)
+
+channels        = 12
+recurrent_iters = 4
+parameters      = 86,271
+epochs          = 2
+accum_pairs     = 4
+train pairs     = 160
+val pairs       = 40
+updates/epoch   = 40
+total updates   = 80
+
+INITIAL VALIDATION
+val full           mean=0.893262 std=0.073393 median=0.894873 min=0.754935 max=1.070649
+val receiver       mean=0.233191 std=0.024296 median=0.234103 min=0.182571 max=0.276085
+[epoch 001/2] update=0040/80 loss=3.795935e-01 lr=5.050e-04 | val_full=0.821277 (max=0.961837) | val_rec=0.236217
+[epoch 002/2] update=0080/80 loss=3.363357e-01 lr=1.000e-05 | val_full=0.810012 (max=0.951080) | val_rec=0.229205
+
+====================================================================================================
+BEST CHECKPOINT AUDIT
+====================================================================================================
+epoch  = 2
+update = 80
+
+TRAIN
+train full         mean=0.814341 std=0.069803 median=0.814482 min=0.598407 max=1.015620
+train receiver     mean=0.235868 std=0.017031 median=0.237112 min=0.191402 max=0.283239
+
+VALIDATION
+val full           mean=0.810012 std=0.057864 median=0.812358 min=0.698737 max=0.951080
+val receiver       mean=0.229205 std=0.018688 median=0.230577 min=0.194722 max=0.262844
+
+====================================================================================================
+LATEST CHECKPOINT AUDIT
+====================================================================================================
+epoch  = 2
+update = 80
+
+TRAIN
+train full         mean=0.814341 std=0.069803 median=0.814482 min=0.598407 max=1.015620
+train receiver     mean=0.235868 std=0.017031 median=0.237112 min=0.191402 max=0.283239
+
+VALIDATION
+val full           mean=0.810012 std=0.057864 median=0.812358 min=0.698737 max=0.951080
+val receiver       mean=0.229205 std=0.018688 median=0.230577 min=0.194723 max=0.262844
+
+====================================================================================================
+C5.2a MgNO-I FINAL SUMMARY
+====================================================================================================
+BEST epoch       = 2
+BEST train full  = 0.814341
+BEST val full    = 0.810012
+BEST val rec     = 0.229205
+
+LATEST epoch     = 2
+LATEST train full= 0.814341
+LATEST val full  = 0.810012
+LATEST val rec   = 0.229205
+
+FNO reference:
+  best val full = 0.551782
+  best val rec  = 0.192650
+
+MgNO-I relative val-full gain vs FNO = -46.80%
+[NO GAIN] MgNO-I does not yet beat the FNO smoke baseline.

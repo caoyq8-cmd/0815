@@ -1,0 +1,140 @@
+[Background] keys = ['mean_field', 'background_field', 'src_indices', 'rec_indices']
+[Background] selected key = mean_field shape = (8, 480, 480)
+[Background] source-index key = src_indices shape = (8, 2)
+[Dataset] split=train images=1 pairs=8 wave_scale=3.72290883e-02
+[Dataset] first file = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train20_val5/train/train_1.npz
+[Dataset] speed shape = (480, 480)
+[Dataset] input shape = (8, 3, 480, 480)
+[Dataset] target shape = (8, 2, 480, 480)
+[Dataset] wavefields shape = (8, 480, 480)
+[Dataset] src_indices shape = (8, 2)
+[Dataset] rec_indices shape = (64, 2)
+[Dataset] estimated wave_scale = 3.72042429e-02
+[Dataset] used wave_scale      = 3.72290883e-02
+[Dataset] dobs shape = (8, 64)
+====================================================================================================
+C5.1h-B SHARED 8-SOURCE FNO-BG CAPACITY AUDIT
+====================================================================================================
+num_sources       = 8
+modes             = 25
+width             = 32
+depth             = 4
+parameters        = 5,125,730
+wave_scale        = 3.72290883e-02
+speed_mean        = 1488.39
+speed_std         = 27.53
+steps             = 2000
+lr                = 0.001
+min_lr            = 1e-05
+source_batch_size = 2
+
+INITIAL full_mean=1.070531 full_max=1.085632 rec_mean=1.359054 rec_max=1.387577
+
+[0001/2000] loss=5.728699e-01 lr=1.000e-03 | full_mean=0.925468 full_max=0.934774 | rec_mean=1.156735 rec_max=1.176940
+[0025/2000] loss=1.036163e-01 lr=9.996e-04 | full_mean=0.452043 full_max=0.472851 | rec_mean=0.255522 rec_max=0.264870
+[0050/2000] loss=8.595606e-02 lr=9.985e-04 | full_mean=0.412930 full_max=0.444354 | rec_mean=0.204509 rec_max=0.214104
+[0075/2000] loss=7.089274e-02 lr=9.966e-04 | full_mean=0.374487 full_max=0.409673 | rec_mean=0.180777 rec_max=0.187463
+[0100/2000] loss=5.213378e-02 lr=9.939e-04 | full_mean=0.319872 full_max=0.355296 | rec_mean=0.165447 rec_max=0.171976
+[0125/2000] loss=3.288629e-02 lr=9.905e-04 | full_mean=0.253016 full_max=0.287936 | rec_mean=0.160684 rec_max=0.171662
+[0150/2000] loss=2.030721e-02 lr=9.863e-04 | full_mean=0.199286 full_max=0.229952 | rec_mean=0.134302 rec_max=0.144458
+[0175/2000] loss=1.357936e-02 lr=9.814e-04 | full_mean=0.162859 full_max=0.188904 | rec_mean=0.099150 rec_max=0.109684
+[0200/2000] loss=1.115700e-02 lr=9.758e-04 | full_mean=0.145739 full_max=0.167892 | rec_mean=0.075847 rec_max=0.089152
+[0225/2000] loss=8.439955e-03 lr=9.694e-04 | full_mean=0.128515 full_max=0.149612 | rec_mean=0.057805 rec_max=0.075546
+[0250/2000] loss=7.089311e-03 lr=9.623e-04 | full_mean=0.118141 full_max=0.138019 | rec_mean=0.045106 rec_max=0.063269
+[0275/2000] loss=6.370016e-03 lr=9.545e-04 | full_mean=0.110615 full_max=0.130285 | rec_mean=0.038110 rec_max=0.055639
+[0300/2000] loss=5.460327e-03 lr=9.460e-04 | full_mean=0.103935 full_max=0.122298 | rec_mean=0.033957 rec_max=0.050351
+[0325/2000] loss=4.969843e-03 lr=9.369e-04 | full_mean=0.099254 full_max=0.116973 | rec_mean=0.032291 rec_max=0.047808
+[0350/2000] loss=5.400334e-03 lr=9.271e-04 | full_mean=0.097638 full_max=0.114353 | rec_mean=0.030235 rec_max=0.046260
+[0375/2000] loss=4.117285e-03 lr=9.166e-04 | full_mean=0.090547 full_max=0.107175 | rec_mean=0.029405 rec_max=0.043332
+[0400/2000] loss=4.131865e-03 lr=9.055e-04 | full_mean=0.089316 full_max=0.106188 | rec_mean=0.028724 rec_max=0.042632
+[0425/2000] loss=3.532048e-03 lr=8.937e-04 | full_mean=0.083701 full_max=0.099625 | rec_mean=0.027408 rec_max=0.042093
+[0450/2000] loss=3.618226e-03 lr=8.814e-04 | full_mean=0.084941 full_max=0.100450 | rec_mean=0.028893 rec_max=0.045827
+[0475/2000] loss=3.165943e-03 lr=8.685e-04 | full_mean=0.079502 full_max=0.094589 | rec_mean=0.026066 rec_max=0.037212
+[0500/2000] loss=2.913741e-03 lr=8.550e-04 | full_mean=0.076100 full_max=0.090641 | rec_mean=0.023937 rec_max=0.034978
+[0525/2000] loss=2.858625e-03 lr=8.410e-04 | full_mean=0.074027 full_max=0.088457 | rec_mean=0.022261 rec_max=0.032944
+[0550/2000] loss=2.611275e-03 lr=8.265e-04 | full_mean=0.071890 full_max=0.085604 | rec_mean=0.021779 rec_max=0.030807
+[0575/2000] loss=2.510973e-03 lr=8.115e-04 | full_mean=0.070799 full_max=0.084490 | rec_mean=0.022161 rec_max=0.029165
+[0600/2000] loss=2.346419e-03 lr=7.960e-04 | full_mean=0.068232 full_max=0.081250 | rec_mean=0.020999 rec_max=0.027957
+[0625/2000] loss=2.343296e-03 lr=7.800e-04 | full_mean=0.067987 full_max=0.080459 | rec_mean=0.020607 rec_max=0.028410
+[0650/2000] loss=2.172857e-03 lr=7.636e-04 | full_mean=0.065536 full_max=0.077938 | rec_mean=0.019652 rec_max=0.026080
+[0675/2000] loss=2.454825e-03 lr=7.469e-04 | full_mean=0.068595 full_max=0.080397 | rec_mean=0.021614 rec_max=0.027984
+[0700/2000] loss=1.950197e-03 lr=7.297e-04 | full_mean=0.062413 full_max=0.073874 | rec_mean=0.018749 rec_max=0.025046
+[0725/2000] loss=1.860865e-03 lr=7.122e-04 | full_mean=0.060834 full_max=0.071747 | rec_mean=0.017901 rec_max=0.023652
+[0750/2000] loss=1.806132e-03 lr=6.944e-04 | full_mean=0.060104 full_max=0.070938 | rec_mean=0.017949 rec_max=0.023360
+[0775/2000] loss=1.730162e-03 lr=6.763e-04 | full_mean=0.058591 full_max=0.068663 | rec_mean=0.017753 rec_max=0.023162
+[0800/2000] loss=1.654446e-03 lr=6.580e-04 | full_mean=0.057334 full_max=0.067120 | rec_mean=0.016850 rec_max=0.021939
+[0825/2000] loss=1.596316e-03 lr=6.394e-04 | full_mean=0.056408 full_max=0.065660 | rec_mean=0.017001 rec_max=0.021698
+[0850/2000] loss=1.555639e-03 lr=6.206e-04 | full_mean=0.055588 full_max=0.064551 | rec_mean=0.016315 rec_max=0.020957
+[0875/2000] loss=1.497416e-03 lr=6.016e-04 | full_mean=0.054556 full_max=0.063175 | rec_mean=0.015980 rec_max=0.020350
+[0900/2000] loss=1.440049e-03 lr=5.824e-04 | full_mean=0.053579 full_max=0.061844 | rec_mean=0.015628 rec_max=0.019818
+[0925/2000] loss=1.389342e-03 lr=5.632e-04 | full_mean=0.052642 full_max=0.060569 | rec_mean=0.015199 rec_max=0.018880
+[0950/2000] loss=1.342148e-03 lr=5.438e-04 | full_mean=0.051703 full_max=0.059298 | rec_mean=0.014947 rec_max=0.018634
+[0975/2000] loss=1.306576e-03 lr=5.244e-04 | full_mean=0.050977 full_max=0.058313 | rec_mean=0.014679 rec_max=0.018479
+[1000/2000] loss=1.267121e-03 lr=5.050e-04 | full_mean=0.050233 full_max=0.057287 | rec_mean=0.014601 rec_max=0.017918
+[1025/2000] loss=1.233348e-03 lr=4.856e-04 | full_mean=0.049528 full_max=0.056339 | rec_mean=0.014148 rec_max=0.017534
+[1050/2000] loss=1.196583e-03 lr=4.662e-04 | full_mean=0.048838 full_max=0.055376 | rec_mean=0.014018 rec_max=0.017336
+[1075/2000] loss=1.167611e-03 lr=4.468e-04 | full_mean=0.048245 full_max=0.054556 | rec_mean=0.013809 rec_max=0.017026
+[1100/2000] loss=1.137885e-03 lr=4.276e-04 | full_mean=0.047631 full_max=0.053736 | rec_mean=0.013593 rec_max=0.016642
+[1125/2000] loss=1.111363e-03 lr=4.084e-04 | full_mean=0.047073 full_max=0.052979 | rec_mean=0.013452 rec_max=0.016517
+[1150/2000] loss=1.086689e-03 lr=3.894e-04 | full_mean=0.046551 full_max=0.052275 | rec_mean=0.013287 rec_max=0.016268
+[1175/2000] loss=1.063963e-03 lr=3.706e-04 | full_mean=0.046065 full_max=0.051621 | rec_mean=0.013136 rec_max=0.016092
+[1200/2000] loss=1.042309e-03 lr=3.520e-04 | full_mean=0.045597 full_max=0.050995 | rec_mean=0.012972 rec_max=0.015884
+[1225/2000] loss=1.022404e-03 lr=3.337e-04 | full_mean=0.045160 full_max=0.050412 | rec_mean=0.012852 rec_max=0.015745
+[1250/2000] loss=1.004224e-03 lr=3.156e-04 | full_mean=0.044760 full_max=0.049876 | rec_mean=0.012718 rec_max=0.015592
+[1275/2000] loss=9.876223e-04 lr=2.978e-04 | full_mean=0.044377 full_max=0.049370 | rec_mean=0.012559 rec_max=0.015433
+[1300/2000] loss=9.707631e-04 lr=2.803e-04 | full_mean=0.044012 full_max=0.048890 | rec_mean=0.012498 rec_max=0.015332
+[1325/2000] loss=9.557172e-04 lr=2.631e-04 | full_mean=0.043676 full_max=0.048449 | rec_mean=0.012393 rec_max=0.015084
+[1350/2000] loss=9.420047e-04 lr=2.464e-04 | full_mean=0.043364 full_max=0.048039 | rec_mean=0.012318 rec_max=0.015075
+[1375/2000] loss=9.295015e-04 lr=2.300e-04 | full_mean=0.043068 full_max=0.047656 | rec_mean=0.012218 rec_max=0.015138
+[1400/2000] loss=9.175289e-04 lr=2.140e-04 | full_mean=0.042797 full_max=0.047302 | rec_mean=0.012183 rec_max=0.015018
+[1425/2000] loss=9.067256e-04 lr=1.985e-04 | full_mean=0.042545 full_max=0.046975 | rec_mean=0.012052 rec_max=0.014829
+[1450/2000] loss=8.968038e-04 lr=1.835e-04 | full_mean=0.042312 full_max=0.046674 | rec_mean=0.011984 rec_max=0.014727
+[1475/2000] loss=8.876270e-04 lr=1.690e-04 | full_mean=0.042097 full_max=0.046398 | rec_mean=0.011929 rec_max=0.014778
+[1500/2000] loss=8.792504e-04 lr=1.550e-04 | full_mean=0.041900 full_max=0.046142 | rec_mean=0.011859 rec_max=0.014531
+[1525/2000] loss=8.715979e-04 lr=1.415e-04 | full_mean=0.041719 full_max=0.045909 | rec_mean=0.011807 rec_max=0.014562
+[1550/2000] loss=8.646093e-04 lr=1.286e-04 | full_mean=0.041551 full_max=0.045692 | rec_mean=0.011773 rec_max=0.014578
+[1575/2000] loss=8.583279e-04 lr=1.163e-04 | full_mean=0.041400 full_max=0.045500 | rec_mean=0.011730 rec_max=0.014610
+[1600/2000] loss=8.526198e-04 lr=1.045e-04 | full_mean=0.041264 full_max=0.045323 | rec_mean=0.011732 rec_max=0.014656
+[1625/2000] loss=8.475126e-04 lr=9.342e-05 | full_mean=0.041141 full_max=0.045166 | rec_mean=0.011637 rec_max=0.014445
+[1650/2000] loss=8.429706e-04 lr=8.294e-05 | full_mean=0.041032 full_max=0.045026 | rec_mean=0.011603 rec_max=0.014403
+[1675/2000] loss=8.388752e-04 lr=7.311e-05 | full_mean=0.040933 full_max=0.044899 | rec_mean=0.011582 rec_max=0.014498
+[1700/2000] loss=8.353268e-04 lr=6.395e-05 | full_mean=0.040847 full_max=0.044792 | rec_mean=0.011573 rec_max=0.014460
+[1725/2000] loss=8.322313e-04 lr=5.547e-05 | full_mean=0.040771 full_max=0.044693 | rec_mean=0.011545 rec_max=0.014426
+[1750/2000] loss=8.294470e-04 lr=4.768e-05 | full_mean=0.040704 full_max=0.044608 | rec_mean=0.011514 rec_max=0.014368
+[1775/2000] loss=8.271037e-04 lr=4.060e-05 | full_mean=0.040647 full_max=0.044536 | rec_mean=0.011504 rec_max=0.014343
+[1800/2000] loss=8.250927e-04 lr=3.423e-05 | full_mean=0.040598 full_max=0.044473 | rec_mean=0.011485 rec_max=0.014237
+[1825/2000] loss=8.233921e-04 lr=2.858e-05 | full_mean=0.040556 full_max=0.044419 | rec_mean=0.011484 rec_max=0.014360
+[1850/2000] loss=8.219425e-04 lr=2.368e-05 | full_mean=0.040521 full_max=0.044374 | rec_mean=0.011502 rec_max=0.014374
+[1875/2000] loss=8.207686e-04 lr=1.951e-05 | full_mean=0.040492 full_max=0.044337 | rec_mean=0.011483 rec_max=0.014292
+[1900/2000] loss=8.197576e-04 lr=1.609e-05 | full_mean=0.040468 full_max=0.044306 | rec_mean=0.011493 rec_max=0.014436
+[1925/2000] loss=8.189613e-04 lr=1.343e-05 | full_mean=0.040448 full_max=0.044281 | rec_mean=0.011478 rec_max=0.014353
+[1950/2000] loss=8.182526e-04 lr=1.153e-05 | full_mean=0.040431 full_max=0.044259 | rec_mean=0.011453 rec_max=0.014261
+[1975/2000] loss=8.176215e-04 lr=1.038e-05 | full_mean=0.040415 full_max=0.044239 | rec_mean=0.011461 rec_max=0.014239
+[2000/2000] loss=8.170066e-04 lr=1.000e-05 | full_mean=0.040400 full_max=0.044221 | rec_mean=0.011452 rec_max=0.014295
+
+====================================================================================================
+C5.1h-B SHARED 8-SOURCE CAPACITY SUMMARY
+====================================================================================================
+source 00 | full=0.041841 | rec=0.010331
+source 01 | full=0.038027 | rec=0.011690
+source 02 | full=0.044221 | rec=0.011642
+source 03 | full=0.040419 | rec=0.011875
+source 04 | full=0.038055 | rec=0.010571
+source 05 | full=0.041128 | rec=0.011348
+source 06 | full=0.041771 | rec=0.014295
+source 07 | full=0.037740 | rec=0.009863
+
+best step = 2000
+
+full mean = 0.040400
+full std  = 0.002159
+full max  = 0.044221
+
+rec mean  = 0.011452
+rec std   = 0.001271
+rec max   = 0.014295
+
+[PASS] shared source-conditioned mapping is learnable.
+
+summary_csv = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/fno_bg_shared8_img1_2k/c5_1h_shared8_summary.csv
+best_ckpt   = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/fno_bg_shared8_img1_2k/best.pt

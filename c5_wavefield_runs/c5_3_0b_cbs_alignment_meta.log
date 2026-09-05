@@ -1,0 +1,60 @@
+====================================================================================================
+C5.3-0b CBS METADATA-DRIVEN ALIGNMENT
+====================================================================================================
+file = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train20_val5/val/test_1.npz
+
+STORED GENERATION CONFIG
+----------------------------------------------------------------------------------------------------
+frequency         = 500000.0
+cbs_iters         = 80
+boundary_width    = [300, 300]
+boundary_strength = 225.0
+boundary_type     = PML3
+measurement_mode  = sparse
+alignment_rrmse   = 9.927168775902828e-08
+source_file       = /home/featurize/datasets/90024ebe-ceca-4e0d-aab7-55f496b4b5f5/test/test_1.mat
+
+source_positions shape = (8,)
+src_indices shape      = (8, 2)
+src_indices:
+[[246  19]
+ [398  85]
+ [461 245]
+ [395 397]
+ [235 461]
+ [ 83 396]
+ [ 19 236]
+ [ 84  84]]
+
+stored wave -> dobs RRMSE = 0.00000000e+00
+
+[CBS] constructing exact-metadata solver...
+[CBS] internal FFT grid = (1024, 1024)
+[CBS] ROI = [[tensor(272, device='cuda:0'), tensor(752, device='cuda:0')], [tensor(272, device='cuda:0'), tensor(752, device='cuda:0')]]
+[CBS] source amplitude max = 10000000.0
+[CBS] solving with 80 iterations ...
+
+====================================================================================================
+ALIGNMENT RESULT
+====================================================================================================
+raw full RRMSE    = 0.00000000e+00
+raw rec  RRMSE    = 0.00000000e+00
+best complex alpha= (1+0j)
+scaled full RRMSE = 0.00000000e+00
+scaled rec  RRMSE = 0.00000000e+00
+
+PER SOURCE
+----------------------------------------------------------------------------------------------------
+source 00 | full=0.00000000e+00 | rec=0.00000000e+00
+source 01 | full=0.00000000e+00 | rec=0.00000000e+00
+source 02 | full=0.00000000e+00 | rec=0.00000000e+00
+source 03 | full=0.00000000e+00 | rec=0.00000000e+00
+source 04 | full=0.00000000e+00 | rec=0.00000000e+00
+source 05 | full=0.00000000e+00 | rec=0.00000000e+00
+source 06 | full=0.00000000e+00 | rec=0.00000000e+00
+source 07 | full=0.00000000e+00 | rec=0.00000000e+00
+
+====================================================================================================
+DECISION
+====================================================================================================
+[STRONG PASS] exact stored generation configuration reproduced.

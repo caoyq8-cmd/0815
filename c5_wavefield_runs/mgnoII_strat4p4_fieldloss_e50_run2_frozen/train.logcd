@@ -1,0 +1,113 @@
+====================================================================================================
+C5.2a MgNO-I TRUE-BG OPERATOR GENERALIZATION
+====================================================================================================
+train images = 20
+val images   = 5
+estimated wave_scale = 3.72095686e-02
+locked wave_scale    = 3.72290883e-02
+[Background] keys = ['candidate_speed', 'background64', 'true64', 'pred64', 'rec_indices', 'seen_mask', 'full_rrmse', 'rec_rrmse']
+[Background] selected key = background64 shape = (64, 480, 480)
+[Background] no source-index array found; using the first 64 background wavefields in stored order.
+[Split] images=20 sources=64 pairs=1280
+[Split] speed_norm = (20, 1, 480, 480)
+[Split] wave_norm  = (20, 64, 2, 480, 480)
+[Background] keys = ['candidate_speed', 'background64', 'true64', 'pred64', 'rec_indices', 'seen_mask', 'full_rrmse', 'rec_rrmse']
+[Background] selected key = background64 shape = (64, 480, 480)
+[Background] no source-index array found; using the first 64 background wavefields in stored order.
+[Split] images=5 sources=64 pairs=320
+[Split] speed_norm = (5, 1, 480, 480)
+[Split] wave_norm  = (5, 64, 2, 480, 480)
+
+channels        = 24
+recurrent_iters = 6
+parameters      = 371,391
+epochs          = 50
+accum_pairs     = 4
+train pairs     = 1280
+val pairs       = 320
+source pool     = 64
+sources/image   = 8
+sampled train pairs/epoch = 160
+measurement pool = [0, 8, 16, 24, 32, 40, 48, 56]
+measurement/image= 4
+other/image      = 4
+updates/epoch   = 40
+total updates   = 2000
+
+INITIAL VALIDATION
+val full           mean=0.889281 std=0.072867 median=0.885029 min=0.728907 max=1.070649
+val receiver       mean=0.230941 std=0.025986 median=0.233412 min=0.168944 max=0.281696
+[epoch 001/50] update=0040/2000 loss=3.577163e-01 lr=9.990e-04 | val_full=0.747906 (max=0.890711) | val_rec=0.239753
+[epoch 002/50] update=0080/2000 loss=2.427260e-01 lr=9.961e-04 | val_full=0.663945 (max=0.760672) | val_rec=0.190398
+[epoch 004/50] update=0160/2000 loss=2.163482e-01 lr=9.844e-04 | val_full=0.640411 (max=0.748826) | val_rec=0.182100
+[epoch 006/50] update=0240/2000 loss=6.611134e+12 lr=9.652e-04 | val_full=0.675115 (max=0.779800) | val_rec=0.202729
+[epoch 008/50] update=0320/2000 loss=2.033725e-01 lr=9.388e-04 | val_full=0.659926 (max=0.724312) | val_rec=0.194853
+[epoch 010/50] update=0400/2000 loss=1.836953e-01 lr=9.055e-04 | val_full=0.608162 (max=0.735522) | val_rec=0.169442
+[epoch 012/50] update=0480/2000 loss=1.764158e-01 lr=8.658e-04 | val_full=0.596332 (max=0.708376) | val_rec=0.165347
+[epoch 014/50] update=0560/2000 loss=1.756026e-01 lr=8.205e-04 | val_full=0.595734 (max=0.702136) | val_rec=0.167065
+[epoch 016/50] update=0640/2000 loss=1.685109e-01 lr=7.702e-04 | val_full=0.583913 (max=0.696876) | val_rec=0.166158
+[epoch 018/50] update=0720/2000 loss=1.643359e-01 lr=7.158e-04 | val_full=0.572841 (max=0.671415) | val_rec=0.165327
+[epoch 020/50] update=0800/2000 loss=1.534826e-01 lr=6.580e-04 | val_full=0.577943 (max=0.686132) | val_rec=0.168168
+[epoch 022/50] update=0880/2000 loss=1.542877e-01 lr=5.978e-04 | val_full=0.570740 (max=0.685597) | val_rec=0.166319
+[epoch 024/50] update=0960/2000 loss=1.452726e-01 lr=5.361e-04 | val_full=0.554594 (max=0.641795) | val_rec=0.164887
+[epoch 026/50] update=1040/2000 loss=1.386014e-01 lr=4.739e-04 | val_full=0.539525 (max=0.638517) | val_rec=0.162323
+[epoch 028/50] update=1120/2000 loss=1.378527e-01 lr=4.122e-04 | val_full=0.530566 (max=0.630120) | val_rec=0.158857
+[epoch 030/50] update=1200/2000 loss=1.369246e-01 lr=3.520e-04 | val_full=0.534066 (max=0.655477) | val_rec=0.158769
+[epoch 032/50] update=1280/2000 loss=1.301284e-01 lr=2.942e-04 | val_full=0.533355 (max=0.663968) | val_rec=0.160742
+[epoch 034/50] update=1360/2000 loss=1.257209e-01 lr=2.398e-04 | val_full=0.517887 (max=0.628840) | val_rec=0.154465
+[epoch 036/50] update=1440/2000 loss=1.272021e-01 lr=1.895e-04 | val_full=0.538598 (max=0.679995) | val_rec=0.164393
+[epoch 038/50] update=1520/2000 loss=1.241523e-01 lr=1.442e-04 | val_full=0.511930 (max=0.629808) | val_rec=0.153168
+[epoch 040/50] update=1600/2000 loss=1.224834e-01 lr=1.045e-04 | val_full=0.512535 (max=0.630156) | val_rec=0.152323
+[epoch 042/50] update=1680/2000 loss=1.198742e-01 lr=7.123e-05 | val_full=0.510968 (max=0.640036) | val_rec=0.152773
+[epoch 044/50] update=1760/2000 loss=1.214480e-01 lr=4.476e-05 | val_full=0.511627 (max=0.634101) | val_rec=0.153737
+[epoch 046/50] update=1840/2000 loss=1.201995e-01 lr=2.555e-05 | val_full=0.509195 (max=0.633333) | val_rec=0.151883
+[epoch 048/50] update=1920/2000 loss=1.178581e-01 lr=1.390e-05 | val_full=0.508461 (max=0.637290) | val_rec=0.151904
+[epoch 050/50] update=2000/2000 loss=1.183148e-01 lr=1.000e-05 | val_full=0.509185 (max=0.637333) | val_rec=0.151997
+
+====================================================================================================
+BEST CHECKPOINT AUDIT
+====================================================================================================
+epoch  = 48
+update = 1920
+
+TRAIN
+train full         mean=0.480944 std=0.096653 median=0.501159 min=0.299870 max=0.692676
+train receiver     mean=0.145584 std=0.026246 median=0.148736 min=0.092795 max=0.212676
+
+VALIDATION
+val full           mean=0.508461 std=0.091033 median=0.546602 min=0.304938 max=0.637289
+val receiver       mean=0.151904 std=0.024830 median=0.158847 min=0.095155 max=0.195378
+
+====================================================================================================
+LATEST CHECKPOINT AUDIT
+====================================================================================================
+epoch  = 50
+update = 2000
+
+TRAIN
+train full         mean=0.480655 std=0.097116 median=0.501510 min=0.299266 max=0.695133
+train receiver     mean=0.145359 std=0.026382 median=0.148749 min=0.092311 max=0.212943
+
+VALIDATION
+val full           mean=0.509185 std=0.092128 median=0.547414 min=0.305484 max=0.637334
+val receiver       mean=0.151997 std=0.025166 median=0.159193 min=0.095230 max=0.196475
+
+====================================================================================================
+C5.2a MgNO-I FINAL SUMMARY
+====================================================================================================
+BEST epoch       = 48
+BEST train full  = 0.480944
+BEST val full    = 0.508461
+BEST val rec     = 0.151904
+
+LATEST epoch     = 50
+LATEST train full= 0.480655
+LATEST val full  = 0.509185
+LATEST val rec   = 0.151997
+
+FNO reference:
+  best val full = 0.551782
+  best val rec  = 0.192650
+
+MgNO-I relative val-full gain vs FNO = 7.85%
+[PASS] MgNO-I improves over the frozen FNO smoke baseline.

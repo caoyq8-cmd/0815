@@ -1,0 +1,77 @@
+[Dataset] split=train images=1 pairs=8 speed_mean=1491.806802 speed_std=22.770939 wave_scale=3.72290883e-02
+[Dataset] split=val images=1 pairs=8 speed_mean=1491.806802 speed_std=22.770939 wave_scale=3.72290883e-02
+====================================================================================================
+C5.1f DIFF-ANO-STYLE AdaMgNO MICRO-OVERFIT
+====================================================================================================
+channels        = 12
+shared repeats  = 4
+levels          = 7
+hierarchy       = 480 -> 239 -> 119 -> 59 -> 29 -> 14 -> 6
+speed stats N   = 300
+speed mean/std  = 1491.806802 / 22.770939
+wave scale      = 3.72290883e-02
+parameters      = 66,614
+loss            = full-wavefield MSE only
+
+INITIAL train full=0.963940 rec=0.245470
+INITIAL val   full=0.985249 rec=0.246849
+[001/50] loss=4.645015e-01 lr=2.533e-05 | train full=0.9637 rec=0.2454 | val full=0.9850 rec=0.2468
+[002/50] loss=4.641139e-01 lr=4.109e-05 | train full=0.9631 rec=0.2453 | val full=0.9844 rec=0.2466
+[003/50] loss=4.633574e-01 lr=6.658e-05 | train full=0.9619 rec=0.2450 | val full=0.9832 rec=0.2464
+[004/50] loss=4.617066e-01 lr=1.007e-04 | train full=0.9594 rec=0.2444 | val full=0.9807 rec=0.2458
+[005/50] loss=4.580249e-01 lr=1.418e-04 | train full=0.9538 rec=0.2436 | val full=0.9750 rec=0.2450
+[006/50] loss=4.509658e-01 lr=1.883e-04 | train full=0.9410 rec=0.2433 | val full=0.9620 rec=0.2448
+[007/50] loss=4.344658e-01 lr=2.379e-04 | train full=0.9200 rec=0.2540 | val full=0.9403 rec=0.2553
+[008/50] loss=4.177153e-01 lr=2.884e-04 | train full=0.9011 rec=0.2777 | val full=0.9200 rec=0.2779
+[009/50] loss=4.008970e-01 lr=3.378e-04 | train full=0.8883 rec=0.2766 | val full=0.9067 rec=0.2763
+[010/50] loss=3.929310e-01 lr=3.836e-04 | train full=0.8779 rec=0.2741 | val full=0.8959 rec=0.2738
+[011/50] loss=3.814870e-01 lr=4.240e-04 | train full=0.8582 rec=0.2791 | val full=0.8757 rec=0.2788
+[012/50] loss=3.644423e-01 lr=4.571e-04 | train full=0.8215 rec=0.2604 | val full=0.8388 rec=0.2618
+[013/50] loss=3.310356e-01 lr=4.814e-04 | train full=0.8181 rec=0.2997 | val full=0.8369 rec=0.3015
+[014/50] loss=3.285454e-01 lr=4.959e-04 | train full=0.7627 rec=0.2821 | val full=0.7795 rec=0.2842
+[015/50] loss=2.962719e-01 lr=5.000e-04 | train full=0.7632 rec=0.2828 | val full=0.7821 rec=0.2849
+[016/50] loss=2.865236e-01 lr=4.987e-04 | train full=0.7501 rec=0.3090 | val full=0.7665 rec=0.3116
+[017/50] loss=2.837752e-01 lr=4.955e-04 | train full=0.7389 rec=0.2749 | val full=0.7558 rec=0.2771
+[018/50] loss=2.751241e-01 lr=4.902e-04 | train full=0.7287 rec=0.2833 | val full=0.7460 rec=0.2862
+[019/50] loss=2.696477e-01 lr=4.831e-04 | train full=0.7188 rec=0.2687 | val full=0.7409 rec=0.2723
+[020/50] loss=2.681908e-01 lr=4.740e-04 | train full=0.7136 rec=0.2889 | val full=0.7349 rec=0.2920
+[021/50] loss=2.535410e-01 lr=4.632e-04 | train full=0.6947 rec=0.2768 | val full=0.7222 rec=0.2800
+[022/50] loss=2.493617e-01 lr=4.506e-04 | train full=0.7004 rec=0.2907 | val full=0.7216 rec=0.2939
+[023/50] loss=2.437716e-01 lr=4.364e-04 | train full=0.6753 rec=0.2781 | val full=0.7054 rec=0.2817
+[024/50] loss=2.358980e-01 lr=4.207e-04 | train full=0.6884 rec=0.2951 | val full=0.7108 rec=0.2986
+[025/50] loss=2.340410e-01 lr=4.037e-04 | train full=0.6765 rec=0.2687 | val full=0.7103 rec=0.2733
+[026/50] loss=2.401586e-01 lr=3.854e-04 | train full=0.6924 rec=0.3043 | val full=0.7196 rec=0.3082
+[027/50] loss=2.304046e-01 lr=3.660e-04 | train full=0.6655 rec=0.2576 | val full=0.7032 rec=0.2634
+[028/50] loss=2.215837e-01 lr=3.457e-04 | train full=0.6474 rec=0.2680 | val full=0.6765 rec=0.2727
+[029/50] loss=2.121893e-01 lr=3.246e-04 | train full=0.6408 rec=0.2717 | val full=0.6744 rec=0.2771
+[030/50] loss=2.061317e-01 lr=3.029e-04 | train full=0.6367 rec=0.2665 | val full=0.6792 rec=0.2738
+[031/50] loss=2.060519e-01 lr=2.808e-04 | train full=0.6297 rec=0.2726 | val full=0.6686 rec=0.2803
+[032/50] loss=1.989162e-01 lr=2.584e-04 | train full=0.6198 rec=0.2724 | val full=0.6593 rec=0.2802
+[033/50] loss=1.951242e-01 lr=2.360e-04 | train full=0.6158 rec=0.2723 | val full=0.6589 rec=0.2810
+[034/50] loss=1.879263e-01 lr=2.137e-04 | train full=0.6074 rec=0.2592 | val full=0.6436 rec=0.2685
+[035/50] loss=1.867563e-01 lr=1.916e-04 | train full=0.6049 rec=0.2674 | val full=0.6521 rec=0.2780
+[036/50] loss=1.844527e-01 lr=1.701e-04 | train full=0.6070 rec=0.2812 | val full=0.6503 rec=0.2902
+[037/50] loss=1.837376e-01 lr=1.492e-04 | train full=0.5997 rec=0.2752 | val full=0.6433 rec=0.2850
+[038/50] loss=1.792644e-01 lr=1.291e-04 | train full=0.5961 rec=0.2662 | val full=0.6379 rec=0.2769
+[039/50] loss=1.774513e-01 lr=1.099e-04 | train full=0.5912 rec=0.2790 | val full=0.6373 rec=0.2908
+[040/50] loss=1.754587e-01 lr=9.195e-05 | train full=0.5890 rec=0.2754 | val full=0.6393 rec=0.2883
+[041/50] loss=1.742651e-01 lr=7.522e-05 | train full=0.5873 rec=0.2801 | val full=0.6375 rec=0.2927
+[042/50] loss=1.726736e-01 lr=5.990e-05 | train full=0.5876 rec=0.2873 | val full=0.6329 rec=0.2998
+[043/50] loss=1.722863e-01 lr=4.611e-05 | train full=0.5849 rec=0.2772 | val full=0.6340 rec=0.2904
+[044/50] loss=1.709403e-01 lr=3.396e-05 | train full=0.5835 rec=0.2783 | val full=0.6334 rec=0.2920
+[045/50] loss=1.703500e-01 lr=2.356e-05 | train full=0.5831 rec=0.2825 | val full=0.6325 rec=0.2959
+[046/50] loss=1.700629e-01 lr=1.497e-05 | train full=0.5827 rec=0.2835 | val full=0.6329 rec=0.2971
+[047/50] loss=1.697280e-01 lr=8.280e-06 | train full=0.5824 rec=0.2824 | val full=0.6332 rec=0.2962
+[048/50] loss=1.695744e-01 lr=3.534e-06 | train full=0.5822 rec=0.2824 | val full=0.6333 rec=0.2962
+[049/50] loss=1.695160e-01 lr=7.727e-07 | train full=0.5822 rec=0.2821 | val full=0.6333 rec=0.2959
+[050/50] loss=1.694730e-01 lr=1.774e-08 | train full=0.5822 rec=0.2821 | val full=0.6333 rec=0.2959
+
+====================================================================================================
+C5.1f AdaMgNO MICRO-OVERFIT SUMMARY
+====================================================================================================
+initial train full = 0.963940
+best train full    = 0.582185 @ epoch 50
+best train rec     = 0.282118
+corresponding val  = full 0.633318, rec 0.295906
+best val full      = 0.632543 @ epoch 45
+[FAIL] AdaMgNO-I still cannot fit one-image wavefields.

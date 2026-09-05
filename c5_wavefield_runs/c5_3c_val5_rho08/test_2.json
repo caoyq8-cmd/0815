@@ -1,0 +1,119 @@
+{
+  "rho": 0.8,
+  "cbs_measurement_rrmse": 0.11674884706735611,
+  "FNO": {
+    "surrogate_loss": 0.0001600918058102252,
+    "forward_full_rrmse": 0.42033642530441284,
+    "forward_rec_rrmse": 0.15248936414718628,
+    "gradient": {
+      "full": {
+        "cosine": -0.06287912874895228,
+        "neg_cosine": 0.06287912874895228,
+        "sign_agreement": 0.4894357638888889,
+        "optimal_scale": -260551112.22318143,
+        "aligned_rel_error": 0.9980211496595518
+      },
+      "crop16": {
+        "cosine": -0.06521599979753814,
+        "neg_cosine": 0.06521599979753814,
+        "sign_agreement": 0.48793247767857145,
+        "optimal_scale": -263159021.6026557,
+        "aligned_rel_error": 0.9978711707281699
+      },
+      "crop32": {
+        "cosine": -0.05457594880908204,
+        "neg_cosine": 0.05457594880908204,
+        "sign_agreement": 0.4884488258136095,
+        "optimal_scale": -290388398.1656679,
+        "aligned_rel_error": 0.9985096222929402
+      },
+      "smooth3": {
+        "cosine": -0.10389508396679381
+      },
+      "smooth5": {
+        "cosine": -0.10077387508000124
+      },
+      "smooth9": {
+        "cosine": -0.0961709794503926
+      }
+    }
+  },
+  "MgNO-I": {
+    "channels": 12,
+    "vcycles": 4,
+    "surrogate_loss": 0.00013488955573848216,
+    "forward_full_rrmse": 0.3748505711555481,
+    "forward_rec_rrmse": 0.11284526437520981,
+    "gradient": {
+      "full": {
+        "cosine": 0.20506561035079127,
+        "neg_cosine": -0.20506561035079127,
+        "sign_agreement": 0.5557074652777778,
+        "optimal_scale": 2049755211.006666,
+        "aligned_rel_error": 0.9787482288369458
+      },
+      "crop16": {
+        "cosine": 0.21332871034224568,
+        "neg_cosine": -0.21332871034224568,
+        "sign_agreement": 0.5641143176020408,
+        "optimal_scale": 2080543387.502106,
+        "aligned_rel_error": 0.9769804815571881
+      },
+      "crop32": {
+        "cosine": 0.2346053607788912,
+        "neg_cosine": -0.2346053607788912,
+        "sign_agreement": 0.5765763683431953,
+        "optimal_scale": 2222517150.9873104,
+        "aligned_rel_error": 0.9720906977714618
+      },
+      "smooth3": {
+        "cosine": 0.28847828468826836
+      },
+      "smooth5": {
+        "cosine": 0.33403798278262375
+      },
+      "smooth9": {
+        "cosine": 0.41393291825380585
+      }
+    }
+  },
+  "MgNO-II": {
+    "channels": 24,
+    "vcycles": 6,
+    "surrogate_loss": 0.00014847855254629394,
+    "forward_full_rrmse": 0.428571879863739,
+    "forward_rec_rrmse": 0.154937282204628,
+    "gradient": {
+      "full": {
+        "cosine": -0.008215595661539234,
+        "neg_cosine": 0.008215595661539234,
+        "sign_agreement": 0.48940972222222223,
+        "optimal_scale": -62292582.10493201,
+        "aligned_rel_error": 0.9999662514244804
+      },
+      "crop16": {
+        "cosine": -0.008443724470750254,
+        "neg_cosine": 0.008443724470750254,
+        "sign_agreement": 0.4869359853316326,
+        "optimal_scale": -62310824.095626265,
+        "aligned_rel_error": 0.9999643511231103
+      },
+      "crop32": {
+        "cosine": -0.0268071338860428,
+        "neg_cosine": 0.0268071338860428,
+        "sign_agreement": 0.48303439349112426,
+        "optimal_scale": -191787619.58336774,
+        "aligned_rel_error": 0.9996406242109297
+      },
+      "smooth3": {
+        "cosine": -0.02771139379245161
+      },
+      "smooth5": {
+        "cosine": -0.042726749807635904
+      },
+      "smooth9": {
+        "cosine": -0.06279232196094009
+      }
+    }
+  }
+}

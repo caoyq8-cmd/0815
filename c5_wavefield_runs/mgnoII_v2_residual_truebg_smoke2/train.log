@@ -1,0 +1,83 @@
+====================================================================================================
+C5.2a MgNO-I TRUE-BG OPERATOR GENERALIZATION
+====================================================================================================
+train images = 20
+val images   = 5
+estimated wave_scale = 3.72042429e-02
+locked wave_scale    = 3.72290883e-02
+[Background] keys = ['mean_field', 'background_field', 'src_indices', 'rec_indices']
+[Background] selected key = background_field shape = (8, 480, 480)
+[Background] source-index key = src_indices shape = (8, 2)
+[Split] images=20 sources=8 pairs=160
+[Split] speed_norm = (20, 1, 480, 480)
+[Split] wave_norm  = (20, 8, 2, 480, 480)
+[Background] keys = ['mean_field', 'background_field', 'src_indices', 'rec_indices']
+[Background] selected key = background_field shape = (8, 480, 480)
+[Background] source-index key = src_indices shape = (8, 2)
+[Split] images=5 sources=8 pairs=40
+[Split] speed_norm = (5, 1, 480, 480)
+[Split] wave_norm  = (5, 8, 2, 480, 480)
+
+channels        = 24
+recurrent_iters = 6
+parameters      = 371,391
+epochs          = 2
+accum_pairs     = 4
+train pairs     = 160
+val pairs       = 40
+updates/epoch   = 40
+total updates   = 80
+
+INITIAL VALIDATION
+val full           mean=0.893262 std=0.073393 median=0.894873 min=0.754935 max=1.070649
+val receiver       mean=0.233191 std=0.024296 median=0.234103 min=0.182571 max=0.276085
+[epoch 001/2] update=0040/80 loss=3.605969e-01 lr=5.050e-04 | val_full=0.772564 (max=0.905649) | val_rec=0.240149
+[epoch 002/2] update=0080/80 loss=2.665088e-01 lr=1.000e-05 | val_full=0.704351 (max=0.822784) | val_rec=0.208005
+
+====================================================================================================
+BEST CHECKPOINT AUDIT
+====================================================================================================
+epoch  = 2
+update = 80
+
+TRAIN
+train full         mean=0.699949 std=0.053758 median=0.695670 min=0.570578 max=0.861308
+train receiver     mean=0.211214 std=0.011127 median=0.211770 min=0.181628 max=0.236185
+
+VALIDATION
+val full           mean=0.704351 std=0.040198 median=0.697929 min=0.640143 max=0.822784
+val receiver       mean=0.208006 std=0.012441 median=0.206587 min=0.178940 max=0.236207
+
+====================================================================================================
+LATEST CHECKPOINT AUDIT
+====================================================================================================
+epoch  = 2
+update = 80
+
+TRAIN
+train full         mean=0.699949 std=0.053758 median=0.695670 min=0.570578 max=0.861308
+train receiver     mean=0.211214 std=0.011127 median=0.211769 min=0.181626 max=0.236182
+
+VALIDATION
+val full           mean=0.704351 std=0.040198 median=0.697929 min=0.640143 max=0.822784
+val receiver       mean=0.208006 std=0.012441 median=0.206586 min=0.178944 max=0.236207
+
+====================================================================================================
+C5.2a MgNO-I FINAL SUMMARY
+====================================================================================================
+BEST epoch       = 2
+BEST train full  = 0.699949
+BEST val full    = 0.704351
+BEST val rec     = 0.208006
+
+LATEST epoch     = 2
+LATEST train full= 0.699949
+LATEST val full  = 0.704351
+LATEST val rec   = 0.208006
+
+FNO reference:
+  best val full = 0.551782
+  best val rec  = 0.192650
+
+MgNO-I relative val-full gain vs FNO = -27.65%
+[NO GAIN] MgNO-I does not yet beat the FNO smoke baseline.

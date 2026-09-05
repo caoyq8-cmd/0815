@@ -1,0 +1,160 @@
+{
+  "paper_direct": {
+    "name": "r=plain,B=plain,T=plain,out=real",
+    "residual_mode": "plain",
+    "basis_mode": "plain",
+    "tx_mode": "plain",
+    "output_mode": "real",
+    "cosine": 0.05078468083819396,
+    "abs_cosine": 0.05078468083819396,
+    "scale": 0.07487756018201217,
+    "aligned_error": 0.9987096255629881
+  },
+  "calibrated_variant": {
+    "name": "r=plain,B=conj,T=conj,out=real",
+    "residual_mode": "plain",
+    "basis_mode": "conj",
+    "tx_mode": "conj",
+    "output_mode": "real",
+    "cosine": -0.9999999999999709,
+    "abs_cosine": 0.9999999999999709,
+    "scale": -0.9999999736604547,
+    "aligned_error": 2.4164526469479934e-07
+  },
+  "global_sign": -1.0,
+  "tx_alignment_rrmse": 0.0,
+  "exact_measurement_rrmse": 0.16127483546733856,
+  "neural_measurement_rrmse": 0.1673528105020523,
+  "reports": {
+    "exact_formula": {
+      "full": {
+        "cosine": 0.9999999999999709,
+        "optimal_scale": 0.9999999736604547,
+        "aligned_rel_error": 2.4164526469479934e-07
+      },
+      "crop16": {
+        "cosine": 0.9999999999999727,
+        "optimal_scale": 0.9999999734654799,
+        "aligned_rel_error": 2.3709224343430479e-07
+      },
+      "crop32": {
+        "cosine": 0.9999999999999732,
+        "optimal_scale": 0.9999999725843308,
+        "aligned_rel_error": 2.3411365205201847e-07
+      },
+      "smooth3": {
+        "cosine": 0.9999999999999875
+      },
+      "smooth5": {
+        "cosine": 0.9999999999999907
+      },
+      "smooth9": {
+        "cosine": 0.9999999999999926
+      }
+    },
+    "neural_residual_exact_basis": {
+      "full": {
+        "cosine": 0.8119124645819776,
+        "optimal_scale": 0.820428082922112,
+        "aligned_rel_error": 0.5837791961490406
+      },
+      "crop16": {
+        "cosine": 0.8218414464536151,
+        "optimal_scale": 0.8346725069826394,
+        "aligned_rel_error": 0.569716277537364
+      },
+      "crop32": {
+        "cosine": 0.8312566883275829,
+        "optimal_scale": 0.8538753540485687,
+        "aligned_rel_error": 0.5558887641522005
+      },
+      "smooth3": {
+        "cosine": 0.8978609668694942
+      },
+      "smooth5": {
+        "cosine": 0.9313612574336596
+      },
+      "smooth9": {
+        "cosine": 0.9545767863400423
+      }
+    },
+    "exact_residual_neural_basis": {
+      "full": {
+        "cosine": 0.7952096190369615,
+        "optimal_scale": 1.2547308869212581,
+        "aligned_rel_error": 0.6063346120675378
+      },
+      "crop16": {
+        "cosine": 0.808740320598677,
+        "optimal_scale": 1.2704147392108862,
+        "aligned_rel_error": 0.5881658727246509
+      },
+      "crop32": {
+        "cosine": 0.8321297253418096,
+        "optimal_scale": 1.286340187749946,
+        "aligned_rel_error": 0.5545810312321956
+      },
+      "smooth3": {
+        "cosine": 0.8725469462567192
+      },
+      "smooth5": {
+        "cosine": 0.9144797781770924
+      },
+      "smooth9": {
+        "cosine": 0.9420927092238459
+      }
+    },
+    "full_neural_ano": {
+      "full": {
+        "cosine": 0.6046497699504161,
+        "optimal_scale": 0.9833735662080892,
+        "aligned_rel_error": 0.7964914661808435
+      },
+      "crop16": {
+        "cosine": 0.6169867797855182,
+        "optimal_scale": 1.0106812153932325,
+        "aligned_rel_error": 0.7869735151642002
+      },
+      "crop32": {
+        "cosine": 0.6346696615305277,
+        "optimal_scale": 1.038770089827413,
+        "aligned_rel_error": 0.7727835536116997
+      },
+      "smooth3": {
+        "cosine": 0.72631388322945
+      },
+      "smooth5": {
+        "cosine": 0.8105800184345733
+      },
+      "smooth9": {
+        "cosine": 0.870157201394288
+      }
+    },
+    "direct_input_autograd": {
+      "full": {
+        "cosine": 0.1869929640640765,
+        "optimal_scale": 1562103062.5264702,
+        "aligned_rel_error": 0.9823612529973542
+      },
+      "crop16": {
+        "cosine": 0.19501004007350217,
+        "optimal_scale": 1590521816.2316885,
+        "aligned_rel_error": 0.9808012460588192
+      },
+      "crop32": {
+        "cosine": 0.2193689262867518,
+        "optimal_scale": 1718332266.0519,
+        "aligned_rel_error": 0.97564198053374
+      },
+      "smooth3": {
+        "cosine": 0.2637754489531275
+      },
+      "smooth5": {
+        "cosine": 0.3048968283219748
+      },
+      "smooth9": {
+        "cosine": 0.37642081857623794
+      }
+    }
+  }
+}

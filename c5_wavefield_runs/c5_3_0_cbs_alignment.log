@@ -1,0 +1,52 @@
+====================================================================================================
+C5.3-0 CBS SOLVER ALIGNMENT AUDIT
+====================================================================================================
+file              = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train20_val5/val/test_1.npz
+frequency         = 500000.0
+CBS iterations    = 80
+boundary_width    = 8
+boundary_strength = 1.0
+boundary_type     = PML3
+npz keys          = ['target_256', 'target_480', 'source_positions', 'src_indices', 'rec_indices', 'wavefields', 'dobs_complex', 'dobs_saved', 'source_file', 'measurement_mode', 'frequency', 'cbs_iters', 'boundary_width', 'boundary_strength', 'boundary_type', 'alignment_rrmse']
+
+speed shape       = (480, 480)
+target wave shape = (8, 480, 480)
+src shape         = (8, 2)
+rec shape         = (64, 2)
+dobs shape        = (8, 64)
+
+[CBS] solving all 8 sources ...
+[CBS] prediction shape = (8, 480, 480)
+
+====================================================================================================
+GLOBAL ALIGNMENT
+====================================================================================================
+raw full RRMSE    = 2.79991436e+00
+raw rec  RRMSE    = 1.01194346e+00
+best complex alpha= (0.10947217-0.008692583j)
+scaled full RRMSE = 9.45728004e-01
+scaled rec  RRMSE = 9.09183025e-01
+
+====================================================================================================
+PER-SOURCE ALIGNMENT
+====================================================================================================
+source 00 | full=2.83677220e+00 | rec=1.00288868e+00
+source 01 | full=2.64374876e+00 | rec=9.90774930e-01
+source 02 | full=3.09631753e+00 | rec=1.13615322e+00
+source 03 | full=2.73646832e+00 | rec=9.86962318e-01
+source 04 | full=2.84446883e+00 | rec=9.14325297e-01
+source 05 | full=2.64781070e+00 | rec=1.02755308e+00
+source 06 | full=2.90010238e+00 | rec=1.00714850e+00
+source 07 | full=2.69354892e+00 | rec=1.01683497e+00
+
+====================================================================================================
+STORED DOBS AUDIT
+====================================================================================================
+receiver target shape = (8, 64)
+stored dobs shape      = (8, 64)
+stored wave receiver vs dobs RRMSE = 0.00000000e+00
+
+====================================================================================================
+C5.3-0 ALIGNMENT DECISION
+====================================================================================================
+[FAIL] current CBS configuration does not reproduce the stored C5 wavefields. Do NOT treat its adjoint as ground truth.

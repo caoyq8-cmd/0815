@@ -1,0 +1,105 @@
+====================================================================================================
+C5.3a NEURAL-vs-CBS GRADIENT CONSISTENCY AUDIT
+====================================================================================================
+sample             = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_10.npz
+rho                = 0.8
+GT min/max         = 1424.9178466796875 1578.2879638671875
+candidate min/max  = 1439.934326171875 1562.63037109375
+frequency          = 500000.0
+CBS iters          = 80
+boundary_width     = 300
+boundary_strength  = 225.0
+boundary_type      = PML3
+
+####################################################################################################
+1. EXACT CBS FORWARD + ADJOINT
+####################################################################################################
+
+[CBS] FFT grid = (1024, 1024)
+
+[CBS] candidate measurement RRMSE = 0.04900386
+[CBS] mean abs receiver residual  = 0.0032862466759979725
+[CBS] gradient norm              = 3.35336751e+02
+
+####################################################################################################
+2. FNO INPUT-AUTOGRAD
+####################################################################################################
+FNO forward vs CBS full RRMSE = 0.604044
+FNO forward vs CBS rec  RRMSE = 0.198664
+
+====================================================================================================
+FNO GRADIENT vs CBS
+====================================================================================================
+full     | cos=-0.003387 | cos(-g)=+0.003387 | sign=0.5034 | aligned_err=0.999994
+crop16   | cos=-0.003586 | cos(-g)=+0.003586 | sign=0.5040 | aligned_err=0.999994
+crop32   | cos=-0.000700 | cos(-g)=+0.000700 | sign=0.5057 | aligned_err=1.000000
+
+SMOOTHED COSINE
+k= 3 | cos=-0.003593
+k= 5 | cos=-0.003989
+k= 9 | cos=-0.001827
+
+||g_neural|| = 2.89115173e-07
+||g_CBS||    = 3.35336751e+02
+
+####################################################################################################
+3. MgNO-I INPUT-AUTOGRAD
+####################################################################################################
+MgNO-I config = C12/V4
+MgNO-I forward vs CBS full RRMSE = 0.568272
+MgNO-I forward vs CBS rec  RRMSE = 0.172917
+
+====================================================================================================
+MgNO-I GRADIENT vs CBS
+====================================================================================================
+full     | cos=-0.033769 | cos(-g)=+0.033769 | sign=0.4888 | aligned_err=0.999430
+crop16   | cos=-0.035520 | cos(-g)=+0.035520 | sign=0.4869 | aligned_err=0.999369
+crop32   | cos=-0.038321 | cos(-g)=+0.038321 | sign=0.4844 | aligned_err=0.999265
+
+SMOOTHED COSINE
+k= 3 | cos=-0.055562
+k= 5 | cos=-0.067978
+k= 9 | cos=-0.081388
+
+||g_neural|| = 7.46348055e-08
+||g_CBS||    = 3.35336751e+02
+
+####################################################################################################
+4. MgNO-II INPUT-AUTOGRAD
+####################################################################################################
+MgNO-II config = C24/V6
+MgNO-II forward vs CBS full RRMSE = 0.592887
+MgNO-II forward vs CBS rec  RRMSE = 0.179909
+
+====================================================================================================
+MgNO-II GRADIENT vs CBS
+====================================================================================================
+full     | cos=+0.008381 | cos(-g)=-0.008381 | sign=0.5028 | aligned_err=0.999965
+crop16   | cos=+0.008972 | cos(-g)=-0.008972 | sign=0.5034 | aligned_err=0.999960
+crop32   | cos=+0.011916 | cos(-g)=-0.011916 | sign=0.5044 | aligned_err=0.999929
+
+SMOOTHED COSINE
+k= 3 | cos=+0.019964
+k= 5 | cos=+0.031774
+k= 9 | cos=+0.052750
+
+||g_neural|| = 8.15877377e-08
+||g_CBS||    = 3.35336751e+02
+
+====================================================================================================
+C5.3a FINAL GRADIENT SUMMARY
+====================================================================================================
+model          fwd_full    fwd_rec   grad_cos     crop16    smooth5
+FNO            0.604044   0.198664  -0.003387  -0.003586  -0.003989
+MgNO-I         0.568272   0.172917  -0.033769  -0.035520  -0.067978
+MgNO-II        0.592887   0.179909   0.008381   0.008972   0.031774
+
+Interpretation guide:
+cos > 0.8  : strong directional agreement
+0.5-0.8    : usable but imperfect
+0.2-0.5    : weak gradient fidelity
+|cos| < 0.2: essentially poor/near-orthogonal
+cos < 0    : wrong descent direction / sign issue
+
+saved JSON = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_7_gradient_val10_rho08/test_10.npz
+saved NPZ  = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_7_gradient_val10_rho08/test_10.npz

@@ -1,0 +1,37 @@
+C5 FINAL PROTOCOL
+
+Neural operator:
+  MgNO-like, channels=24, recurrent_iters=6
+
+Training source sampling:
+  source pool = 64
+  sources/image/epoch = 8
+  measurement sources/image = 4
+  other sources/image = 4
+  measurement pool = [0,8,16,24,32,40,48,56]
+
+Candidate:
+  rho = 0.8
+  candidate = 0.8 * GT + 0.2 * background
+
+True objective:
+  J(X) = 1/2 sum |P u(X) - d|^2
+  Exact CBS forward model
+
+Frozen correction step:
+  normalized gradient RMS = 1
+  step = 1.5 m/s
+
+Held-out robustness:
+  N = 10
+
+Strat4+4:
+  gradient cosine positive = 10/10
+  cosine mean = 0.267079
+  cosine median = 0.245661
+  cosine min = 0.087459
+
+  true-CBS descent = 10/10
+  mean objective drop = 20.966%
+  median objective drop = 9.649%
+  worst objective drop = +4.699%

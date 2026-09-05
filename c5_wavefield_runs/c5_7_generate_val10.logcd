@@ -1,0 +1,99 @@
+====================================================================================================
+C5.1b CURRENT-DATA WAVEFIELD SMOKE GENERATOR
+====================================================================================================
+input root       = /home/featurize/work/USCT_repro/USCT_download/self_consistent_cbs/sparse_64_dobs_train300_test50
+output root      = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10
+source positions = [0, 8, 16, 24, 32, 40, 48, 56]
+frequency        = 500000.0
+CBS iters        = 80
+PML              = PML3 300 225.0
+
+====================================================================================================
+[001/001] train_1.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 1.8400309898e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/train/train_1.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[001/010] test_1.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.9271687759e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_1.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[002/010] test_2.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 8.6420243406e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_2.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[003/010] test_3.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 1.0276396267e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_3.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[004/010] test_4.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 8.6168839175e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_4.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[005/010] test_5.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.2532218332e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_5.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[006/010] test_6.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 1.0358517244e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_6.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[007/010] test_7.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 1.7159740651e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_7.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[008/010] test_8.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.6617512213e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_8.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[009/010] test_9.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.8608602173e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_9.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[010/010] test_10.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 2.3753186440e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val/test_10.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+C5 WAVEFIELD DATASET SUMMARY
+====================================================================================================
+train images       = 1
+val images         = 10
+sources/image      = 8
+train wavefields   = 8
+val wavefields     = 80
+alignment mean     = 1.2355460073e-07
+alignment max      = 2.3753186440e-07
+
+[PASS] C5.1b wavefield smoke dataset generated.

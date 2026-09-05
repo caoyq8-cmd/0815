@@ -1,0 +1,39 @@
+========================================================================================================================
+C6.2 REAL C4 -> CBS PHYSICAL BRIDGE AUDIT
+========================================================================================================================
+pred_norm = /home/featurize/work/USCT_repro/paper_reproduction/cosign_usct/metrics/c4_oof897_5k_2step_multiseed/seed20260908/2step_official_pred_norm.npy
+gt_norm   = /home/featurize/work/USCT_repro/paper_reproduction/cosign_usct/data/val20_gt_norm.npy
+hint_norm = /home/featurize/work/USCT_repro/paper_reproduction/cosign_usct/data/val20_cond_norm.npy
+C5 val    = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_data/smoke8src_train1_val10/val
+samples   = 10
+
+C4 prediction normalized range = -0.7758888006210327 0.579230010509491
+C4 prediction speed range      = 1422.971435546875 1561.87109375
+test_01 | GT256 maxabs=8.224011e+01 RR=1.113547e-02 | GT480 interp RR=1.081136e-02 | hint MSE=243.89794 C4 MSE=230.15646 gain=+5.634% | clip=0.000%
+test_02 | GT256 maxabs=7.401477e+01 RR=8.882369e-03 | GT480 interp RR=8.597608e-03 | hint MSE=155.65938 C4 MSE=154.34749 gain=+0.843% | clip=0.000%
+test_03 | GT256 maxabs=1.076069e+02 RR=1.679776e-02 | GT480 interp RR=1.637720e-02 | hint MSE=600.29011 C4 MSE=480.84809 gain=+19.897% | clip=0.000%
+test_04 | GT256 maxabs=1.227439e+02 RR=2.099768e-02 | GT480 interp RR=2.056393e-02 | hint MSE=923.02729 C4 MSE=722.29580 gain=+21.747% | clip=0.000%
+test_05 | GT256 maxabs=1.042366e+02 RR=1.623752e-02 | GT480 interp RR=1.586071e-02 | hint MSE=527.75991 C4 MSE=435.66236 gain=+17.451% | clip=0.000%
+test_06 | GT256 maxabs=1.056725e+02 RR=1.489014e-02 | GT480 interp RR=1.456296e-02 | hint MSE=437.79573 C4 MSE=397.82404 gain=+9.130% | clip=0.000%
+test_07 | GT256 maxabs=1.102325e+02 RR=1.664647e-02 | GT480 interp RR=1.629758e-02 | hint MSE=548.79864 C4 MSE=504.16949 gain=+8.132% | clip=0.000%
+test_08 | GT256 maxabs=1.066703e+02 RR=1.298142e-02 | GT480 interp RR=1.262348e-02 | hint MSE=320.75953 C4 MSE=303.60978 gain=+5.347% | clip=0.000%
+test_09 | GT256 maxabs=1.107552e+02 RR=1.448528e-02 | GT480 interp RR=1.412385e-02 | hint MSE=417.16350 C4 MSE=382.82545 gain=+8.231% | clip=0.000%
+test_10 | GT256 maxabs=1.423580e+02 RR=1.715268e-02 | GT480 interp RR=1.679356e-02 | hint MSE=581.58827 C4 MSE=514.25683 gain=+11.577% | clip=0.000%
+
+========================================================================================================================
+C6.2 SUMMARY
+========================================================================================================================
+num_samples                      = 10
+pred_norm_path                   = /home/featurize/work/USCT_repro/paper_reproduction/cosign_usct/metrics/c4_oof897_5k_2step_multiseed/seed20260908/2step_official_pred_norm.npy
+max_gt256_abs                    = 142.3580322265625
+max_gt256_rrmse                  = 0.020997678143082205
+mean_gt480_bilinear_rrmse        = 0.014661223572748633
+hint_mse256_mean                 = 475.67403077653637
+c4_pred_mse256_mean              = 412.5995801976552
+c4_pred_mse_gain_frac            = 0.13260015577455886
+alignment_pass                   = False
+gt256_abs_tol                    = 0.01
+gt256_rrmse_tol                  = 1e-06
+
+[FAIL] C4 and C5 sample identity is not sufficiently aligned.
+DO NOT start C6.3 before resolving this mismatch.

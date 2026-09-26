@@ -1,0 +1,17 @@
+======================================================================================================================================================
+C6.7 STRUCTURAL TRADE-OFF AND ERROR REDISTRIBUTION AUDIT
+======================================================================================================================================================
+runs:
+  dev_test1_10: /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_6_terminal_gra_dev10_v1 (10 samples)
+  secondary_transfer_test11_20_reused: /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_6_terminal_gra_transfer11_20_v1 (10 samples)
+
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_7_structural_tradeoff_audit.py", line 1471, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_7_structural_tradeoff_audit.py", line 1109, in main
+    groups[split] = analyze_group(
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_7_structural_tradeoff_audit.py", line 642, in analyze_group
+    vals = [
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_7_structural_tradeoff_audit.py", line 643, in <listcomp>
+    r[metric]
+KeyError: 'delta_mse_vs_c4'

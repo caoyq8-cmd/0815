@@ -1,0 +1,92 @@
+====================================================================================================
+C5.1b CURRENT-DATA WAVEFIELD SMOKE GENERATOR
+====================================================================================================
+input root       = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_raw_view_heldout11_20
+output root      = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20
+source positions = [0, 8, 16, 24, 32, 40, 48, 56]
+frequency        = 500000.0
+CBS iters        = 80
+PML              = PML3 300 225.0
+
+====================================================================================================
+[001/010] test_11.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 1.0679011098e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_11.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[002/010] test_12.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 2.2963538981e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_12.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[003/010] test_13.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 1.0621955937e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_13.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[004/010] test_14.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 2.2536126210e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_14.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[005/010] test_15.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 2.0273898826e-07
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_15.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[006/010] test_16.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.8839052498e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_16.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[007/010] test_17.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.8024393935e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_17.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[008/010] test_18.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.1589811291e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_18.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[009/010] test_19.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 9.1643563849e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_19.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+[010/010] test_20.npz
+sources = [0, 8, 16, 24, 32, 40, 48, 56]
+receiver alignment RRMSE = 8.7213450684e-08
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics8_heldout11_20/val/test_20.npz
+wavefields shape = (8, 480, 480)
+
+====================================================================================================
+C5 WAVEFIELD DATASET SUMMARY
+====================================================================================================
+train images       = 0
+val images         = 10
+sources/image      = 8
+train wavefields   = 0
+val wavefields     = 80
+alignment mean     = 1.3380555828e-07
+alignment max      = 2.2963538981e-07
+
+[PASS] C5.1b wavefield smoke dataset generated.

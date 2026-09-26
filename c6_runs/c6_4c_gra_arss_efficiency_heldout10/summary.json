@@ -1,0 +1,330 @@
+{
+  "experiment": "C6.4C Real Efficiency Audit",
+  "derived_from": "C6.4B Held-out GRA-ARSS",
+  "evaluation_split": "heldout_test11_20",
+  "sample_ids": [
+    11,
+    20
+  ],
+  "num_samples": 10,
+  "device": "cuda:0",
+  "mgno_config": {
+    "checkpoint": "/home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/mgnoII_strat4p4_fieldloss_e50_run2_frozen/best.pt",
+    "channels": 24,
+    "vcycles": 6,
+    "speed_mean": 1488.39,
+    "speed_std": 27.53,
+    "wave_scale": 0.0372290883
+  },
+  "frozen_gra_protocol": {
+    "initial_step_mps": 1.5,
+    "backtrack_factor": 0.5,
+    "max_backtracks": 5,
+    "acceptance_rule": "J_trial < J_current",
+    "gt_used_for_acceptance": false,
+    "cosine_used_for_acceptance": false
+  },
+  "timing_protocol": {
+    "cuda_synchronize_before_after": true,
+    "warmup_runs_per_sample_method": 1,
+    "recorded_repeats_per_sample_method": 3,
+    "model_load_seconds": 0.0508065579997492,
+    "model_load_excluded_from_per_sample_latency": true,
+    "reference_J0_true8_excluded_from_method_core": true,
+    "fixed_method_final_objective_validation_excluded_from_core": true,
+    "gra_backtracking_true8_included_in_core": true,
+    "primary_latency_metric": "mean across samples of each sample's median method_core_seconds"
+  },
+  "cost_convention": {
+    "Exact-CBS": "64 exact source solves + exact gradient/update; final objective evaluation is validation-only.",
+    "Full-ARSS": "MgNO64 + neural residual + gradient/update; true-CBS objective checks are validation-only.",
+    "RA-ARSS": "8-source exact anchor/residual + MgNO64 + gradient/update; final objective check is validation-only.",
+    "GRA-ARSS": "8-source exact anchor/residual + MgNO64 + gradient/update + all 8-source guarded backtracking evaluations."
+  },
+  "methods": {
+    "Exact-CBS": {
+      "num_samples": 10,
+      "descent_count": 10,
+      "accepted_count": 10,
+      "method_core_seconds": {
+        "mean": 1.1576480467999317,
+        "std": 0.008145055220589396,
+        "median": 1.1581016149998504,
+        "min": 1.1489579300005062,
+        "max": 1.1762269170003492
+      },
+      "end_to_end_with_validation_seconds": {
+        "mean": 1.2965378289996807,
+        "std": 0.008150222715116139,
+        "median": 1.2970855349994963,
+        "min": 1.2878116660003798,
+        "max": 1.3152857400000357
+      },
+      "relative_drop": {
+        "mean": 0.6643500617461241,
+        "std": 0.037480478085944804,
+        "median": 0.6537745497476848,
+        "min": 0.6162495245121654,
+        "max": 0.7438676562028453
+      },
+      "mse_gain": {
+        "mean": 0.02388366996779633,
+        "std": 0.008230792350784236,
+        "median": 0.018722721546832848,
+        "min": 0.01530591179369969,
+        "max": 0.03710062933935678
+      },
+      "true_source_equiv_core": {
+        "mean": 64.0,
+        "std": 0.0,
+        "median": 64.0,
+        "min": 64.0,
+        "max": 64.0
+      },
+      "peak_delta_allocated_mb": {
+        "mean": 384.02001953125,
+        "std": 0.0,
+        "median": 384.02001953125,
+        "min": 384.02001953125,
+        "max": 384.02001953125
+      },
+      "true_cbs_core_seconds": {
+        "mean": 1.1312615157999668,
+        "std": 0.008316127909322532,
+        "median": 1.1310791778334228,
+        "min": 1.1202974066666986,
+        "max": 1.145002168666603
+      },
+      "neural64_seconds": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "gradient_update_seconds": {
+        "mean": 0.02898737456659243,
+        "std": 0.00246605860059306,
+        "median": 0.027833539833257724,
+        "min": 0.027414905333595623,
+        "max": 0.03424549399975755
+      },
+      "speedup_vs_exact_core": 1.0
+    },
+    "Full-ARSS": {
+      "num_samples": 10,
+      "descent_count": 10,
+      "accepted_count": 10,
+      "method_core_seconds": {
+        "mean": 2.4337893181998878,
+        "std": 0.0036973401575932006,
+        "median": 2.432130083499942,
+        "min": 2.431019452000328,
+        "max": 2.4430695909995848
+      },
+      "end_to_end_with_validation_seconds": {
+        "mean": 2.576152959299816,
+        "std": 0.00368555080475003,
+        "median": 2.574904777500251,
+        "min": 2.5732479199996305,
+        "max": 2.585411395999472
+      },
+      "relative_drop": {
+        "mean": 0.2549241189127214,
+        "std": 0.11912988168669084,
+        "median": 0.2380619656087089,
+        "min": 0.1052079309521046,
+        "max": 0.45835064104122575
+      },
+      "mse_gain": {
+        "mean": 0.009234029065695768,
+        "std": 0.007669498268029573,
+        "median": 0.00864175033584456,
+        "min": -0.004489954724484301,
+        "max": 0.02145036224539486
+      },
+      "true_source_equiv_core": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "peak_delta_allocated_mb": {
+        "mean": 253.6044921875,
+        "std": 0.0,
+        "median": 253.6044921875,
+        "min": 253.6044921875,
+        "max": 253.6044921875
+      },
+      "true_cbs_core_seconds": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "neural64_seconds": {
+        "mean": 2.406307044633498,
+        "std": 0.0046577599789210805,
+        "median": 2.4043504091669092,
+        "min": 2.4014636776667735,
+        "max": 2.4171354693338194
+      },
+      "gradient_update_seconds": {
+        "mean": 0.027075467866688997,
+        "std": 0.00026860466822605075,
+        "median": 0.027012582333251583,
+        "min": 0.026680147333233133,
+        "max": 0.027579592333495384
+      },
+      "speedup_vs_exact_core": 0.4756566388647671
+    },
+    "RA-ARSS": {
+      "num_samples": 10,
+      "descent_count": 9,
+      "accepted_count": 10,
+      "method_core_seconds": {
+        "mean": 2.573483597500035,
+        "std": 0.003295951702236438,
+        "median": 2.574173100999815,
+        "min": 2.5688450560001,
+        "max": 2.578359062000345
+      },
+      "end_to_end_with_validation_seconds": {
+        "mean": 2.71567325850001,
+        "std": 0.0033556260727516363,
+        "median": 2.7163219670001126,
+        "min": 2.7109316790001685,
+        "max": 2.7207055740000214
+      },
+      "relative_drop": {
+        "mean": 0.4231967706467949,
+        "std": 0.24236514116199,
+        "median": 0.4839537867921496,
+        "min": -0.0799902030174933,
+        "max": 0.6513573025863096
+      },
+      "mse_gain": {
+        "mean": 0.0185057996569654,
+        "std": 0.015492064658740173,
+        "median": 0.019082229564622435,
+        "min": -0.0102743853194377,
+        "max": 0.03801217707531308
+      },
+      "true_source_equiv_core": {
+        "mean": 8.0,
+        "std": 0.0,
+        "median": 8.0,
+        "min": 8.0,
+        "max": 8.0
+      },
+      "peak_delta_allocated_mb": {
+        "mean": 384.02001953125,
+        "std": 0.0,
+        "median": 384.02001953125,
+        "min": 384.02001953125,
+        "max": 384.02001953125
+      },
+      "true_cbs_core_seconds": {
+        "mean": 0.14048425403334475,
+        "std": 0.00013964479729940057,
+        "median": 0.14041553383337183,
+        "min": 0.1403330666665473,
+        "max": 0.1407375129999006
+      },
+      "neural64_seconds": {
+        "mean": 2.4050456757000274,
+        "std": 0.0020887002713059267,
+        "median": 2.4046534099999612,
+        "min": 2.4021747769999515,
+        "max": 2.409453163333334
+      },
+      "gradient_update_seconds": {
+        "mean": 0.027427656466655508,
+        "std": 0.0009330591350361386,
+        "median": 0.027137584500148176,
+        "min": 0.026593617333067716,
+        "max": 0.029719124000015047
+      },
+      "speedup_vs_exact_core": 0.4498369633769993
+    },
+    "GRA-ARSS": {
+      "num_samples": 10,
+      "descent_count": 10,
+      "accepted_count": 10,
+      "method_core_seconds": {
+        "mean": 2.7425278999000513,
+        "std": 0.08535993164241833,
+        "median": 2.7143173095000748,
+        "min": 2.706154845999663,
+        "max": 2.9981388129999686
+      },
+      "end_to_end_with_validation_seconds": {
+        "mean": 2.7425278999000513,
+        "std": 0.08535993164241833,
+        "median": 2.7143173095000748,
+        "min": 2.706154845999663,
+        "max": 2.9981388129999686
+      },
+      "relative_drop": {
+        "mean": 0.4320759284710016,
+        "std": 0.22475463045856223,
+        "median": 0.48395388571653664,
+        "min": 0.00880143141105014,
+        "max": 0.6513580365663257
+      },
+      "mse_gain": {
+        "mean": 0.019490843978781446,
+        "std": 0.013857742100388195,
+        "median": 0.019082029647537826,
+        "min": -0.0032955246190129552,
+        "max": 0.0380125814308717
+      },
+      "true_source_equiv_core": {
+        "mean": 17.6,
+        "std": 4.8,
+        "median": 16.0,
+        "min": 16.0,
+        "max": 32.0
+      },
+      "peak_delta_allocated_mb": {
+        "mean": 384.02001953125,
+        "std": 0.0,
+        "median": 384.02001953125,
+        "min": 384.02001953125,
+        "max": 384.02001953125
+      },
+      "true_cbs_core_seconds": {
+        "mean": 0.30930705249996515,
+        "std": 0.08311532767640226,
+        "median": 0.2816586313335089,
+        "min": 0.2812941083332892,
+        "max": 0.5586516976663916
+      },
+      "neural64_seconds": {
+        "mean": 2.4045470062334973,
+        "std": 0.004094512726687306,
+        "median": 2.4033931540000895,
+        "min": 2.398647705333436,
+        "max": 2.411566615666743
+      },
+      "gradient_update_seconds": {
+        "mean": 0.027830137033258023,
+        "std": 0.0010182349892919617,
+        "median": 0.027376021999771183,
+        "min": 0.026652412333532993,
+        "max": 0.029270267333534623
+      },
+      "speedup_vs_exact_core": 0.42210985231622294
+    }
+  },
+  "c6_4c_gate": "EFFICIENCY_CHARACTERIZED_PASS",
+  "files": {
+    "per_run_timing_csv": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4c_gra_arss_efficiency_heldout10/per_run_timing.csv",
+    "per_sample_timing_csv": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4c_gra_arss_efficiency_heldout10/per_sample_timing.csv",
+    "method_summary_csv": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4c_gra_arss_efficiency_heldout10/method_summary.csv",
+    "gra_backtracking_attempts_csv": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4c_gra_arss_efficiency_heldout10/gra_backtracking_attempts.csv",
+    "reference_objectives_csv": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4c_gra_arss_efficiency_heldout10/reference_objectives.csv"
+  }
+}

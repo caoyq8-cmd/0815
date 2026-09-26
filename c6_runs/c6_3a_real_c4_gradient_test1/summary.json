@@ -1,0 +1,44 @@
+{
+  "num_samples": 1,
+  "sample_start": 1,
+  "sample_end": 1,
+  "mgno_ckpt": "/home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/mgnoII_strat4p4_fieldloss_e50_run2_frozen/best.pt",
+  "background64_npz": "/home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_4a_mgnoI_source64_test1_rho08.npz",
+  "gradient_reference": "exact CBS 64-source wavefields + C5.4b calibrated adjoint formula",
+  "field64_rrmse": {
+    "mean": 0.4069308042526245,
+    "std": 0.0,
+    "min": 0.4069308042526245,
+    "max": 0.4069308042526245
+  },
+  "measurement_rrmse": {
+    "mean": 0.15231114625930786,
+    "std": 0.0,
+    "min": 0.15231114625930786,
+    "max": 0.15231114625930786
+  },
+  "residual_rrmse": {
+    "mean": 1.4418506622314453,
+    "std": 0.0,
+    "min": 1.4418506622314453,
+    "max": 1.4418506622314453
+  },
+  "cos_raw": {
+    "mean": 0.12273530281030004,
+    "std": 0.0,
+    "min": 0.12273530281030004,
+    "max": 0.12273530281030004
+  },
+  "cos_crop32": {
+    "mean": 0.12904272920632642,
+    "std": 0.0,
+    "min": 0.12904272920632642,
+    "max": 0.12904272920632642
+  },
+  "cos_smooth5": {
+    "mean": 0.002503580656828962,
+    "std": 0.0,
+    "min": 0.002503580656828962,
+    "max": 0.002503580656828962
+  }
+}

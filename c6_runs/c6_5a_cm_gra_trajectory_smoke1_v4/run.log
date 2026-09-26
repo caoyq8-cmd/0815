@@ -1,0 +1,59 @@
+========================================================================================================================================
+C6.5A CONDITIONAL-CM + PHYSICS TRAJECTORY INTEGRATION
+========================================================================================================================================
+split              = dev_smoke_test1
+samples            = 1..1
+C4 seed            = 20260908
+C4 schedule        = [0, 17, 39]
+C4 NFE             = 2
+MgNO config        = C24/V6
+GRA step           = 1.5
+GRA backtrack      = 0.5
+GRA max backtracks = 5
+
+########################################################################################################################################
+TEST 1 (array_idx=0)
+########################################################################################################################################
+identity audit     | GT rr=0.000e+00 | HINT rr=0.000e+00 | source=test_1.mat
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+C4 audit           | rrmse=4.848e-11 | max=4.657e-10
+bridge audit       | align_corners=False | rrmse=0.000e+00 | mae=0.000000 m/s
+Warning: Distributed not initialised, using single rank
+C4-only    | MSE=69.133 | PSNR=27.838 | SSIM=0.82164 | J=3.109553e-02 | phys_drop=+0.00% | step=0.0000
+Warning: Distributed not initialised, using single rank
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+Exact   | MSE=69.415 | PSNR=27.821 | SSIM=0.82191 | J=3.452971e-02 | phys_drop=+76.67% | step=1.5000
+Warning: Distributed not initialised, using single rank
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+GRA     | MSE=69.476 | PSNR=27.817 | SSIM=0.82190 | J=3.479641e-02 | phys_drop=+72.03% | step=1.5000
+
+========================================================================================================================================
+C6.5A FINAL SUMMARY
+========================================================================================================================================
+      method         MSE       MAE      PSNR      SSIM       meas_J   MSEwin   src-eq      time
+        Hint     53.7118    2.5711   28.9344   0.85821  2.44904e-02        -     0.00     0.000
+     C4-only     69.1334    3.7883   27.8382   0.82164  3.10955e-02      0/1     0.00     0.102
+    C4+Exact     69.4155    3.7746   27.8205   0.82191  3.45297e-02      0/1    64.00     1.433
+      C4+GRA     69.4764    3.7735   27.8167   0.82190  3.47964e-02      0/1    16.00     2.980
+
+Exact physics accepted = 1/1
+GRA physics accepted   = 1/1
+GRA insert mean drop   = +72.032%
+C6.5A GATE             = INTEGRATION_FAIL
+summary                = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_smoke1_v4/summary.json

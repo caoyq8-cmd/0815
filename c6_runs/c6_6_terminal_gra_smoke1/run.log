@@ -1,0 +1,56 @@
+==============================================================================================================================================
+C6.6 TERMINAL GUARDED PHYSICS CORRECTION
+==============================================================================================================================================
+split              = dev_smoke_test1
+samples            = 1..1
+C4 seed            = 20260908
+C4 schedule        = [0, 17, 39]
+C4 NFE             = 2
+MgNO config        = C24/V6
+GRA step           = 1.5
+GRA backtrack      = 0.5
+GRA max backtracks = 5
+post-physics CM    = NONE
+
+##############################################################################################################################################
+TEST 1 (array_idx=0)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=4.77e-11 | bridge=1.17e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=3.109677e-02->1.035100e-02 | drop=+66.714% | MSE=69.133->65.747 | SSIM=0.82164->0.80577 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=3.109677e-02->1.072830e-02 | drop=+65.500% | MSE=69.133->65.382 | SSIM=0.82164->0.80662 | accepted=True | step=1.5000
+
+==============================================================================================================================================
+C6.6 FINAL SUMMARY
+==============================================================================================================================================
+      method         MSE       MAE      PSNR      SSIM       meas_J     Jwin   MSEwin    src-eq      time
+        Hint     53.7118    2.5711   28.9344   0.85821  2.44904e-02        -        -      0.00     0.000
+     C4-only     69.1332    3.7882   27.8382   0.82164  3.10968e-02        -        -      0.00     0.081
+   C4+TExact     65.7471    4.0541   28.0563   0.80577  1.03510e-02      1/1      1/1     64.00     0.773
+     C4+TGRA     65.3819    4.0449   28.0805   0.80662  1.07283e-02      1/1      1/1     16.00     2.469
+
+Terminal Exact accepted = 1/1
+Terminal GRA accepted   = 1/1
+Terminal GRA J noninc   = 1/1
+Terminal GRA mean Jdrop = +65.500%
+Terminal GRA mean MSEgain = +5.426%
+C6.6 GATE               = STRONG_TERMINAL_PASS
+summary                  = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_6_terminal_gra_smoke1/summary.json

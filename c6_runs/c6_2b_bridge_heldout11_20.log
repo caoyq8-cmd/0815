@@ -1,0 +1,39 @@
+========================================================================================================================
+C6.2 REAL C4 -> CBS PHYSICAL BRIDGE AUDIT
+========================================================================================================================
+pred_norm = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_c4_slice11_20/pred_norm_11_20.npy
+gt_norm   = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_c4_slice11_20/gt_norm_11_20.npy
+hint_norm = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_c4_slice11_20/hint_norm_11_20.npy
+C5 val    = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_physics_view1_10
+samples   = 10
+
+C4 prediction normalized range = -0.8035233020782471 0.6507166624069214
+C4 prediction speed range      = 1420.138916015625 1569.198486328125
+test_01 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=241.60387 C4 MSE=245.78305 gain=-1.730% | clip=0.000%
+test_02 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=273.83500 C4 MSE=246.04985 gain=+10.147% | clip=0.000%
+test_03 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=226.21720 C4 MSE=196.36435 gain=+13.197% | clip=0.000%
+test_04 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=279.56527 C4 MSE=261.90034 gain=+6.319% | clip=0.000%
+test_05 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=135.05920 C4 MSE=117.05503 gain=+13.331% | clip=0.000%
+test_06 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=87.30409 C4 MSE=76.14646 gain=+12.780% | clip=0.000%
+test_07 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=56.83616 C4 MSE=76.48534 gain=-34.572% | clip=0.000%
+test_08 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=78.16588 C4 MSE=80.19426 gain=-2.595% | clip=0.000%
+test_09 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=248.56777 C4 MSE=270.20923 gain=-8.706% | clip=0.000%
+test_10 | GT256 maxabs=0.000000e+00 RR=0.000000e+00 | GT480 interp RR=0.000000e+00 | hint MSE=211.68500 C4 MSE=212.06358 gain=-0.179% | clip=0.000%
+
+========================================================================================================================
+C6.2 SUMMARY
+========================================================================================================================
+num_samples                      = 10
+pred_norm_path                   = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_c4_slice11_20/pred_norm_11_20.npy
+max_gt256_abs                    = 0.0
+max_gt256_rrmse                  = 0.0
+mean_gt480_bilinear_rrmse        = 0.0
+hint_mse256_mean                 = 183.88394562647198
+c4_pred_mse256_mean              = 178.22514818493602
+c4_pred_mse_gain_frac            = 0.030773743853804353
+alignment_pass                   = True
+gt256_abs_tol                    = 0.01
+gt256_rrmse_tol                  = 1e-06
+
+[STRONG PASS] C4 VAL index / normalization / C5 target_256 identity verified.
+Ready for C6.3 true-CBS physics correction on real Conditional-CM samples.

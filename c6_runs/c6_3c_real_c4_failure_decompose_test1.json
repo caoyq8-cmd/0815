@@ -1,0 +1,45 @@
+{
+  "sample": 1,
+  "step": 1.5,
+  "J0": 0.03109552804529775,
+  "rr0": 0.10560137778520584,
+  "results": {
+    "Exact": {
+      "cosine_to_exact": 1.0,
+      "J0": 0.03109552804529775,
+      "J1": 0.01034993242078186,
+      "relative_drop": 0.6671568848837423,
+      "rr0": 0.10560137778520584,
+      "rr1": 0.060924138873815536,
+      "descent": true
+    },
+    "Neural-residual-only": {
+      "cosine_to_exact": 0.31831397471344747,
+      "J0": 0.03109552804529775,
+      "J1": 0.038310269141504705,
+      "relative_drop": -0.2320186068458794,
+      "rr0": 0.10560137778520584,
+      "rr1": 0.1172136589884758,
+      "descent": false
+    },
+    "Neural-basis-only": {
+      "cosine_to_exact": 0.7418390556073684,
+      "J0": 0.03109552804529775,
+      "J1": 0.01072902602327308,
+      "relative_drop": 0.6549656269659161,
+      "rr0": 0.10560137778520584,
+      "rr1": 0.06202985346317291,
+      "descent": true
+    },
+    "Full-ARSS": {
+      "cosine_to_exact": 0.12273530281030004,
+      "J0": 0.03109552804529775,
+      "J1": 0.03818897515115616,
+      "relative_drop": -0.22811791764800327,
+      "rr0": 0.10560137778520584,
+      "rr1": 0.11702795326709747,
+      "descent": false
+    }
+  },
+  "diagnosis": "RESIDUAL BOTTLENECK: neural residual destroys descent while neural wavefield/basis alone still preserves descent."
+}

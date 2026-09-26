@@ -1,0 +1,1799 @@
+====================================================================================================================================
+C6.4C REAL EFFICIENCY AUDIT (Exact-CBS / Full-ARSS / RA-ARSS / GRA-ARSS)
+====================================================================================================================================
+bridge             = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_c4_to_cbs_bridge_heldout11_20
+split              = heldout_test11_20
+samples            = 11..20
+device             = cuda:0
+MgNO ckpt          = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/mgnoII_strat4p4_fieldloss_e50_run2_frozen/best.pt
+MgNO config        = C24/V6
+model load         = 0.0508s
+initial RMS step   = 1.5 m/s
+backtrack factor   = 0.5
+max backtracks     = 5
+warmup/method      = 1
+repeats/method     = 3
+chunk size         = 8
+
+####################################################################################################################################
+TEST 11
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=8.5898518230e-02 | RR0=0.17546585 | MSE0=233.5037 | reference-only true8=0.2520s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1844s | val=0.1387s | drop=+61.625% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1762s | val=0.1391s | drop=+61.625% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1671s | val=0.1440s | drop=+61.625% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4304s | val=0.1424s | drop=+14.908% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4368s | val=0.1422s | drop=+14.908% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4322s | val=0.1432s | drop=+14.908% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5797s | val=0.1426s | drop=+33.611% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5750s | val=0.1423s | drop=+33.610% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5625s | val=0.1423s | drop=+33.610% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7125s | val=0.0000s | drop=+33.610% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7173s | val=0.0000s | drop=+33.610% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7092s | val=0.0000s | drop=+33.610% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 12
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=7.4325556035e-02 | RR0=0.16339174 | MSE0=233.1063 | reference-only true8=0.1403s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1556s | val=0.1391s | drop=+64.225% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1618s | val=0.1405s | drop=+64.225% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1561s | val=0.1391s | drop=+64.225% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4314s | val=0.1424s | drop=+24.619% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4255s | val=0.1425s | drop=+24.619% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4313s | val=0.1423s | drop=+24.619% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5766s | val=0.1423s | drop=+47.666% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5784s | val=0.1423s | drop=+47.666% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5802s | val=0.1424s | drop=+47.666% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7128s | val=0.0000s | drop=+47.666% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7259s | val=0.0000s | drop=+47.666% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7161s | val=0.0000s | drop=+47.666% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 13
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=4.7794043577e-02 | RR0=0.13097206 | MSE0=184.7275 | reference-only true8=0.1397s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1501s | val=0.1389s | drop=+67.229% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.2064s | val=0.1391s | drop=+67.229% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1494s | val=0.1394s | drop=+67.229% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4351s | val=0.1422s | drop=+22.993% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4348s | val=0.1426s | drop=+22.994% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4415s | val=0.1422s | drop=+22.994% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5761s | val=0.1421s | drop=+49.125% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5689s | val=0.1422s | drop=+49.125% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5671s | val=0.1421s | drop=+49.125% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7205s | val=0.0000s | drop=+49.125% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7145s | val=0.0000s | drop=+49.125% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7275s | val=0.0000s | drop=+49.125% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 14
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=6.7665909050e-02 | RR0=0.15582843 | MSE0=248.8327 | reference-only true8=0.1392s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1612s | val=0.1388s | drop=+63.946% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1617s | val=0.1401s | drop=+63.946% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1605s | val=0.1389s | drop=+63.946% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4495s | val=0.1422s | drop=+17.004% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4425s | val=0.1421s | drop=+17.005% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4431s | val=0.1423s | drop=+17.004% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5820s | val=0.1424s | drop=+37.328% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5721s | val=0.1425s | drop=+37.328% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5773s | val=0.1424s | drop=+37.328% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7258s | val=0.0000s | drop=+37.328% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7200s | val=0.0000s | drop=+37.328% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7102s | val=0.0000s | drop=+37.328% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 15
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=6.7156836584e-02 | RR0=0.15519573 | MSE0=110.4561 | reference-only true8=0.1397s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1638s | val=0.1389s | drop=+69.796% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1601s | val=0.1389s | drop=+69.796% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1505s | val=0.1389s | drop=+69.796% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4304s | val=0.1420s | drop=+45.835% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4330s | val=0.1421s | drop=+45.836% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4312s | val=0.1421s | drop=+45.836% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5706s | val=0.1421s | drop=+65.136% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5710s | val=0.1422s | drop=+65.136% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5772s | val=0.1421s | drop=+65.136% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7290s | val=0.0000s | drop=+65.136% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7214s | val=0.0000s | drop=+65.136% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7108s | val=0.0000s | drop=+65.136% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 16
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=3.1588770067e-02 | RR0=0.10645470 | MSE0=71.5518 | reference-only true8=0.1393s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1492s | val=0.1390s | drop=+62.476% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1517s | val=0.1389s | drop=+62.476% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1496s | val=0.1390s | drop=+62.476% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4310s | val=0.1423s | drop=+39.325% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4279s | val=0.1424s | drop=+39.326% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4371s | val=0.1422s | drop=+39.324% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5778s | val=0.1422s | drop=+64.877% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5693s | val=0.1422s | drop=+64.877% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5705s | val=0.1422s | drop=+64.877% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7093s | val=0.0000s | drop=+64.877% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7165s | val=0.0000s | drop=+64.877% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7115s | val=0.0000s | drop=+64.877% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 17
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=2.9877065714e-02 | RR0=0.10356922 | MSE0=72.1228 | reference-only true8=0.1392s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1500s | val=0.1390s | drop=+74.387% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1509s | val=0.1391s | drop=+74.387% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1492s | val=0.1393s | drop=+74.387% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4330s | val=0.1424s | drop=+28.443% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4268s | val=0.1424s | drop=+28.443% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4335s | val=0.1424s | drop=+28.440% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5760s | val=0.1424s | drop=+64.787% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5727s | val=0.1422s | drop=+64.788% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5754s | val=0.1421s | drop=+64.788% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7052s | val=0.0000s | drop=+64.787% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7065s | val=0.0000s | drop=+64.787% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7143s | val=0.0000s | drop=+64.787% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 18
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=4.4461178199e-02 | RR0=0.12632969 | MSE0=75.3636 | reference-only true8=0.1398s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1486s | val=0.1389s | drop=+66.121% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1490s | val=0.1389s | drop=+66.121% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1498s | val=0.1388s | drop=+66.121% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4377s | val=0.1421s | drop=+39.602% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4307s | val=0.1421s | drop=+39.603% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4500s | val=0.1422s | drop=+39.603% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5761s | val=0.1421s | drop=+61.762% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5676s | val=0.1421s | drop=+61.762% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5815s | val=0.1422s | drop=+61.762% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.7088s | val=0.0000s | drop=+61.762% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7197s | val=0.0000s | drop=+61.762% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7124s | val=0.0000s | drop=+61.762% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 19
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=9.0157791969e-02 | RR0=0.17991221 | MSE0=251.6145 | reference-only true8=0.1396s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.2177s | val=0.1387s | drop=+64.634% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1595s | val=0.1388s | drop=+64.634% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1614s | val=0.1387s | drop=+64.634% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4428s | val=0.1421s | drop=+11.673% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4313s | val=0.1421s | drop=+11.672% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4280s | val=0.1423s | drop=+11.672% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5673s | val=0.1421s | drop=+6.904% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5846s | val=0.1421s | drop=+6.905% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5688s | val=0.1421s | drop=+6.905% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.6997s | val=0.0000s | drop=+6.904% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.7062s | val=0.0000s | drop=+6.905% | src-eq=16 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.7252s | val=0.0000s | drop=+6.905% | src-eq=16 | peakΔ=384.0MB
+
+####################################################################################################################################
+TEST 20
+####################################################################################################################################
+[CBS] sources 00:08 / 8
+reference J0=6.7783175121e-02 | RR0=0.15600248 | MSE0=196.7079 | reference-only true8=0.1395s
+
+------------------------------------------------------------------------------------------------------------------------
+Exact-CBS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  warmup 1/1 done
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=1/3 | core=1.1628s | val=0.1388s | drop=+69.912% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=2/3 | core=1.1607s | val=0.1388s | drop=+69.912% | src-eq=64 | peakΔ=384.0MB
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+  rep=3/3 | core=1.1629s | val=0.1387s | drop=+69.912% | src-eq=64 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+Full-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.4323s | val=0.1426s | drop=+10.521% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.4321s | val=0.1424s | drop=+10.520% | src-eq=0 | peakΔ=253.6MB
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.4255s | val=0.1424s | drop=+10.521% | src-eq=0 | peakΔ=253.6MB
+
+------------------------------------------------------------------------------------------------------------------------
+RA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.5734s | val=0.1420s | drop=-7.999% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.5676s | val=0.1421s | drop=-7.999% | src-eq=8 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.5760s | val=0.1421s | drop=-7.999% | src-eq=8 | peakΔ=384.0MB
+
+------------------------------------------------------------------------------------------------------------------------
+GRA-ARSS | warmup=1 | repeats=3
+------------------------------------------------------------------------------------------------------------------------
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  warmup 1/1 done
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=1/3 | core=2.9981s | val=0.0000s | drop=+0.880% | src-eq=32 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=2/3 | core=2.9988s | val=0.0000s | drop=+0.880% | src-eq=32 | peakΔ=384.0MB
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+  rep=3/3 | core=2.9815s | val=0.0000s | drop=+0.880% | src-eq=32 | peakΔ=384.0MB
+
+====================================================================================================================================
+C6.4C FINAL EFFICIENCY SUMMARY
+====================================================================================================================================
+
+Exact-CBS
+  descent        = 10/10
+  mean drop      = +66.435%
+  core time mean = 1.1576s
+  core time med  = 1.1581s
+  speedup/exact  = 1.000x
+  source-equiv   = 64.00
+  peak delta mem = 384.0 MB
+
+Full-ARSS
+  descent        = 10/10
+  mean drop      = +25.492%
+  core time mean = 2.4338s
+  core time med  = 2.4321s
+  speedup/exact  = 0.476x
+  source-equiv   = 0.00
+  peak delta mem = 253.6 MB
+
+RA-ARSS
+  descent        = 9/10
+  mean drop      = +42.320%
+  core time mean = 2.5735s
+  core time med  = 2.5742s
+  speedup/exact  = 0.450x
+  source-equiv   = 8.00
+  peak delta mem = 384.0 MB
+
+GRA-ARSS
+  descent        = 10/10
+  mean drop      = +43.208%
+  core time mean = 2.7425s
+  core time med  = 2.7143s
+  speedup/exact  = 0.422x
+  source-equiv   = 17.60
+  peak delta mem = 384.0 MB
+
+C6.4C GATE = EFFICIENCY_CHARACTERIZED_PASS
+saved summary = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4c_gra_arss_efficiency_heldout10/summary.json

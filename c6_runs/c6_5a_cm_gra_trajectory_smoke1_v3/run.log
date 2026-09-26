@@ -1,0 +1,56 @@
+========================================================================================================================================
+C6.5A CONDITIONAL-CM + PHYSICS TRAJECTORY INTEGRATION
+========================================================================================================================================
+split              = dev_smoke_test1
+samples            = 1..1
+C4 seed            = 20260908
+C4 schedule        = [0, 17, 39]
+C4 NFE             = 2
+MgNO config        = C24/V6
+GRA step           = 1.5
+GRA backtrack      = 0.5
+GRA max backtracks = 5
+
+########################################################################################################################################
+TEST 1 (array_idx=0)
+########################################################################################################################################
+identity audit     | GT rr=0.000e+00 | HINT rr=0.000e+00 | source=test_1.mat
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+C4 audit           | rrmse=4.848e-11 | max=4.657e-10
+bridge audit       | align_corners=False | rrmse=0.000e+00 | mae=0.000000 m/s
+Warning: Distributed not initialised, using single rank
+C4-only    | MSE=69.133 | PSNR=27.838 | SSIM=0.82164 | J=3.109553e-02 | phys_drop=+0.00% | step=0.0000
+Warning: Distributed not initialised, using single rank
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+Exact   | MSE=69.415 | PSNR=27.821 | SSIM=0.82191 | J=3.452971e-02 | phys_drop=+76.67% | step=1.5000
+Warning: Distributed not initialised, using single rank
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+GRA     | MSE=69.475 | PSNR=27.817 | SSIM=0.82191 | J=3.479637e-02 | phys_drop=+72.03% | step=1.5000
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_5a_conditional_cm_gra_trajectory_v3_coordfix.py", line 2708, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_5a_conditional_cm_gra_trajectory_v3_coordfix.py", line 2527, in main
+    write_csv(
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_5a_conditional_cm_gra_trajectory_v3_coordfix.py", line 219, in write_csv
+    w.writerows(rows)
+  File "/home/featurize/work/usct/lib/python3.10/csv.py", line 157, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+  File "/home/featurize/work/usct/lib/python3.10/csv.py", line 149, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'anchor_true8_seconds'

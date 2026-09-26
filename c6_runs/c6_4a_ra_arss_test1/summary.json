@@ -1,0 +1,137 @@
+{
+  "experiment": "C6.4A Residual-Anchored ARSS",
+  "frozen_step_mps": 1.5,
+  "samples": [
+    1,
+    1
+  ],
+  "ra_method_definition": "8-source true-CBS residual + 64-source frozen ARSS-MgNO wavefield/basis",
+  "oracle_definition": "64-source true-CBS wavefields + same calibrated adjoint formula",
+  "evaluation_note": "true-CBS J evaluations and 64-source Exact oracle are validation-only costs; RA-ARSS method physics cost uses 8 true forward sources.",
+  "methods": {
+    "Exact-CBS": {
+      "num_samples": 1,
+      "descent_count": 1,
+      "relative_drop": {
+        "mean": 0.6671568848837423,
+        "std": 0.0,
+        "min": 0.6671568848837423,
+        "max": 0.6671568848837423
+      },
+      "cos_raw": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "cos_crop32": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "rr1": {
+        "mean": 0.060924138873815536,
+        "std": 0.0,
+        "min": 0.060924138873815536,
+        "max": 0.060924138873815536
+      },
+      "mse1": {
+        "mean": 60.28390681067003,
+        "std": 0.0,
+        "min": 60.28390681067003,
+        "max": 60.28390681067003
+      },
+      "mse_gain": {
+        "mean": 0.03609413614316978,
+        "std": 0.0,
+        "min": 0.03609413614316978,
+        "max": 0.03609413614316978
+      },
+      "true_forward_sources_method": 64
+    },
+    "Full-ARSS": {
+      "num_samples": 1,
+      "descent_count": 0,
+      "relative_drop": {
+        "mean": -0.2281027803615712,
+        "std": 0.0,
+        "min": -0.2281027803615712,
+        "max": -0.2281027803615712
+      },
+      "cos_raw": {
+        "mean": 0.1227470227568072,
+        "std": 0.0,
+        "min": 0.1227470227568072,
+        "max": 0.1227470227568072
+      },
+      "cos_crop32": {
+        "mean": 0.12905042476947376,
+        "std": 0.0,
+        "min": 0.12905042476947376,
+        "max": 0.12905042476947376
+      },
+      "rr1": {
+        "mean": 0.11702723056077957,
+        "std": 0.0,
+        "min": 0.11702723056077957,
+        "max": 0.11702723056077957
+      },
+      "mse1": {
+        "mean": 63.19518898704594,
+        "std": 0.0,
+        "min": 63.19518898704594,
+        "max": 63.19518898704594
+      },
+      "mse_gain": {
+        "mean": -0.01045563326649832,
+        "std": 0.0,
+        "min": -0.01045563326649832,
+        "max": -0.01045563326649832
+      },
+      "true_forward_sources_method": 0
+    },
+    "RA-ARSS": {
+      "num_samples": 1,
+      "descent_count": 1,
+      "relative_drop": {
+        "mean": 0.6549652589867387,
+        "std": 0.0,
+        "min": 0.6549652589867387,
+        "max": 0.6549652589867387
+      },
+      "cos_raw": {
+        "mean": 0.7418384923114704,
+        "std": 0.0,
+        "min": 0.7418384923114704,
+        "max": 0.7418384923114704
+      },
+      "cos_crop32": {
+        "mean": 0.7823998237868847,
+        "std": 0.0,
+        "min": 0.7823998237868847,
+        "max": 0.7823998237868847
+      },
+      "rr1": {
+        "mean": 0.0620298869907856,
+        "std": 0.0,
+        "min": 0.0620298869907856,
+        "max": 0.0620298869907856
+      },
+      "mse1": {
+        "mean": 59.906396205799474,
+        "std": 0.0,
+        "min": 59.906396205799474,
+        "max": 59.906396205799474
+      },
+      "mse_gain": {
+        "mean": 0.042130319014424294,
+        "std": 0.0,
+        "min": 0.042130319014424294,
+        "max": 0.042130319014424294
+      },
+      "true_forward_sources_method": 8
+    }
+  },
+  "ra_gate": "FAIL"
+}

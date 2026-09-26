@@ -1,0 +1,338 @@
+{
+  "experiment": "C6.5A Two-step Conditional CM + Physics Trajectory Integration",
+  "split": "dev_smoke_test1",
+  "sample_ids": [
+    1,
+    1
+  ],
+  "frozen_c4": {
+    "seed": 20260908,
+    "sampler": "multistep",
+    "steps": 40,
+    "ts": [
+      0,
+      17,
+      39
+    ],
+    "sigma_min": 0.002,
+    "sigma_max": 80.0,
+    "rho": 7.0,
+    "nfe": 2
+  },
+  "frozen_gra": {
+    "initial_step_mps": 1.5,
+    "backtrack_factor": 0.5,
+    "max_backtracks": 5,
+    "acceptance_rule": "J_trial < J_current",
+    "gt_used_for_acceptance": false,
+    "cosine_used_for_acceptance": false
+  },
+  "bridge_alignment": {
+    "align_corners": false,
+    "selection_rule": "choose the PyTorch bilinear convention that reproduces the pre-existing frozen C6.2 bridge candidate_480"
+  },
+  "methods": {
+    "Hint": {
+      "num_samples": 1,
+      "mse": {
+        "mean": 53.71175579228952,
+        "std": 0.0,
+        "median": 53.71175579228952,
+        "min": 53.71175579228952,
+        "max": 53.71175579228952
+      },
+      "mae": {
+        "mean": 2.5710866171866655,
+        "std": 0.0,
+        "median": 2.5710866171866655,
+        "min": 2.5710866171866655,
+        "max": 2.5710866171866655
+      },
+      "psnr": {
+        "mean": 28.934383727812644,
+        "std": 0.0,
+        "median": 28.934383727812644,
+        "min": 28.934383727812644,
+        "max": 28.934383727812644
+      },
+      "ssim": {
+        "mean": 0.8582088333041898,
+        "std": 0.0,
+        "median": 0.8582088333041898,
+        "min": 0.8582088333041898,
+        "max": 0.8582088333041898
+      },
+      "measurement_J": {
+        "mean": 0.024490401841093995,
+        "std": 0.0,
+        "median": 0.024490401841093995,
+        "min": 0.024490401841093995,
+        "max": 0.024490401841093995
+      },
+      "measurement_rr": {
+        "mean": 0.0937170460820198,
+        "std": 0.0,
+        "median": 0.0937170460820198,
+        "min": 0.0937170460820198,
+        "max": 0.0937170460820198
+      },
+      "method_core_seconds": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "true_source_equiv_core": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mse_wins_vs_c4": null,
+      "ssim_wins_vs_c4": null
+    },
+    "C4-only": {
+      "num_samples": 1,
+      "mse": {
+        "mean": 69.13338413835663,
+        "std": 0.0,
+        "median": 69.13338413835663,
+        "min": 69.13338413835663,
+        "max": 69.13338413835663
+      },
+      "mae": {
+        "mean": 3.788263488560915,
+        "std": 0.0,
+        "median": 3.788263488560915,
+        "min": 3.788263488560915,
+        "max": 3.788263488560915
+      },
+      "psnr": {
+        "mean": 27.838199056219317,
+        "std": 0.0,
+        "median": 27.838199056219317,
+        "min": 27.838199056219317,
+        "max": 27.838199056219317
+      },
+      "ssim": {
+        "mean": 0.8216385695124957,
+        "std": 0.0,
+        "median": 0.8216385695124957,
+        "min": 0.8216385695124957,
+        "max": 0.8216385695124957
+      },
+      "measurement_J": {
+        "mean": 0.03109552804529775,
+        "std": 0.0,
+        "median": 0.03109552804529775,
+        "min": 0.03109552804529775,
+        "max": 0.03109552804529775
+      },
+      "measurement_rr": {
+        "mean": 0.10560137778520584,
+        "std": 0.0,
+        "median": 0.10560137778520584,
+        "min": 0.10560137778520584,
+        "max": 0.10560137778520584
+      },
+      "method_core_seconds": {
+        "mean": 0.10175008199985314,
+        "std": 0.0,
+        "median": 0.10175008199985314,
+        "min": 0.10175008199985314,
+        "max": 0.10175008199985314
+      },
+      "true_source_equiv_core": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mse_wins_vs_c4": 0,
+      "ssim_wins_vs_c4": 0
+    },
+    "C4+Exact": {
+      "num_samples": 1,
+      "mse": {
+        "mean": 69.41547925111377,
+        "std": 0.0,
+        "median": 69.41547925111377,
+        "min": 69.41547925111377,
+        "max": 69.41547925111377
+      },
+      "mae": {
+        "mean": 3.7746197935193777,
+        "std": 0.0,
+        "median": 3.7746197935193777,
+        "min": 3.7746197935193777,
+        "max": 3.7746197935193777
+      },
+      "psnr": {
+        "mean": 27.820513956949576,
+        "std": 0.0,
+        "median": 27.820513956949576,
+        "min": 27.820513956949576,
+        "max": 27.820513956949576
+      },
+      "ssim": {
+        "mean": 0.8219068226854198,
+        "std": 0.0,
+        "median": 0.8219068226854198,
+        "min": 0.8219068226854198,
+        "max": 0.8219068226854198
+      },
+      "measurement_J": {
+        "mean": 0.03452971460126808,
+        "std": 0.0,
+        "median": 0.03452971460126808,
+        "min": 0.03452971460126808,
+        "max": 0.03452971460126808
+      },
+      "measurement_rr": {
+        "mean": 0.11128000169992447,
+        "std": 0.0,
+        "median": 0.11128000169992447,
+        "min": 0.11128000169992447,
+        "max": 0.11128000169992447
+      },
+      "method_core_seconds": {
+        "mean": 1.4331785059985123,
+        "std": 0.0,
+        "median": 1.4331785059985123,
+        "min": 1.4331785059985123,
+        "max": 1.4331785059985123
+      },
+      "true_source_equiv_core": {
+        "mean": 64.0,
+        "std": 0.0,
+        "median": 64.0,
+        "min": 64.0,
+        "max": 64.0
+      },
+      "mse_wins_vs_c4": 0,
+      "ssim_wins_vs_c4": 1
+    },
+    "C4+GRA": {
+      "num_samples": 1,
+      "mse": {
+        "mean": 69.47639033288237,
+        "std": 0.0,
+        "median": 69.47639033288237,
+        "min": 69.47639033288237,
+        "max": 69.47639033288237
+      },
+      "mae": {
+        "mean": 3.773490471765399,
+        "std": 0.0,
+        "median": 3.773490471765399,
+        "min": 3.773490471765399,
+        "max": 3.773490471765399
+      },
+      "psnr": {
+        "mean": 27.81670475653,
+        "std": 0.0,
+        "median": 27.81670475653,
+        "min": 27.81670475653,
+        "max": 27.81670475653
+      },
+      "ssim": {
+        "mean": 0.821903198734892,
+        "std": 0.0,
+        "median": 0.821903198734892,
+        "min": 0.821903198734892,
+        "max": 0.821903198734892
+      },
+      "measurement_J": {
+        "mean": 0.034796407855230416,
+        "std": 0.0,
+        "median": 0.034796407855230416,
+        "min": 0.034796407855230416,
+        "max": 0.034796407855230416
+      },
+      "measurement_rr": {
+        "mean": 0.11170890927314758,
+        "std": 0.0,
+        "median": 0.11170890927314758,
+        "min": 0.11170890927314758,
+        "max": 0.11170890927314758
+      },
+      "method_core_seconds": {
+        "mean": 2.9797708629994304,
+        "std": 0.0,
+        "median": 2.9797708629994304,
+        "min": 2.9797708629994304,
+        "max": 2.9797708629994304
+      },
+      "true_source_equiv_core": {
+        "mean": 16.0,
+        "std": 0.0,
+        "median": 16.0,
+        "min": 16.0,
+        "max": 16.0
+      },
+      "mse_wins_vs_c4": 0,
+      "ssim_wins_vs_c4": 1
+    }
+  },
+  "physics_insert": {
+    "C4+Exact": {
+      "accepted_count": 1,
+      "insert_relative_drop": {
+        "mean": 0.7667287885339233,
+        "std": 0.0,
+        "median": 0.7667287885339233,
+        "min": 0.7667287885339233,
+        "max": 0.7667287885339233
+      },
+      "accepted_step_mps": {
+        "mean": 1.5,
+        "std": 0.0,
+        "median": 1.5,
+        "min": 1.5,
+        "max": 1.5
+      },
+      "true_source_equiv_core": {
+        "mean": 64.0,
+        "std": 0.0,
+        "median": 64.0,
+        "min": 64.0,
+        "max": 64.0
+      }
+    },
+    "C4+GRA": {
+      "accepted_count": 1,
+      "insert_relative_drop": {
+        "mean": 0.7203159630971777,
+        "std": 0.0,
+        "median": 0.7203159630971777,
+        "min": 0.7203159630971777,
+        "max": 0.7203159630971777
+      },
+      "accepted_step_mps": {
+        "mean": 1.5,
+        "std": 0.0,
+        "median": 1.5,
+        "min": 1.5,
+        "max": 1.5
+      },
+      "true_source_equiv_core": {
+        "mean": 16.0,
+        "std": 0.0,
+        "median": 16.0,
+        "min": 16.0,
+        "max": 16.0
+      }
+    }
+  },
+  "gate": "INTEGRATION_FAIL",
+  "files": {
+    "per_sample_metrics": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_smoke1_v4/per_sample_metrics.csv",
+    "method_summary": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_smoke1_v4/method_summary.csv",
+    "physics_insert_metrics": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_smoke1_v4/physics_insert_metrics.csv",
+    "gra_backtracking_attempts": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_smoke1_v4/gra_backtracking_attempts.csv",
+    "trajectory_audit": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_smoke1_v4/trajectory_audit.csv"
+  }
+}

@@ -1,0 +1,16 @@
+==============================================================================================================
+C6.4A-0 TRUE8 RESIDUAL EQUIVALENCE — TEST1
+==============================================================================================================
+
+src_indices == rec_indices[source_positions] = True
+source_positions = [0, 8, 16, 24, 32, 40, 48, 56]
+
+Solving true CBS for only 8 measurement sources...
+[CBS] sources 00:08 / 8
+
+true8 vs true64 TX field RRMSE = 0.0000000000e+00
+true8 vs true64 TX maxabs      = 0.0000000000e+00
+measurement RRMSE              = 0.0000000000e+00
+residual RRMSE                 = 0.0000000000e+00
+
+[STRONG PASS] 8-source CBS reproduces the exact measurement residual used by the 64-source reference.

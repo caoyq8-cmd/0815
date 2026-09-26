@@ -1,0 +1,371 @@
+=============================================================================================================================
+C6.4A RESIDUAL-ANCHORED ARSS — REAL C4 VAL
+=============================================================================================================================
+bridge       = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2b_c4_to_cbs_bridge_heldout11_20
+MgNO ckpt    = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/mgnoII_strat4p4_fieldloss_e50_run2_frozen/best.pt
+MgNO config  = C24/V6
+frozen step  = 1.5 m/s
+samples      = 11..20
+
+#############################################################################################################################
+TEST 11
+#############################################################################################################################
+J0=8.5898518230e-02 RR0=0.17546585 MSE0=233.5037
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.175063
+residual RRMSE    = 0.997403
+RA cosine raw     = +0.453814
+Full cosine raw   = +0.264056
+
+Exact-CBS    | cos=+1.00000 | drop=+61.625% | RR=0.17547->0.10870 | MSE=233.50->229.20 | descent=True
+
+Full-ARSS    | cos=+0.26406 | drop=+14.908% | RR=0.17547->0.16186 | MSE=233.50->232.02 | descent=True
+
+RA-ARSS      | cos=+0.45381 | drop=+33.611% | RR=0.17547->0.14297 | MSE=233.50->230.57 | descent=True
+
+#############################################################################################################################
+TEST 12
+#############################################################################################################################
+J0=7.4325556035e-02 RR0=0.16339174 MSE0=233.1063
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.138560
+residual RRMSE    = 0.848294
+RA cosine raw     = +0.610590
+Full cosine raw   = +0.403566
+
+Exact-CBS    | cos=+1.00000 | drop=+64.225% | RR=0.16339->0.09773 | MSE=233.11->229.30 | descent=True
+
+Full-ARSS    | cos=+0.40357 | drop=+24.619% | RR=0.16339->0.14186 | MSE=233.11->230.49 | descent=True
+
+RA-ARSS      | cos=+0.61059 | drop=+47.665% | RR=0.16339->0.11820 | MSE=233.11->226.99 | descent=True
+
+#############################################################################################################################
+TEST 13
+#############################################################################################################################
+J0=4.7794043577e-02 RR0=0.13097206 MSE0=184.7275
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.135913
+residual RRMSE    = 1.037643
+RA cosine raw     = +0.559435
+Full cosine raw   = +0.321960
+
+Exact-CBS    | cos=+1.00000 | drop=+67.229% | RR=0.13097->0.07498 | MSE=184.73->181.59 | descent=True
+
+Full-ARSS    | cos=+0.32196 | drop=+22.994% | RR=0.13097->0.11493 | MSE=184.73->183.26 | descent=True
+
+RA-ARSS      | cos=+0.55943 | drop=+49.125% | RR=0.13097->0.09342 | MSE=184.73->181.41 | descent=True
+
+#############################################################################################################################
+TEST 14
+#############################################################################################################################
+J0=6.7665909050e-02 RR0=0.15582843 MSE0=248.8327
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.160890
+residual RRMSE    = 1.032592
+RA cosine raw     = +0.480251
+Full cosine raw   = +0.276165
+
+Exact-CBS    | cos=+1.00000 | drop=+63.946% | RR=0.15583->0.09357 | MSE=248.83->244.25 | descent=True
+
+Full-ARSS    | cos=+0.27617 | drop=+17.005% | RR=0.15583->0.14196 | MSE=248.83->246.51 | descent=True
+
+RA-ARSS      | cos=+0.48025 | drop=+37.328% | RR=0.15583->0.12336 | MSE=248.83->245.70 | descent=True
+
+#############################################################################################################################
+TEST 15
+#############################################################################################################################
+J0=6.7156836584e-02 RR0=0.15519573 MSE0=110.4561
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.139134
+residual RRMSE    = 0.896428
+RA cosine raw     = +0.740923
+Full cosine raw   = +0.542271
+
+Exact-CBS    | cos=+1.00000 | drop=+69.796% | RR=0.15520->0.08529 | MSE=110.46->107.17 | descent=True
+
+Full-ARSS    | cos=+0.54227 | drop=+45.834% | RR=0.15520->0.11422 | MSE=110.46->108.09 | descent=True
+
+RA-ARSS      | cos=+0.74092 | drop=+65.136% | RR=0.15520->0.09164 | MSE=110.46->106.26 | descent=True
+
+#############################################################################################################################
+TEST 16
+#############################################################################################################################
+J0=3.1588770067e-02 RR0=0.10645470 MSE0=71.5518
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.128298
+residual RRMSE    = 1.204693
+RA cosine raw     = +0.797141
+Full cosine raw   = +0.575438
+
+Exact-CBS    | cos=+1.00000 | drop=+62.476% | RR=0.10645->0.06521 | MSE=71.55->69.30 | descent=True
+
+Full-ARSS    | cos=+0.57544 | drop=+39.325% | RR=0.10645->0.08292 | MSE=71.55->70.38 | descent=True
+
+RA-ARSS      | cos=+0.79714 | drop=+64.876% | RR=0.10645->0.06309 | MSE=71.55->68.92 | descent=True
+
+#############################################################################################################################
+TEST 17
+#############################################################################################################################
+J0=2.9877065714e-02 RR0=0.10356922 MSE0=72.1228
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.137002
+residual RRMSE    = 1.322928
+RA cosine raw     = +0.678537
+Full cosine raw   = +0.570419
+
+Exact-CBS    | cos=+1.00000 | drop=+74.387% | RR=0.10357->0.05242 | MSE=72.12->69.45 | descent=True
+
+Full-ARSS    | cos=+0.57042 | drop=+28.441% | RR=0.10357->0.08761 | MSE=72.12->71.64 | descent=True
+
+RA-ARSS      | cos=+0.67854 | drop=+64.787% | RR=0.10357->0.06146 | MSE=72.12->70.67 | descent=True
+
+#############################################################################################################################
+TEST 18
+#############################################################################################################################
+J0=4.4461178199e-02 RR0=0.12632969 MSE0=75.3636
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.137581
+residual RRMSE    = 1.089360
+RA cosine raw     = +0.749784
+Full cosine raw   = +0.505662
+
+Exact-CBS    | cos=+1.00000 | drop=+66.121% | RR=0.12633->0.07353 | MSE=75.36->72.64 | descent=True
+
+Full-ARSS    | cos=+0.50566 | drop=+39.602% | RR=0.12633->0.09818 | MSE=75.36->73.99 | descent=True
+
+RA-ARSS      | cos=+0.74978 | drop=+61.762% | RR=0.12633->0.07812 | MSE=75.36->72.77 | descent=True
+
+#############################################################################################################################
+TEST 19
+#############################################################################################################################
+J0=9.0157791969e-02 RR0=0.17991221 MSE0=251.6145
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.195141
+residual RRMSE    = 1.084711
+RA cosine raw     = +0.147938
+Full cosine raw   = +0.197869
+
+Exact-CBS    | cos=+1.00000 | drop=+64.634% | RR=0.17991->0.10699 | MSE=251.61->247.76 | descent=True
+
+Full-ARSS    | cos=+0.19787 | drop=+11.672% | RR=0.17991->0.16909 | MSE=251.61->251.79 | descent=True
+
+RA-ARSS      | cos=+0.14794 | drop=+6.905% | RR=0.17991->0.17359 | MSE=251.61->252.44 | descent=True
+
+#############################################################################################################################
+TEST 20
+#############################################################################################################################
+J0=6.7783175121e-02 RR0=0.15600248 MSE0=196.7079
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.196855
+residual RRMSE    = 1.262391
+RA cosine raw     = +0.068130
+Full cosine raw   = +0.168335
+
+Exact-CBS    | cos=+1.00000 | drop=+69.912% | RR=0.15600->0.08557 | MSE=196.71->192.97 | descent=True
+
+Full-ARSS    | cos=+0.16834 | drop=+10.520% | RR=0.15600->0.14757 | MSE=196.71->197.59 | descent=True
+
+RA-ARSS      | cos=+0.06813 | drop=-7.999% | RR=0.15600->0.16212 | MSE=196.71->198.73 | descent=False
+
+=============================================================================================================================
+C6.4A VAL SUMMARY
+=============================================================================================================================
+
+Exact-CBS
+  descent      = 10/10
+  mean drop    = +66.435%
+  worst drop   = +61.625%
+  mean cosine  = +1.00000
+  mean MSEgain = +2.388%
+  true sources = 64
+
+Full-ARSS
+  descent      = 10/10
+  mean drop    = +25.492%
+  worst drop   = +10.520%
+  mean cosine  = +0.38257
+  mean MSEgain = +0.923%
+  true sources = 0
+
+RA-ARSS
+  descent      = 9/10
+  mean drop    = +42.320%
+  worst drop   = -7.999%
+  mean cosine  = +0.52865
+  mean MSEgain = +1.851%
+  true sources = 8
+
+RA-ARSS gate = STRONG_PASS
+
+saved CSV  = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4b_ra_arss_heldout11_20/all_steps.csv
+saved JSON = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4b_ra_arss_heldout11_20/summary.json

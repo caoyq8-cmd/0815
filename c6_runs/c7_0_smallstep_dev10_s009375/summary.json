@@ -1,0 +1,282 @@
+{
+  "experiment": "C6.6 Terminal Guarded Physics Correction",
+  "split": "dev_test1_10",
+  "samples": [
+    1,
+    10
+  ],
+  "protocol": {
+    "c4_seed": 20260908,
+    "c4_ts": [
+      0,
+      17,
+      39
+    ],
+    "c4_nfe": 2,
+    "physics_location": "after final C4 clean reconstruction",
+    "post_physics_consistency_mapping": false,
+    "gra_initial_step_mps": 0.09375,
+    "gra_backtrack_factor": 0.5,
+    "gra_max_backtracks": 5,
+    "acceptance_rule": "accept iff true 8-source measurement J_trial < J_current; no GT/MSE/SSIM/cosine guard",
+    "mgno_ckpt": "/home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/mgnoII_strat4p4_fieldloss_e50_run2_frozen/best.pt",
+    "background64_npz": "/home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_4a_mgnoI_source64_test1_rho08.npz"
+  },
+  "methods": {
+    "Hint": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 115.94915613363571,
+        "std": 74.54094874063614,
+        "median": 81.85686842079042,
+        "min": 28.386561121569002,
+        "max": 279.04230530717655
+      },
+      "mae": {
+        "mean": 2.87117903996259,
+        "std": 1.2119879578650277,
+        "median": 2.4415869442746043,
+        "min": 1.5632813144475222,
+        "max": 5.595682827755809
+      },
+      "psnr": {
+        "mean": 26.480840024410316,
+        "std": 2.823440548047553,
+        "median": 27.10519156484318,
+        "min": 21.77837670921642,
+        "max": 31.703949388278755
+      },
+      "ssim": {
+        "mean": 0.8863145039463914,
+        "std": 0.023934852582449043,
+        "median": 0.8941855392231193,
+        "min": 0.8398024717132967,
+        "max": 0.916029415571648
+      },
+      "measurement_J": {
+        "mean": 0.04838989912525162,
+        "std": 0.01899828336565959,
+        "median": 0.05428622739850203,
+        "min": 0.009936615907848955,
+        "max": 0.07948433643319472
+      },
+      "method_core_seconds": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "true_source_equiv_core": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "C4-only": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 124.98712300666105,
+        "std": 74.34102696038798,
+        "median": 98.0068777688748,
+        "min": 37.81588532389969,
+        "max": 298.95832988844836
+      },
+      "mae": {
+        "mean": 4.532835402153433,
+        "std": 1.5787838454374432,
+        "median": 4.3824152229353786,
+        "min": 2.522550016641617,
+        "max": 8.234526494517922
+      },
+      "psnr": {
+        "mean": 25.982553005393118,
+        "std": 2.496454799348499,
+        "median": 26.338552092357006,
+        "min": 21.478970634214427,
+        "max": 30.45833449806102
+      },
+      "ssim": {
+        "mean": 0.8566129620010081,
+        "std": 0.028334224818582013,
+        "median": 0.8634236562019163,
+        "min": 0.7960156784763245,
+        "max": 0.889188686841791
+      },
+      "measurement_J": {
+        "mean": 0.044905492786886665,
+        "std": 0.02407849491431334,
+        "median": 0.03879731988585758,
+        "min": 0.0127405695231112,
+        "max": 0.09038691717401466
+      },
+      "method_core_seconds": {
+        "mean": 0.10286835040014922,
+        "std": 0.00029825266563934555,
+        "median": 0.10280350200036992,
+        "min": 0.10248824000063905,
+        "max": 0.10356392300036532
+      },
+      "true_source_equiv_core": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "C4+TExact": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 124.60652062217234,
+        "std": 74.24450066073346,
+        "median": 97.83517047710404,
+        "min": 37.731908850077616,
+        "max": 298.2379637047509
+      },
+      "mae": {
+        "mean": 4.503260422311723,
+        "std": 1.5829368834315982,
+        "median": 4.3475354658439755,
+        "min": 2.4879371784627438,
+        "max": 8.217613378539681
+      },
+      "psnr": {
+        "mean": 25.998512306260373,
+        "std": 2.5009211499759645,
+        "median": 26.346223726846283,
+        "min": 21.489447966830923,
+        "max": 30.467989454796736
+      },
+      "ssim": {
+        "mean": 0.858266548450537,
+        "std": 0.028514094064959146,
+        "median": 0.8647667500904499,
+        "min": 0.7969275195509997,
+        "max": 0.8902560966308004
+      },
+      "measurement_J": {
+        "mean": 0.04124486189784691,
+        "std": 0.022831197896938632,
+        "median": 0.03554989744610789,
+        "min": 0.010879940635929355,
+        "max": 0.08415310161646317
+      },
+      "method_core_seconds": {
+        "mean": 1.4257522692001658,
+        "std": 0.03322237024298809,
+        "median": 1.4126376979997985,
+        "min": 1.4069192029992337,
+        "max": 1.516802161000669
+      },
+      "true_source_equiv_core": {
+        "mean": 64.0,
+        "std": 0.0,
+        "median": 64.0,
+        "min": 64.0,
+        "max": 64.0
+      },
+      "accepted_count": 10,
+      "strict_J_win_vs_C4_count": 10,
+      "nonincrease_J_vs_C4_count": 10,
+      "MSE_win_vs_C4_count": 10,
+      "SSIM_win_vs_C4_count": 10,
+      "relative_J_drop_vs_C4": {
+        "mean": 0.09345371770309743,
+        "std": 0.025484247087630047,
+        "median": 0.0868928724155377,
+        "min": 0.06259162797895428,
+        "max": 0.14603969499218164
+      },
+      "MSE_gain_vs_C4": {
+        "mean": 0.0036613829101229305,
+        "std": 0.0036265767392053834,
+        "median": 0.0023151269356308643,
+        "min": 0.0011314470695462534,
+        "max": 0.014179328879365469
+      }
+    },
+    "C4+TGRA": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 124.77842987964819,
+        "std": 74.2446766119783,
+        "median": 98.24444296621152,
+        "min": 37.729571837003505,
+        "max": 298.38594643457463
+      },
+      "mae": {
+        "mean": 4.509593602642417,
+        "std": 1.5825124544429956,
+        "median": 4.363802859559655,
+        "min": 2.4871391858905554,
+        "max": 8.215364810079336
+      },
+      "psnr": {
+        "mean": 25.991595458899695,
+        "std": 2.500528651158954,
+        "median": 26.328098862291597,
+        "min": 21.48729357498691,
+        "max": 30.46825845346289
+      },
+      "ssim": {
+        "mean": 0.8581856469726414,
+        "std": 0.028478264246522042,
+        "median": 0.8646341080814868,
+        "min": 0.7968687293082652,
+        "max": 0.8902640392217107
+      },
+      "measurement_J": {
+        "mean": 0.043739200913991465,
+        "std": 0.024074804696973845,
+        "median": 0.03825665576542442,
+        "min": 0.011198077666318113,
+        "max": 0.09026674711545901
+      },
+      "method_core_seconds": {
+        "mean": 2.9293742567001573,
+        "std": 0.04705396755448282,
+        "median": 2.908913038999799,
+        "min": 2.888519171000553,
+        "max": 3.0351183909997417
+      },
+      "true_source_equiv_core": {
+        "mean": 16.0,
+        "std": 0.0,
+        "median": 16.0,
+        "min": 16.0,
+        "max": 16.0
+      },
+      "accepted_count": 10,
+      "strict_J_win_vs_C4_count": 10,
+      "nonincrease_J_vs_C4_count": 10,
+      "MSE_win_vs_C4_count": 7,
+      "SSIM_win_vs_C4_count": 10,
+      "relative_J_drop_vs_C4": {
+        "mean": 0.036591011046359256,
+        "std": 0.034960605770778266,
+        "median": 0.02720656097063131,
+        "min": 0.0013295072153450644,
+        "max": 0.12106930180750798
+      },
+      "MSE_gain_vs_C4": {
+        "mean": 0.002069732562168195,
+        "std": 0.0044996993361519156,
+        "median": 0.0015878126494778798,
+        "min": -0.0025742954807415545,
+        "max": 0.014516294912115412
+      }
+    }
+  },
+  "terminal_gate": "STRONG_TERMINAL_PASS",
+  "interpretation": "Terminal GRA is evaluated as a final guarded physics projector. No generative mapping is allowed after the accepted physics update.",
+  "files": {
+    "per_sample_metrics": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c7_0_smallstep_dev10_s009375/per_sample_metrics.csv",
+    "terminal_physics_metrics": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c7_0_smallstep_dev10_s009375/terminal_physics_metrics.csv",
+    "gra_backtracking_attempts": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c7_0_smallstep_dev10_s009375/gra_backtracking_attempts.csv",
+    "trajectory_audit": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c7_0_smallstep_dev10_s009375/trajectory_audit.csv",
+    "method_summary": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c7_0_smallstep_dev10_s009375/method_summary.csv"
+  }
+}

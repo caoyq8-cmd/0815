@@ -1,0 +1,290 @@
+==============================================================================================================================================
+C6.6 TERMINAL GUARDED PHYSICS CORRECTION
+==============================================================================================================================================
+split              = secondary_transfer_test11_20_reused
+samples            = 11..20
+C4 seed            = 20260908
+C4 schedule        = [0, 17, 39]
+C4 NFE             = 2
+MgNO config        = C24/V6
+GRA step           = 1.5
+GRA backtrack      = 0.5
+GRA max backtracks = 5
+post-physics CM    = NONE
+
+##############################################################################################################################################
+TEST 11 (array_idx=10)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=1.48e-10 | bridge=1.10e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=8.589739e-02->3.296274e-02 | drop=+61.625% | MSE=245.782->241.330 | SSIM=0.78278->0.76135 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=8.589739e-02->5.702524e-02 | drop=+33.612% | MSE=245.782->242.825 | SSIM=0.78278->0.76227 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 12 (array_idx=11)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=1.81e-10 | bridge=1.13e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=7.432581e-02->2.658981e-02 | drop=+64.225% | MSE=246.052->241.250 | SSIM=0.81081->0.78576 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=7.432581e-02->3.889592e-02 | drop=+47.668% | MSE=246.052->239.080 | SSIM=0.81081->0.78713 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 13 (array_idx=12)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=1.86e-10 | bridge=1.09e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=4.779484e-02->1.566355e-02 | drop=+67.228% | MSE=196.365->192.537 | SSIM=0.83211->0.80686 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=4.779484e-02->2.431446e-02 | drop=+49.127% | MSE=196.365->192.458 | SSIM=0.83211->0.80736 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 14 (array_idx=13)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=1.37e-10 | bridge=1.08e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=6.766643e-02->2.439678e-02 | drop=+63.946% | MSE=261.901->256.636 | SSIM=0.77323->0.75219 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=6.766643e-02->4.240643e-02 | drop=+37.330% | MSE=261.901->258.180 | SSIM=0.77323->0.75259 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 15 (array_idx=14)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=7.95e-11 | bridge=1.08e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=6.715648e-02->2.028437e-02 | drop=+69.795% | MSE=117.055->111.824 | SSIM=0.82332->0.80500 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=6.715648e-02->2.341384e-02 | drop=+65.135% | MSE=117.055->110.946 | SSIM=0.82332->0.80649 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 16 (array_idx=15)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=6.44e-11 | bridge=1.11e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=3.158819e-02->1.185354e-02 | drop=+62.475% | MSE=76.147->73.036 | SSIM=0.85818->0.83962 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=3.158819e-02->1.109549e-02 | drop=+64.875% | MSE=76.147->72.682 | SSIM=0.85818->0.83859 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 17 (array_idx=16)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=7.39e-11 | bridge=1.07e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=2.987788e-02->7.653428e-03 | drop=+74.384% | MSE=76.485->73.154 | SSIM=0.85779->0.83642 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=2.987788e-02->1.052308e-02 | drop=+64.780% | MSE=76.485->74.363 | SSIM=0.85779->0.83412 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 18 (array_idx=17)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=8.40e-11 | bridge=1.03e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=4.446125e-02->1.506282e-02 | drop=+66.121% | MSE=80.194->76.652 | SSIM=0.86274->0.84322 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=4.446125e-02->1.700084e-02 | drop=+61.763% | MSE=80.194->76.802 | SSIM=0.86274->0.84111 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 19 (array_idx=18)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=3.81e-11 | bridge=1.15e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=9.015772e-02->3.188551e-02 | drop=+64.634% | MSE=270.208->264.923 | SSIM=0.78089->0.76114 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=9.015772e-02->8.392536e-02 | drop= +6.913% | MSE=270.208->269.637 | SSIM=0.78089->0.75378 | accepted=True | step=1.5000
+
+##############################################################################################################################################
+TEST 20 (array_idx=19)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=3.84e-11 | bridge=1.12e-06 | align_corners=False
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=6.778195e-02->2.039425e-02 | drop=+69.912% | MSE=212.064->208.301 | SSIM=0.81126->0.79100 | accepted=True | step=1.5000
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=6.778195e-02->6.718290e-02 | drop= +0.884% | MSE=212.064->212.668 | SSIM=0.81126->0.81052 | accepted=True | step=0.3750
+
+==============================================================================================================================================
+C6.6 FINAL SUMMARY
+==============================================================================================================================================
+      method         MSE       MAE      PSNR      SSIM       meas_J     Jwin   MSEwin    src-eq      time
+        Hint    183.8839    4.3162   24.1731   0.84041  6.88439e-02        -        -      0.00     0.000
+     C4-only    178.2254    5.8423   24.2464   0.81931  6.06708e-02        -        -      0.00     0.081
+   C4+TExact    173.9643    6.0904   24.3735   0.79826  2.06747e-02    10/10    10/10     64.00     0.726
+     C4+TGRA    174.9640    6.0988   24.3532   0.79940  3.75784e-02    10/10     9/10     17.60     2.412
+
+Terminal Exact accepted = 10/10
+Terminal GRA accepted   = 10/10
+Terminal GRA J noninc   = 10/10
+Terminal GRA mean Jdrop = +43.209%
+Terminal GRA mean MSEgain = +2.415%
+C6.6 GATE               = STRONG_TERMINAL_PASS
+summary                  = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_6_terminal_gra_transfer11_20_v1/summary.json

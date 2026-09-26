@@ -1,0 +1,63 @@
+========================================================================================================================
+C6.3A REAL C4 STATE GRADIENT REGENERATION
+========================================================================================================================
+bridge_dir       = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2_c4_to_cbs_bridge_val10_final
+background64     = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/c5_4a_mgnoI_source64_test1_rho08.npz
+ARSS MgNO ckpt   = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/mgnoII_strat4p4_fieldloss_e50_run2_frozen/best.pt
+MgNO config      = C24/V6
+samples          = 1..1
+speed norm       = 1488.39 27.53
+wave_scale       = 0.0372290883
+
+########################################################################################################################
+TEST 1
+########################################################################################################################
+candidate range = 1456.234619140625 1536.6649169921875
+candidate SHA256 = 8c30ac0e1e46cc0bed5dec256151662a6816c9b1f85179e21e9f3d832d8ff56a
+measurement sources = [0, 8, 16, 24, 32, 40, 48, 56]
+CBS config = 80 300 225.0 PML3
+
+[1/4] exact 64-source CBS wavefields
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+[2/4] exact-CBS adjoint gradient
+[3/4] frozen ARSS-MgNO 64-source wavefields
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[4/4] full ARSS-ANO gradient
+
+64-source field RRMSE       = 0.40693080
+measurement surrogate RRMSE = 0.15231115
+residual RRMSE              = 1.44185066
+cos(ARSS,Exact) raw         = +0.12273530
+cos(ARSS,Exact) crop32      = +0.12904273
+cos(ARSS,Exact) smooth5     = +0.00250358
+exact grad norm             = 7.66103382e+02
+ARSS grad norm              = 7.30464212e+02
+saved = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_3a_real_c4_gradient_test1/decompose_test1.npz
+
+========================================================================================================================
+C6.3A SUMMARY
+========================================================================================================================
+num samples = 1
+field64_rrmse         : +0.40693080 ± 0.00000000 [+0.40693080, +0.40693080]
+measurement_rrmse     : +0.15231115 ± 0.00000000 [+0.15231115, +0.15231115]
+residual_rrmse        : +1.44185066 ± 0.00000000 [+1.44185066, +1.44185066]
+cos_raw               : +0.12273530 ± 0.00000000 [+0.12273530, +0.12273530]
+cos_crop32            : +0.12904273 ± 0.00000000 [+0.12904273, +0.12904273]
+cos_smooth5           : +0.00250358 ± 0.00000000 [+0.00250358, +0.00250358]
+
+saved CSV = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_3a_real_c4_gradient_test1/gradient_summary.csv
+saved JSON = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_3a_real_c4_gradient_test1/summary.json

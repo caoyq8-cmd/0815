@@ -1,0 +1,338 @@
+{
+  "experiment": "C6.5A Two-step Conditional CM + Physics Trajectory Integration",
+  "split": "dev_test1_10",
+  "sample_ids": [
+    1,
+    10
+  ],
+  "frozen_c4": {
+    "seed": 20260908,
+    "sampler": "multistep",
+    "steps": 40,
+    "ts": [
+      0,
+      17,
+      39
+    ],
+    "sigma_min": 0.002,
+    "sigma_max": 80.0,
+    "rho": 7.0,
+    "nfe": 2
+  },
+  "frozen_gra": {
+    "initial_step_mps": 1.5,
+    "backtrack_factor": 0.5,
+    "max_backtracks": 5,
+    "acceptance_rule": "J_trial < J_current",
+    "gt_used_for_acceptance": false,
+    "cosine_used_for_acceptance": false
+  },
+  "bridge_alignment": {
+    "align_corners": false,
+    "selection_rule": "choose the PyTorch bilinear convention that reproduces the pre-existing frozen C6.2 bridge candidate_480"
+  },
+  "methods": {
+    "Hint": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 115.94915613363571,
+        "std": 74.54094874063614,
+        "median": 81.85686842079042,
+        "min": 28.386561121569002,
+        "max": 279.04230530717655
+      },
+      "mae": {
+        "mean": 2.87117903996259,
+        "std": 1.2119879578650277,
+        "median": 2.4415869442746043,
+        "min": 1.5632813144475222,
+        "max": 5.595682827755809
+      },
+      "psnr": {
+        "mean": 26.480840024410316,
+        "std": 2.823440548047553,
+        "median": 27.10519156484318,
+        "min": 21.77837670921642,
+        "max": 31.703949388278755
+      },
+      "ssim": {
+        "mean": 0.8863145039463914,
+        "std": 0.023934852582449043,
+        "median": 0.8941855392231193,
+        "min": 0.8398024717132967,
+        "max": 0.916029415571648
+      },
+      "measurement_J": {
+        "mean": 0.04838989912525162,
+        "std": 0.01899828336565959,
+        "median": 0.05428622739850203,
+        "min": 0.009936615907848955,
+        "max": 0.07948433643319472
+      },
+      "measurement_rr": {
+        "mean": 0.12830295488238336,
+        "std": 0.03002118352648202,
+        "median": 0.13953282684087753,
+        "min": 0.05968838185071945,
+        "max": 0.16905197501182556
+      },
+      "method_core_seconds": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "true_source_equiv_core": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mse_wins_vs_c4": null,
+      "ssim_wins_vs_c4": null
+    },
+    "C4-only": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 124.98712300666105,
+        "std": 74.34102696038798,
+        "median": 98.0068777688748,
+        "min": 37.81588532389969,
+        "max": 298.95832988844836
+      },
+      "mae": {
+        "mean": 4.532835402153433,
+        "std": 1.5787838454374432,
+        "median": 4.3824152229353786,
+        "min": 2.522550016641617,
+        "max": 8.234526494517922
+      },
+      "psnr": {
+        "mean": 25.982553005393118,
+        "std": 2.496454799348499,
+        "median": 26.338552092357006,
+        "min": 21.478970634214427,
+        "max": 30.45833449806102
+      },
+      "ssim": {
+        "mean": 0.8566129620010081,
+        "std": 0.028334224818582013,
+        "median": 0.8634236562019163,
+        "min": 0.7960156784763245,
+        "max": 0.889188686841791
+      },
+      "measurement_J": {
+        "mean": 0.044905492786886665,
+        "std": 0.02407849491431334,
+        "median": 0.03879731988585758,
+        "min": 0.0127405695231112,
+        "max": 0.09038691717401466
+      },
+      "measurement_rr": {
+        "mean": 0.12209317833185196,
+        "std": 0.03471381483104863,
+        "median": 0.11783643811941147,
+        "min": 0.06758727878332138,
+        "max": 0.18004189431667328
+      },
+      "method_core_seconds": {
+        "mean": 0.10160935590029112,
+        "std": 0.0002693765182147669,
+        "median": 0.10150718350087118,
+        "min": 0.10141002199998184,
+        "max": 0.10235929600094096
+      },
+      "true_source_equiv_core": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mse_wins_vs_c4": 0,
+      "ssim_wins_vs_c4": 0
+    },
+    "C4+Exact": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 124.77939184301977,
+        "std": 74.08321596912204,
+        "median": 97.52368837227334,
+        "min": 38.28650820503617,
+        "max": 298.4743554992315
+      },
+      "mae": {
+        "mean": 4.503477634117007,
+        "std": 1.5798663143954024,
+        "median": 4.335720006376505,
+        "min": 2.5172873102128506,
+        "max": 8.23015009239316
+      },
+      "psnr": {
+        "mean": 25.983978309599888,
+        "std": 2.4823410388068337,
+        "median": 26.359661462335133,
+        "min": 21.486006990200252,
+        "max": 30.404619623565303
+      },
+      "ssim": {
+        "mean": 0.856691900393647,
+        "std": 0.02825286911080332,
+        "median": 0.8635616849877827,
+        "min": 0.7961488101119054,
+        "max": 0.8890597179373906
+      },
+      "measurement_J": {
+        "mean": 0.04421564428701136,
+        "std": 0.022203172728559394,
+        "median": 0.03906248450783831,
+        "min": 0.015016035315715916,
+        "max": 0.08516350515744997
+      },
+      "measurement_rr": {
+        "mean": 0.1217638872563839,
+        "std": 0.03221690984325802,
+        "median": 0.11820054426789284,
+        "min": 0.07337500900030136,
+        "max": 0.17476221919059753
+      },
+      "method_core_seconds": {
+        "mean": 1.3946690088010656,
+        "std": 0.014037462906176088,
+        "median": 1.3898741605007672,
+        "min": 1.3853665659989929,
+        "max": 1.4350268260004668
+      },
+      "true_source_equiv_core": {
+        "mean": 64.0,
+        "std": 0.0,
+        "median": 64.0,
+        "min": 64.0,
+        "max": 64.0
+      },
+      "mse_wins_vs_c4": 7,
+      "ssim_wins_vs_c4": 7
+    },
+    "C4+GRA": {
+      "num_samples": 10,
+      "mse": {
+        "mean": 124.94357214965471,
+        "std": 73.9959964792162,
+        "median": 98.26753685531514,
+        "min": 38.317568609592854,
+        "max": 298.595043625407
+      },
+      "mae": {
+        "mean": 4.530437130481005,
+        "std": 1.5725488328324102,
+        "median": 4.404282992705703,
+        "min": 2.513695601373911,
+        "max": 8.225542590022087
+      },
+      "psnr": {
+        "mean": 25.975700862618613,
+        "std": 2.479312876675678,
+        "median": 26.326225318715906,
+        "min": 21.4842512751018,
+        "max": 30.401097784100667
+      },
+      "ssim": {
+        "mean": 0.8566207664192745,
+        "std": 0.02822948132432174,
+        "median": 0.8633621368834827,
+        "min": 0.7960959928980366,
+        "max": 0.889123525457587
+      },
+      "measurement_J": {
+        "mean": 0.045388297968012956,
+        "std": 0.02324905772859261,
+        "median": 0.03881859464052931,
+        "min": 0.015363394199220753,
+        "max": 0.09041664995375909
+      },
+      "measurement_rr": {
+        "mean": 0.12323022186756134,
+        "std": 0.03315301662563946,
+        "median": 0.11787032335996628,
+        "min": 0.07421883195638657,
+        "max": 0.18007150292396545
+      },
+      "method_core_seconds": {
+        "mean": 3.118685271200411,
+        "std": 0.30818036365851537,
+        "median": 2.9087119074993097,
+        "min": 2.8906645579991164,
+        "max": 3.5872943730009865
+      },
+      "true_source_equiv_core": {
+        "mean": 28.0,
+        "std": 18.33030277982336,
+        "median": 16.0,
+        "min": 16.0,
+        "max": 56.0
+      },
+      "mse_wins_vs_c4": 3,
+      "ssim_wins_vs_c4": 3
+    }
+  },
+  "physics_insert": {
+    "C4+Exact": {
+      "accepted_count": 10,
+      "insert_relative_drop": {
+        "mean": 0.6766403928521316,
+        "std": 0.07370063345807622,
+        "median": 0.6917416729212101,
+        "min": 0.5419307820826952,
+        "max": 0.7832854827849816
+      },
+      "accepted_step_mps": {
+        "mean": 1.5,
+        "std": 0.0,
+        "median": 1.5,
+        "min": 1.5,
+        "max": 1.5
+      },
+      "true_source_equiv_core": {
+        "mean": 64.0,
+        "std": 0.0,
+        "median": 64.0,
+        "min": 64.0,
+        "max": 64.0
+      }
+    },
+    "C4+GRA": {
+      "accepted_count": 7,
+      "insert_relative_drop": {
+        "mean": 0.2858877059936038,
+        "std": 0.2946911474520472,
+        "median": 0.2088901628211102,
+        "min": 0.0,
+        "max": 0.8191306683330152
+      },
+      "accepted_step_mps": {
+        "mean": 1.05,
+        "std": 0.687386354243376,
+        "median": 1.5,
+        "min": 0.0,
+        "max": 1.5
+      },
+      "true_source_equiv_core": {
+        "mean": 28.0,
+        "std": 18.33030277982336,
+        "median": 16.0,
+        "min": 16.0,
+        "max": 56.0
+      }
+    }
+  },
+  "gate": "INTEGRATION_FAIL",
+  "files": {
+    "per_sample_metrics": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_dev10_v1/per_sample_metrics.csv",
+    "method_summary": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_dev10_v1/method_summary.csv",
+    "physics_insert_metrics": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_dev10_v1/physics_insert_metrics.csv",
+    "gra_backtracking_attempts": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_dev10_v1/gra_backtracking_attempts.csv",
+    "trajectory_audit": "/home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_5a_cm_gra_trajectory_dev10_v1/trajectory_audit.csv"
+  }
+}

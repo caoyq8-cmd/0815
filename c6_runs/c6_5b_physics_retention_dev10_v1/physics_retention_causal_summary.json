@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "causal_retention_ratio": "(J_C4only_final - J_physics_arm_final) / (J_prephysics - J_after_physics)",
+    "interpretation": {
+      "gt_1": "physics advantage is amplified after CM2",
+      "between_0_1": "part of the physics advantage survives CM2",
+      "eq_0": "no final advantage versus paired C4-only",
+      "lt_0": "physics arm ends worse than paired C4-only"
+    }
+  },
+  "methods": {
+    "C4+Exact": {
+      "num_samples": 10,
+      "accepted_count": 10,
+      "accepted_final_J_win_count": 6,
+      "accepted_final_MSE_win_count": 7,
+      "overall_final_J_win_count": 6,
+      "overall_final_MSE_win_count": 7,
+      "aggregate_causal_retention_ratio": 0.01274402319759789,
+      "sum_final_J_advantage_vs_C4only": 0.006896170813035358,
+      "sum_physics_J_gain": 0.5411298069776906,
+      "individual_causal_retention": {
+        "n": 10,
+        "mean": -0.006474799172408033,
+        "median": 0.011596879011024897,
+        "std": 0.06541099769716122,
+        "min": -0.16328015191769554,
+        "max": 0.05807401309320579
+      },
+      "final_J_advantage_vs_C4only": {
+        "n": 10,
+        "mean": 0.0006896170813035357,
+        "median": 0.0006380260305364205,
+        "std": 0.002477395582962269,
+        "min": -0.0034333172561787084,
+        "max": 0.005224919813353074
+      },
+      "final_MSE_advantage_vs_C4only": {
+        "n": 10,
+        "mean": 0.20775879658651775,
+        "median": 0.20885692765807562,
+        "std": 0.4820867797785947,
+        "min": -0.47111944695052443,
+        "max": 1.2362053040824321
+      }
+    },
+    "C4+GRA": {
+      "num_samples": 10,
+      "accepted_count": 7,
+      "accepted_final_J_win_count": 2,
+      "accepted_final_MSE_win_count": 3,
+      "overall_final_J_win_count": 2,
+      "overall_final_MSE_win_count": 3,
+      "aggregate_causal_retention_ratio": -0.03202292988797727,
+      "sum_final_J_advantage_vs_C4only": -0.0047499522663297655,
+      "sum_physics_J_gain": 0.14832972132612682,
+      "individual_causal_retention": {
+        "n": 7,
+        "mean": -1.9108276009992229,
+        "median": -0.001376179766083748,
+        "std": 4.61927735826547,
+        "min": -13.22366284103581,
+        "max": 0.11657804935006724
+      },
+      "final_J_advantage_vs_C4only": {
+        "n": 10,
+        "mean": -0.00048200767406364475,
+        "median": -2.6809102326649792e-05,
+        "std": 0.0019891788020886692,
+        "min": -0.0037000515256509214,
+        "max": 0.0037478255736137223
+      },
+      "final_MSE_advantage_vs_C4only": {
+        "n": 10,
+        "mean": 0.04428802952224942,
+        "median": -0.05701297179064113,
+        "std": 0.5700364768125514,
+        "min": -0.5009492629583292,
+        "max": 1.5987571530779405
+      }
+    }
+  }
+}

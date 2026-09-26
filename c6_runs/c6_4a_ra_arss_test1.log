@@ -1,0 +1,74 @@
+=============================================================================================================================
+C6.4A RESIDUAL-ANCHORED ARSS — REAL C4 VAL
+=============================================================================================================================
+bridge       = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_2_c4_to_cbs_bridge_val10_final
+MgNO ckpt    = /home/featurize/work/USCT_repro/USCT_download/c5_wavefield_runs/mgnoII_strat4p4_fieldloss_e50_run2_frozen/best.pt
+MgNO config  = C24/V6
+frozen step  = 1.5 m/s
+samples      = 1..1
+
+#############################################################################################################################
+TEST 1
+#############################################################################################################################
+J0=3.1095528045e-02 RR0=0.10560138 MSE0=62.5413
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+
+measurement RRMSE = 0.152310
+residual RRMSE    = 1.441836
+RA cosine raw     = +0.741838
+Full cosine raw   = +0.122747
+
+Exact-CBS    | cos=+1.00000 | drop=+66.716% | RR=0.10560->0.06092 | MSE=62.54->60.28 | descent=True
+
+Full-ARSS    | cos=+0.12275 | drop=-22.810% | RR=0.10560->0.11703 | MSE=62.54->63.20 | descent=False
+
+RA-ARSS      | cos=+0.74184 | drop=+65.497% | RR=0.10560->0.06203 | MSE=62.54->59.91 | descent=True
+
+=============================================================================================================================
+C6.4A VAL SUMMARY
+=============================================================================================================================
+
+Exact-CBS
+  descent      = 1/1
+  mean drop    = +66.716%
+  worst drop   = +66.716%
+  mean cosine  = +1.00000
+  mean MSEgain = +3.609%
+  true sources = 64
+
+Full-ARSS
+  descent      = 0/1
+  mean drop    = -22.810%
+  worst drop   = -22.810%
+  mean cosine  = +0.12275
+  mean MSEgain = -1.046%
+  true sources = 0
+
+RA-ARSS
+  descent      = 1/1
+  mean drop    = +65.497%
+  worst drop   = +65.497%
+  mean cosine  = +0.74184
+  mean MSEgain = +4.213%
+  true sources = 8
+
+RA-ARSS gate = FAIL
+
+saved CSV  = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4a_ra_arss_test1/all_steps.csv
+saved JSON = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_4a_ra_arss_test1/summary.json

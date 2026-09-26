@@ -1,0 +1,22 @@
+========================================================================================================================================
+C6.5A CONDITIONAL-CM + PHYSICS TRAJECTORY INTEGRATION
+========================================================================================================================================
+split              = dev_smoke_test1
+samples            = 1..1
+C4 seed            = 20260908
+C4 schedule        = [0, 17, 39]
+C4 NFE             = 2
+MgNO config        = C24/V6
+GRA step           = 1.5
+GRA backtrack      = 0.5
+GRA max backtracks = 5
+
+########################################################################################################################################
+TEST 1 (array_idx=0)
+########################################################################################################################################
+Traceback (most recent call last):
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_5a_conditional_cm_gra_trajectory_v2.py", line 2671, in <module>
+    main()
+  File "/home/featurize/work/USCT_repro/USCT_download/c6_5a_conditional_cm_gra_trajectory_v2.py", line 1718, in main
+    raise RuntimeError(
+RuntimeError: test_1: GT/bridge identity failed: RRMSE=1.113547e-02, maxabs=8.224011e+01

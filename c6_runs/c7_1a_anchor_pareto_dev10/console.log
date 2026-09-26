@@ -1,0 +1,370 @@
+==============================================================================================================================================
+C7.1A HINT-C4 ANCHOR PARETO SCAN
+==============================================================================================================================================
+split              = c7_1a_dev10
+samples            = 1..10
+C4 seed            = 20260908
+C4 schedule        = [0, 17, 39]
+C4 NFE             = 2
+MgNO config        = C24/V6
+GRA step           = 0.1875
+GRA backtrack      = 0.5
+GRA max backtracks = 5
+post-physics CM    = NONE
+
+##############################################################################################################################################
+TEST 1 (array_idx=0)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=4.85e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=3.109553e-02 | MSE=69.133 | MAE=3.7883 | SSIM=0.82164 | SSIM->Hint=0.93701
+lambda=0.25 | J=2.774143e-02 | MSE=61.346 | MAE=3.4058 | SSIM=0.83634 | SSIM->Hint=0.96344
+lambda=0.50 | J=2.549020e-02 | MSE=56.180 | MAE=3.0582 | SSIM=0.84781 | SSIM->Hint=0.98353
+lambda=0.75 | J=2.439445e-02 | MSE=53.635 | MAE=2.7598 | SSIM=0.85529 | SSIM->Hint=0.99590
+lambda=1.00 | J=2.449040e-02 | MSE=53.712 | MAE=2.5711 | SSIM=0.85821 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=3.109553e-02->2.481202e-02 | drop=+20.207% | MSE=69.133->67.892 | SSIM=0.82164->0.82365 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=3.109553e-02->2.629487e-02 | drop=+15.438% | MSE=69.133->67.845 | SSIM=0.82164->0.82373 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 2 (array_idx=1)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=6.31e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=1.274057e-02 | MSE=37.816 | MAE=2.5226 | SSIM=0.88919 | SSIM->Hint=0.95195
+lambda=0.25 | J=1.100726e-02 | MSE=32.924 | MAE=2.2226 | SSIM=0.90080 | SSIM->Hint=0.97242
+lambda=0.50 | J=9.938076e-03 | MSE=29.722 | MAE=1.9484 | SSIM=0.90941 | SSIM->Hint=0.98774
+lambda=0.75 | J=9.569992e-03 | MSE=28.210 | MAE=1.7133 | SSIM=0.91455 | SSIM->Hint=0.99699
+lambda=1.00 | J=9.936616e-03 | MSE=28.387 | MAE=1.5633 | SSIM=0.91603 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=1.274057e-02->9.225785e-03 | drop=+27.587% | MSE=37.816->37.532 | SSIM=0.88919->0.89020 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=1.274057e-02->9.798341e-03 | drop=+23.093% | MSE=37.816->37.528 | SSIM=0.88919->0.89023 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 3 (array_idx=2)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=3.07e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=4.259055e-02 | MSE=167.873 | MAE=4.9208 | SSIM=0.86015 | SSIM->Hint=0.93917
+lambda=0.25 | J=4.277517e-02 | MSE=160.480 | MAE=4.4629 | SSIM=0.87139 | SSIM->Hint=0.96477
+lambda=0.50 | J=4.586911e-02 | MSE=159.348 | MAE=4.0505 | SSIM=0.87948 | SSIM->Hint=0.98408
+lambda=0.75 | J=5.179939e-02 | MSE=164.480 | MAE=3.7276 | SSIM=0.88403 | SSIM->Hint=0.99601
+lambda=1.00 | J=6.028661e-02 | MSE=175.874 | MAE=3.6125 | SSIM=0.88477 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=4.259055e-02->3.594286e-02 | drop=+15.608% | MSE=167.873->167.336 | SSIM=0.86015->0.86091 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=4.259055e-02->4.090209e-02 | drop= +3.964% | MSE=167.873->167.819 | SSIM=0.86015->0.86072 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 4 (array_idx=3)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=8.99e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=6.414888e-02 | MSE=298.958 | MAE=8.2345 | SSIM=0.79602 | SSIM->Hint=0.89837
+lambda=0.25 | J=6.078220e-02 | MSE=271.242 | MAE=7.3878 | SSIM=0.81510 | SSIM->Hint=0.94078
+lambda=0.50 | J=6.212786e-02 | MSE=258.684 | MAE=6.6188 | SSIM=0.82875 | SSIM->Hint=0.97295
+lambda=0.75 | J=6.852076e-02 | MSE=261.284 | MAE=5.9669 | SSIM=0.83702 | SSIM->Hint=0.99312
+lambda=1.00 | J=7.948434e-02 | MSE=279.042 | MAE=5.5957 | SSIM=0.83980 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=6.414888e-02->5.630582e-02 | drop=+12.226% | MSE=298.958->297.895 | SSIM=0.79602->0.79672 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=6.414888e-02->6.013882e-02 | drop= +6.251% | MSE=298.958->298.192 | SSIM=0.79602->0.79661 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 5 (array_idx=4)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=3.37e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=3.500409e-02 | MSE=137.007 | MAE=4.5515 | SSIM=0.86670 | SSIM->Hint=0.94172
+lambda=0.25 | J=3.026744e-02 | MSE=124.657 | MAE=4.0138 | SSIM=0.87936 | SSIM->Hint=0.96608
+lambda=0.50 | J=3.257898e-02 | MSE=118.654 | MAE=3.5156 | SSIM=0.88915 | SSIM->Hint=0.98461
+lambda=0.75 | J=4.193582e-02 | MSE=118.998 | MAE=3.0777 | SSIM=0.89554 | SSIM->Hint=0.99613
+lambda=1.00 | J=5.750567e-02 | MSE=125.690 | MAE=2.8207 | SSIM=0.89795 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=3.500409e-02->2.904566e-02 | drop=+17.022% | MSE=137.007->136.089 | SSIM=0.86670->0.86823 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=3.500409e-02->3.464416e-02 | drop= +1.028% | MSE=137.007->136.616 | SSIM=0.86670->0.86786 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 6 (array_idx=5)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=2.24e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=2.506347e-02 | MSE=77.802 | MAE=3.2844 | SSIM=0.87736 | SSIM->Hint=0.95419
+lambda=0.25 | J=2.276248e-02 | MSE=72.134 | MAE=2.8447 | SSIM=0.88878 | SSIM->Hint=0.97215
+lambda=0.50 | J=2.646623e-02 | MSE=69.218 | MAE=2.4344 | SSIM=0.89796 | SSIM->Hint=0.98674
+lambda=0.75 | J=3.618867e-02 | MSE=69.056 | MAE=2.0869 | SSIM=0.90401 | SSIM->Hint=0.99652
+lambda=1.00 | J=5.138552e-02 | MSE=71.647 | MAE=1.9146 | SSIM=0.90590 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=2.506347e-02->1.993499e-02 | drop=+20.462% | MSE=77.802->77.258 | SSIM=0.87736->0.87921 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=2.506347e-02->2.402665e-02 | drop= +4.137% | MSE=77.802->77.615 | SSIM=0.87736->0.87890 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 7 (array_idx=6)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=3.86e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=9.038692e-02 | MSE=106.415 | MAE=4.9662 | SSIM=0.85388 | SSIM->Hint=0.93998
+lambda=0.25 | J=5.454413e-02 | MSE=92.522 | MAE=4.1903 | SSIM=0.86913 | SSIM->Hint=0.96368
+lambda=0.50 | J=3.370850e-02 | MSE=84.037 | MAE=3.4465 | SSIM=0.88111 | SSIM->Hint=0.98283
+lambda=0.75 | J=3.295961e-02 | MSE=80.959 | MAE=2.7679 | SSIM=0.88861 | SSIM->Hint=0.99553
+lambda=1.00 | J=5.310447e-02 | MSE=83.290 | MAE=2.3121 | SSIM=0.89042 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=9.038692e-02->7.820237e-02 | drop=+13.480% | MSE=106.415->105.903 | SSIM=0.85388->0.85599 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=9.038692e-02->9.017545e-02 | drop= +0.234% | MSE=106.415->106.794 | SSIM=0.85388->0.85567 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 8 (array_idx=7)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=2.51e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=1.812632e-02 | MSE=67.992 | MAE=2.9062 | SSIM=0.88766 | SSIM->Hint=0.95729
+lambda=0.25 | J=1.804249e-02 | MSE=63.948 | MAE=2.5616 | SSIM=0.89676 | SSIM->Hint=0.97442
+lambda=0.50 | J=2.079743e-02 | MSE=61.867 | MAE=2.2441 | SSIM=0.90336 | SSIM->Hint=0.98795
+lambda=0.75 | J=2.630687e-02 | MSE=61.749 | MAE=1.9773 | SSIM=0.90707 | SSIM->Hint=0.99684
+lambda=1.00 | J=3.436291e-02 | MSE=63.593 | MAE=1.8261 | SSIM=0.90738 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=1.812632e-02->1.382703e-02 | drop=+23.718% | MSE=67.992->67.532 | SSIM=0.88766->0.88961 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=1.812632e-02->1.693926e-02 | drop= +6.549% | MSE=67.992->67.810 | SSIM=0.88766->0.88936 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 9 (array_idx=8)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=3.80e-11 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=5.733884e-02 | MSE=89.599 | MAE=4.2133 | SSIM=0.87343 | SSIM->Hint=0.95587
+lambda=0.25 | J=3.288660e-02 | MSE=81.313 | MAE=3.5644 | SSIM=0.88554 | SSIM->Hint=0.97392
+lambda=0.50 | J=2.414496e-02 | MSE=77.021 | MAE=2.9517 | SSIM=0.89478 | SSIM->Hint=0.98795
+lambda=0.75 | J=3.294192e-02 | MSE=76.725 | MAE=2.4230 | SSIM=0.90048 | SSIM->Hint=0.99692
+lambda=1.00 | J=5.787448e-02 | MSE=80.424 | MAE=2.1732 | SSIM=0.90209 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=5.733884e-02->4.775720e-02 | drop=+16.711% | MSE=89.599->89.129 | SSIM=0.87343->0.87558 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=5.733884e-02->5.591370e-02 | drop= +2.485% | MSE=89.599->89.873 | SSIM=0.87343->0.87514 | accepted=True | step=0.1875
+
+##############################################################################################################################################
+TEST 10 (array_idx=9)
+##############################################################################################################################################
+Warning: Distributed not initialised, using single rank
+Warning: Distributed not initialised, using single rank
+audit              | GT=0.00e+00 HINT=0.00e+00 | C4=1.29e-10 | bridge=0.00e+00 | align_corners=False
+
+C7.1A HINT-C4 ANCHOR PARETO
+lambda=0.00 | J=7.255977e-02 | MSE=197.275 | MAE=5.9406 | SSIM=0.84010 | SSIM->Hint=0.93161
+lambda=0.25 | J=5.385807e-02 | MSE=184.697 | MAE=5.4000 | SSIM=0.84997 | SSIM->Hint=0.95904
+lambda=0.50 | J=4.401497e-02 | MSE=180.597 | MAE=4.9149 | SSIM=0.85697 | SSIM->Hint=0.98072
+lambda=0.75 | J=4.478843e-02 | MSE=184.976 | MAE=4.5208 | SSIM=0.86070 | SSIM->Hint=0.99497
+lambda=1.00 | J=5.546799e-02 | MSE=197.834 | MAE=4.3226 | SSIM=0.86059 | SSIM->Hint=1.00000
+
+[CBS] sources 00:08 / 64
+[CBS] sources 08:16 / 64
+[CBS] sources 16:24 / 64
+[CBS] sources 24:32 / 64
+[CBS] sources 32:40 / 64
+[CBS] sources 40:48 / 64
+[CBS] sources 48:56 / 64
+[CBS] sources 56:64 / 64
+C4+TExact  | J=7.255977e-02->6.306386e-02 | drop=+13.087% | MSE=197.275->196.565 | SSIM=0.84010->0.84100 | accepted=True | step=0.1875
+[CBS] sources 00:08 / 8
+[MgNO] predicted 8/64
+[MgNO] predicted 16/64
+[MgNO] predicted 24/64
+[MgNO] predicted 32/64
+[MgNO] predicted 40/64
+[MgNO] predicted 48/64
+[MgNO] predicted 56/64
+[MgNO] predicted 64/64
+C4+TGRA    | J=7.255977e-02->6.774129e-02 | drop= +6.641% | MSE=197.275->196.479 | SSIM=0.84010->0.84110 | accepted=True | step=0.1875
+
+==============================================================================================================================================
+C6.6 FINAL SUMMARY
+==============================================================================================================================================
+      method         MSE       MAE      PSNR      SSIM       meas_J     Jwin   MSEwin    src-eq      time
+        Hint    115.9492    2.8712   26.4808   0.88631  4.83899e-02        -        -      0.00     0.000
+     C4-only    124.9871    4.5328   25.9826   0.85661  4.49055e-02        -        -      0.00     0.103
+   C4+TExact    124.3131    4.5010   26.0115   0.85811  3.78118e-02    10/10    10/10     64.00     1.423
+     C4+TGRA    124.6570    4.5143   25.9976   0.85793  4.26575e-02    10/10     8/10     16.00     2.931
+
+Terminal Exact accepted = 10/10
+Terminal GRA accepted   = 10/10
+Terminal GRA J noninc   = 10/10
+Terminal GRA mean Jdrop = +6.982%
+Terminal GRA mean MSEgain = +0.345%
+C6.6 GATE               = STRONG_TERMINAL_PASS
+summary                  = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c7_1a_anchor_pareto_dev10/summary.json

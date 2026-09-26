@@ -1,0 +1,55 @@
+/home/featurize/work/USCT_repro/USCT_download/c6_7_structural_tradeoff_audit_v2.py:425: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  plt.boxplot(
+/home/featurize/work/USCT_repro/USCT_download/c6_7_structural_tradeoff_audit_v2.py:425: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  plt.boxplot(
+/home/featurize/work/USCT_repro/USCT_download/c6_7_structural_tradeoff_audit_v2.py:425: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  plt.boxplot(
+======================================================================================================================================================
+C6.7 STRUCTURAL TRADE-OFF AND ERROR REDISTRIBUTION AUDIT
+======================================================================================================================================================
+runs:
+  dev_test1_10: /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_6_terminal_gra_dev10_v1 (10 samples)
+  secondary_transfer_test11_20_reused: /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_6_terminal_gra_transfer11_20_v1 (10 samples)
+
+======================================================================================================================================================
+C6.7 SUMMARY
+======================================================================================================================================================
+
+dev_test1_10
+------------------------------------------------------------------------------------------------------------------------------------------------------
+TGRA ΔMSE mean/median = -0.904347 / -0.461685
+TGRA ΔMAE mean/median = +0.256155 / +0.249274
+TGRA ΔSSIM mean/median= -0.016490 / -0.018089
+TGRA Δp95 |err| mean  = -0.074901 m/s
+TGRA Δp99 |err| mean  = -0.602512 m/s
+pixel improved/worsened = 38.72% / 61.28%
+top10 C4-error MSE gain = +2.472%
+bottom90 C4-error MAE gain = -18.677%
+TGRA update spectrum low/mid/high = 0.3723 / 0.3236 / 0.3041
+
+secondary_transfer_test11_20_reused
+------------------------------------------------------------------------------------------------------------------------------------------------------
+TGRA ΔMSE mean/median = -3.261363 / -3.428763
+TGRA ΔMAE mean/median = +0.256448 / +0.262750
+TGRA ΔSSIM mean/median= -0.019914 / -0.021135
+TGRA Δp95 |err| mean  = -0.462920 m/s
+TGRA Δp99 |err| mean  = -0.935899 m/s
+pixel improved/worsened = 39.04% / 60.96%
+top10 C4-error MSE gain = +3.575%
+bottom90 C4-error MAE gain = -18.778%
+TGRA update spectrum low/mid/high = 0.3866 / 0.3023 / 0.3111
+
+combined
+------------------------------------------------------------------------------------------------------------------------------------------------------
+TGRA ΔMSE mean/median = -2.082855 / -2.076936
+TGRA ΔMAE mean/median = +0.256301 / +0.258075
+TGRA ΔSSIM mean/median= -0.018202 / -0.020897
+TGRA Δp95 |err| mean  = -0.268911 m/s
+TGRA Δp99 |err| mean  = -0.769205 m/s
+pixel improved/worsened = 38.88% / 61.12%
+top10 C4-error MSE gain = +3.023%
+bottom90 C4-error MAE gain = -18.728%
+TGRA update spectrum low/mid/high = 0.3795 / 0.3130 / 0.3076
+
+saved summary = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_7_structural_tradeoff_dev10_transfer10_v2/summary.json
+saved figures = /home/featurize/work/USCT_repro/USCT_download/c6_runs/c6_7_structural_tradeoff_dev10_transfer10_v2

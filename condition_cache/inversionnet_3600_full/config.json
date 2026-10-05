@@ -1,0 +1,16 @@
+{
+  "data_root": "/home/featurize/work/dataset_3600_400_unpack/OpenBreastUS_processed_3600_400_fullresize",
+  "ckpt_path": "./experiments_3600_400/inversionnet_b32_blocks2_g005/checkpoints/best.pth",
+  "output_root": "./condition_cache/inversionnet_3600_full",
+  "batch_size": 16,
+  "num_workers": 0,
+  "device": "cuda:0",
+  "base_ch": null,
+  "bottleneck_blocks": null,
+  "dropout": null,
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "log_every": 10,
+  "inversion_target_min": 1400.0,
+  "inversion_target_max": 1600.0
+}

@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{PGCR物理一致性实验结果}
+\label{tab:pgcr_physics}
+\begin{tabular}{llrrrr}
+\toprule
+数据划分 & 方法 &
+Image MSE$\downarrow$ &
+CBS-RRMSE$\downarrow$ &
+物理改善(\%)$\uparrow$ &
+Physics wins \\
+\midrule
+phys-dev10 & InversionNet & 75.0872 & 0.07484 & -- & -- \\
+ & AGR-Stable & 72.1488 & 0.07244 & 3.21 & 6/10 \\
+ & PGCR-v1 & 73.9449 & 0.07130 & 4.73 & 6/10 \\
+\midrule
+phys-heldout10 & InversionNet & 56.2551 & 0.06987 & -- & -- \\
+ & AGR-Stable & 54.4267 & 0.06713 & 3.91 & 8/10 \\
+ & PGCR-v1 & 54.5347 & 0.06683 & 4.35 & 8/10 \\
+\midrule
+\bottomrule
+\end{tabular}
+\end{table}

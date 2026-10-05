@@ -1,0 +1,33 @@
+{
+  "dataset": "formal_phys20",
+  "source_split": "formal validation split",
+  "num_samples": 20,
+  "dev_ids": [1,2,3,4,5,6,7,8,9,10],
+  "heldout_ids": [11,12,13,14,15,16,17,18,19,20],
+
+  "raw_speed_field": "slice",
+  "raw_speed_shape": [480,480],
+  "raw_to_physics_transform": "transpose",
+  "processed_resize": "bilinear_480_to_256",
+
+  "raw480_to_processed_mse_mean": 1.2524026260507526e-08,
+  "raw480_to_processed_mse_max": 1.2787722880602814e-08,
+  "processed_to_formal_mse_max": 1.0098780092141448e-17,
+
+  "formal_normalization": {
+    "speed_min": 1400.0,
+    "speed_max": 1605.0,
+    "center": 1502.5,
+    "half_range": 102.5
+  },
+
+  "physics_plan": {
+    "frequency_hz": 500000,
+    "num_sources": 64,
+    "num_receivers": 64,
+    "cbs_iterations": 80,
+    "boundary_type": "PML3",
+    "boundary_width": 300,
+    "boundary_strength": 225
+  }
+}

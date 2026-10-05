@@ -1,0 +1,35 @@
+PGCR FINAL FROZEN PROTOCOL
+
+Selection:
+  VAL50 parameter selection
+  VAL400 stability confirmation
+  TEST400 final one-shot evaluation
+
+Initialization:
+  InversionNet e89
+
+Physics:
+  CBS8
+  frequency = 500000 Hz
+  forward_iters = 80
+  adjoint_iters = 80
+  PML3
+  boundary_width = 300
+  boundary_strength = 225
+
+PGCR:
+  num_iters = 1
+  step_size_mps = 0.25
+  smooth_kernel = 9
+  shrink_theta = 1.00
+  softcap_tau = 0.75
+
+Other:
+  prior_tether = 0
+  step_factors = 1.0
+  direction_mode = minus
+  candidate_validation = none
+  include_no_update = false
+
+IMPORTANT:
+  No TEST-based parameter tuning is permitted.

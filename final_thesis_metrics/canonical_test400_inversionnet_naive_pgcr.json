@@ -1,0 +1,48 @@
+{
+  "InversionNet": {
+    "mse": 100.509118770013,
+    "mae": 2.746965830870904,
+    "rmse": 9.373454468927653,
+    "psnr": 27.401849793701516,
+    "ssim": 0.9058173230290413
+  },
+  "Naive-CBS8": {
+    "mse": 99.48091508656522,
+    "mae": 3.4734428557101635,
+    "rmse": 9.351212176526435,
+    "psnr": 27.38991233993499,
+    "ssim": 0.8796241292357445
+  },
+  "PGCR": {
+    "mse": 98.09178053707687,
+    "mae": 2.7576568385539577,
+    "rmse": 9.264563925696978,
+    "psnr": 27.49668152482159,
+    "ssim": 0.9063094586133957
+  },
+  "pairwise": {
+    "Naive_vs_Inv": {
+      "mse_wins": 242,
+      "mae_wins": 0,
+      "psnr_wins": 242,
+      "ssim_wins": 0
+    },
+    "PGCR_vs_Inv": {
+      "mse_wins": 396,
+      "mae_wins": 106,
+      "psnr_wins": 396,
+      "ssim_wins": 313
+    },
+    "PGCR_vs_Naive": {
+      "mse_wins": 399,
+      "mae_wins": 400,
+      "psnr_wins": 399,
+      "ssim_wins": 400
+    }
+  },
+  "MSE_improvement_percent": {
+    "Naive_vs_Inv": 1.0229954217393364,
+    "PGCR_vs_Inv": 2.4050934507420503,
+    "PGCR_vs_Naive": 1.3963829627819213
+  }
+}

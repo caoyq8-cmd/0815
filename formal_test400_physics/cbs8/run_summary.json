@@ -1,0 +1,29 @@
+{
+  "protocol": "formal_TEST400_CBS8",
+  "start_id": 1,
+  "end_id": 400,
+  "source_positions": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56
+  ],
+  "num_sources": 8,
+  "num_receivers": 64,
+  "frequency": 500000.0,
+  "cbs_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "raw_to_physics_transform": "identity",
+  "raw_to_processed_transform": "identity",
+  "processed_resize": "MATLAB bilinear",
+  "raw_processed_identity": "400/400 exact, MSE=0",
+  "geometry_convention": "x_y_every4",
+  "reference_npz": "/home/featurize/work/USCT_repro/paper_reproduction/cosign_usct/metrics/c5_wavefield_baselines.npz",
+  "save_wavefields": false
+}

@@ -1,0 +1,35 @@
+{
+  "num_samples": 400,
+  "valid": 400,
+  "missing": 0,
+  "bad": 0,
+  "target_mse_mean": 0.0,
+  "target_mse_max": 0.0,
+  "target_mae_mean": 0.0,
+  "target_max_abs": 0.0,
+  "dobs_abs_min_global": 3.179751365678385e-05,
+  "dobs_abs_mean_mean": 0.04463369138538838,
+  "dobs_abs_mean_std": 0.00039547539901948955,
+  "dobs_abs_max_global": 0.7787466049194336,
+  "protocol": {
+    "raw_transform": "identity",
+    "processed_resize": "MATLAB_bilinear",
+    "sources": [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56
+    ],
+    "num_sources": 8,
+    "num_receivers": 64,
+    "frequency": 500000.0,
+    "cbs_iters": 80,
+    "boundary_type": "PML3",
+    "boundary_width": 300,
+    "boundary_strength": 225.0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "method": "PGCR-v1",
+  "status": "frozen_before_physics_heldout_evaluation",
+
+  "proposal": {
+    "base": "InversionNet",
+    "generative_proposal": "C4 step3500 sigma=11.71851402",
+    "refinement": "AGR-Stable",
+    "gate_mode": "soft",
+    "tau_mps": 3.0,
+    "alpha": 0.125,
+    "upper_mps": "inf"
+  },
+
+  "physics_gate": {
+    "forward_model": "true CBS",
+    "metric": "measurement_rrmse",
+    "rule": "accept AGR-Stable iff candidate_rrmse < inversionnet_rrmse",
+    "uses_ground_truth": false
+  },
+
+  "cbs_protocol": {
+    "frequency_hz": 500000,
+    "num_sources": 64,
+    "num_receivers": 64,
+    "iterations": 80,
+    "boundary_type": "PML3",
+    "boundary_width": 300,
+    "boundary_strength": 225
+  },
+
+  "coordinate_protocol": {
+    "formal_256_to_cbs_480": "direct bilinear upsample",
+    "transpose": false
+  },
+
+  "development_physics_ids": [1,2,3,4,5,6,7,8,9,10],
+  "physics_heldout_ids": [11,12,13,14,15,16,17,18,19,20]
+}

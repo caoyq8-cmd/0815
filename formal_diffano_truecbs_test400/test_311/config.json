@@ -1,0 +1,27 @@
+{
+  "sample_path": "/home/featurize/work/USCT_repro/USCT_download/formal_test400_physics/cbs8/test_311.npz",
+  "condition_path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/inversionnet_formal_3600_400_400_e89/test/test_311.npz",
+  "output_dir": "/home/featurize/work/USCT_repro/USCT_download/formal_diffano_truecbs_test400/test_311",
+  "num_iters": 1,
+  "step_size_mps": 1.5,
+  "prior_tether": 0.0,
+  "step_factors": [
+    1.0
+  ],
+  "direction_mode": "minus",
+  "candidate_validation": "none",
+  "include_no_update": false,
+  "try_both_signs": false,
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "adjoint_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "smooth_kernel": 1,
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "device": "cuda:0",
+  "save_every": 0,
+  "skip_initial_vis": true
+}

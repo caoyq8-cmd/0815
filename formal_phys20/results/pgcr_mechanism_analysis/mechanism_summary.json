@@ -1,0 +1,163 @@
+{
+  "development": {
+    "num_samples": 10,
+    "baseline": {
+      "mean_image_mse": 75.0871729850769,
+      "mean_cbs_rrmse": 0.07483657242689043
+    },
+    "methods": {
+      "HP-C4": {
+        "mean_image_mse": 72.30778427124024,
+        "mean_cbs_rrmse": 0.08980882613735928,
+        "image_wins": 2,
+        "physics_wins": 2,
+        "image_gain_pct": 3.7015492837758757,
+        "physics_gain_pct": -20.006600015113726
+      },
+      "AGR-MSE": {
+        "mean_image_mse": 72.01621294021606,
+        "mean_cbs_rrmse": 0.08353058913892678,
+        "image_wins": 3,
+        "physics_wins": 2,
+        "image_gain_pct": 4.089859722740092,
+        "physics_gain_pct": -11.617336858298435
+      },
+      "AGR-Stable": {
+        "mean_image_mse": 72.1488426208496,
+        "mean_cbs_rrmse": 0.07243646225899288,
+        "image_wins": 9,
+        "physics_wins": 6,
+        "image_gain_pct": 3.9132254517176617,
+        "physics_gain_pct": 3.20713534848523
+      },
+      "PGCR-v1": {
+        "mean_image_mse": 73.94490919113159,
+        "mean_cbs_rrmse": 0.07129852861323406,
+        "image_wins": 5,
+        "physics_wins": 6,
+        "image_gain_pct": 1.521250232942364,
+        "physics_gain_pct": 4.727693558003028
+      }
+    },
+    "quadrants": {
+      "both_improve": 5,
+      "image_only": 4,
+      "physics_only": 1
+    },
+    "delta_correlation": {
+      "pearson": -0.3928047052043818,
+      "spearman": 0.01818181818181818
+    },
+    "pgcr": {
+      "accepted": 6,
+      "rejected": 4
+    }
+  },
+  "physics_heldout": {
+    "num_samples": 10,
+    "baseline": {
+      "mean_image_mse": 56.25506725311279,
+      "mean_cbs_rrmse": 0.06986801198475288
+    },
+    "methods": {
+      "HP-C4": {
+        "mean_image_mse": 54.46140842437744,
+        "mean_cbs_rrmse": 0.07519777161550235,
+        "image_wins": 6,
+        "physics_wins": 3,
+        "image_gain_pct": 3.1884395776561862,
+        "physics_gain_pct": -7.628325866653498
+      },
+      "AGR-MSE": {
+        "mean_image_mse": 54.26865348815918,
+        "mean_cbs_rrmse": 0.07215333985251181,
+        "image_wins": 9,
+        "physics_wins": 4,
+        "image_gain_pct": 3.531084152856817,
+        "physics_gain_pct": -3.2709215602952106
+      },
+      "AGR-Stable": {
+        "mean_image_mse": 54.426675415039064,
+        "mean_cbs_rrmse": 0.0671345441069037,
+        "image_wins": 10,
+        "physics_wins": 8,
+        "image_gain_pct": 3.250181587815196,
+        "physics_gain_pct": 3.912330979799029
+      },
+      "PGCR-v1": {
+        "mean_image_mse": 54.53465251922607,
+        "mean_cbs_rrmse": 0.06682643646298622,
+        "image_wins": 8,
+        "physics_wins": 8,
+        "image_gain_pct": 3.058239582482276,
+        "physics_gain_pct": 4.353316253553082
+      }
+    },
+    "quadrants": {
+      "both_improve": 8,
+      "image_only": 2
+    },
+    "delta_correlation": {
+      "pearson": 0.2643783907205638,
+      "spearman": 0.41818181818181815
+    },
+    "pgcr": {
+      "accepted": 8,
+      "rejected": 2
+    }
+  },
+  "combined_descriptive": {
+    "num_samples": 20,
+    "baseline": {
+      "mean_image_mse": 65.67112011909485,
+      "mean_cbs_rrmse": 0.07235229220582165
+    },
+    "methods": {
+      "HP-C4": {
+        "mean_image_mse": 63.38459634780884,
+        "mean_cbs_rrmse": 0.08250329887643082,
+        "image_wins": 8,
+        "physics_wins": 5,
+        "image_gain_pct": 3.481779764285112,
+        "physics_gain_pct": -14.029972459935962
+      },
+      "AGR-MSE": {
+        "mean_image_mse": 63.14243321418762,
+        "mean_cbs_rrmse": 0.07784196449571928,
+        "image_wins": 12,
+        "physics_wins": 6,
+        "image_gain_pct": 3.8505311015275026,
+        "physics_gain_pct": -7.587420000849567
+      },
+      "AGR-Stable": {
+        "mean_image_mse": 63.28775901794434,
+        "mean_cbs_rrmse": 0.06978550318294828,
+        "image_wins": 19,
+        "physics_wins": 14,
+        "image_gain_pct": 3.6292377788414107,
+        "physics_gain_pct": 3.547626404940408
+      },
+      "PGCR-v1": {
+        "mean_image_mse": 64.23978085517884,
+        "mean_cbs_rrmse": 0.06906248253811013,
+        "image_wins": 13,
+        "physics_wins": 14,
+        "image_gain_pct": 2.1795566473059633,
+        "physics_gain_pct": 4.546932194425776
+      }
+    },
+    "quadrants": {
+      "both_improve": 13,
+      "image_only": 6,
+      "physics_only": 1
+    },
+    "delta_correlation": {
+      "pearson": -0.28353367162267135,
+      "spearman": 0.21654135338345865
+    },
+    "pgcr": {
+      "accepted": 14,
+      "rejected": 6
+    }
+  }
+}

@@ -1,0 +1,56 @@
+CHAPTER 5 — FORMAL TEST400 LOCAL-AA FROZEN PROTOCOL
+
+Dataset:
+  Formal OpenBreastUS TEST400
+  same formal 3600/400 protocol used in Chapters 3–4
+
+Initializer:
+  InversionNet-e89
+  condition_cache/inversionnet_formal_3600_400_400_e89/test
+
+Physics:
+  64 sources x 64 receivers
+  frequency = 500000 Hz
+  CBS forward iterations = 80
+  PML3
+  boundary width = 300
+  boundary strength = 225
+
+Local-AA:
+  checkpoint =
+    adjoint_aware_runs/clean_reverse_train20_val10_lf1_lg3/checkpoints/epoch_001.pth
+
+  mean dobs =
+    dobs_mean_baseline/local_alpha_train100_test20/mean_dobs_train.npz
+
+  image_size = 240
+  num_steps = 8
+  base_step_mps = 0.5
+  step_factors = 1.0, 0.5, 0.25, 0.1
+
+  candidate_validation = true CBS
+  fallback_opposite = true
+  stop_on_no_update = true
+
+  speed range = [1400, 1605] m/s
+
+  online CBS adjoint calls = 0
+
+Evaluation convention:
+  Physics observations:
+    generated from Formal raw target_480 using CBS64.
+
+  Image-domain GT:
+    Formal processed target_256,
+    resized consistently for 240/480 image metrics.
+
+  Physics and image GT are deliberately separated.
+
+Important:
+  Formal30 is an engineering/stability audit only.
+  NO checkpoint selection.
+  NO hyperparameter tuning.
+  NO step-size tuning.
+  NO method selection.
+
+  Formal400 is the final unified Chapter-5 evaluation.

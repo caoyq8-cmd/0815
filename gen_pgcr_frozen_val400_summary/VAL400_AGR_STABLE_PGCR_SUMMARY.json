@@ -1,0 +1,190 @@
+{
+  "summary": {
+    "n": 400,
+    "mse_initial_mean": 71.57797724246979,
+    "mse_final_mean": 70.82087732315064,
+    "mse_mean_gain": 0.7570999193191529,
+    "mse_mean_relative_gain": 0.010577274582019494,
+    "mse_relative_gain_mean": -0.00036742422845772234,
+    "mse_relative_gain_median": -0.0038302157337690833,
+    "mse_wins": 183,
+    "mae_initial_mean": 2.382621584236622,
+    "mae_final_mean": 2.4355646646022797,
+    "mae_wins": 13,
+    "psnr_initial_mean": 29.173858456239696,
+    "psnr_final_mean": 29.17292260276111,
+    "psnr_wins": 183,
+    "ssim_initial_mean": 0.9243630194664001,
+    "ssim_final_mean": 0.9240232734382152,
+    "ssim_wins": 126,
+    "physics_descent": 400,
+    "physics_drop_mean": 0.005344255223035356,
+    "physics_drop_median": 0.005040772498589665,
+    "active_frac_mean": 0.25654120008680553,
+    "update_abs_mean": 0.02809574264101684,
+    "update_abs_max": 0.1875,
+    "runtime_median": 3.211054473000331,
+    "step_runtime_median": 0.43152415650001785,
+    "mse_gain_bootstrap": {
+      "mean": 0.7570999193191529,
+      "ci95_low": 0.5833023942112923,
+      "ci95_high": 0.937113131225109
+    },
+    "mae_gain_bootstrap": {
+      "mean": -0.052943080365657806,
+      "ci95_low": -0.05595104187354446,
+      "ci95_high": -0.04992018879950046
+    },
+    "ssim_gain_bootstrap": {
+      "mean": -0.00033974602818489076,
+      "ci95_low": -0.00040352100133895873,
+      "ci95_high": -0.00027525518834590915
+    }
+  },
+  "correlation_with_mse_gain": {
+    "mse_initial": {
+      "pearson": 0.9473336638704134,
+      "spearman": 0.67060862880393
+    },
+    "physics_initial": {
+      "pearson": 0.2680498208517702,
+      "spearman": 0.09097931862074136
+    },
+    "physics_rel_drop": {
+      "pearson": -0.2871258269575151,
+      "spearman": -0.11981549884686778
+    },
+    "shrink_active_frac": {
+      "pearson": 0.16739941157606936,
+      "spearman": 0.08616013033217752
+    },
+    "update_abs_mean": {
+      "pearson": 0.1286181071443194,
+      "spearman": 0.08511971949824686
+    }
+  },
+  "mse_quartiles": [
+    {
+      "mse_quartile": "Q1-easy",
+      "n": 100,
+      "init_mse": 19.848949356079103,
+      "final_mse": 20.152146034240722,
+      "mse_gain": -0.3031966781616211,
+      "rel_gain": -0.015040617510337265,
+      "mse_wins": 12,
+      "mae_gain": -0.0593109393119812,
+      "ssim_gain": -0.0007275813817977906,
+      "physics_drop": 0.006367421767725589
+    },
+    {
+      "mse_quartile": "Q2",
+      "n": 100,
+      "init_mse": 36.1943288230896,
+      "final_mse": 36.524675827026364,
+      "mse_gain": -0.3303470039367676,
+      "rel_gain": -0.009442054063781107,
+      "mse_wins": 19,
+      "mae_gain": -0.0689450454711914,
+      "ssim_gain": -0.000691494345664978,
+      "physics_drop": 0.005371471157072064
+    },
+    {
+      "mse_quartile": "Q3",
+      "n": 100,
+      "init_mse": 63.89019214630127,
+      "final_mse": 63.62408847808838,
+      "mse_gain": 0.2661036682128906,
+      "rel_gain": 0.0029810716639544375,
+      "mse_wins": 52,
+      "mae_gain": -0.06295848727226257,
+      "ssim_gain": -0.0004402649402618408,
+      "physics_drop": 0.004979695809823709
+    },
+    {
+      "mse_quartile": "Q4-hard",
+      "n": 100,
+      "init_mse": 166.3784386444092,
+      "final_mse": 162.98259895324708,
+      "mse_gain": 3.3958396911621094,
+      "rel_gain": 0.020031902996333045,
+      "mse_wins": 100,
+      "mae_gain": -0.020557849407196044,
+      "ssim_gain": 0.0005003565549850464,
+      "physics_drop": 0.00465843215752006
+    }
+  ],
+  "physics_quartiles": [
+    {
+      "physics_quartile": "Q1-lowJ",
+      "n": 100,
+      "physics_J0": 0.012264335025101901,
+      "init_mse": 36.73250626564026,
+      "final_mse": 36.612106285095216,
+      "mse_gain": 0.12039998054504394,
+      "rel_gain": -0.00523851327315998,
+      "mse_wins": 39,
+      "ssim_gain": -0.0005074888467788696
+    },
+    {
+      "physics_quartile": "Q2",
+      "n": 100,
+      "physics_J0": 0.014282999821007251,
+      "init_mse": 64.23597218513488,
+      "final_mse": 63.66006441116333,
+      "mse_gain": 0.5759077739715576,
+      "rel_gain": -0.000928218911472623,
+      "mse_wins": 42,
+      "ssim_gain": -0.00041667461395263674
+    },
+    {
+      "physics_quartile": "Q3",
+      "n": 100,
+      "physics_J0": 0.015854799998924137,
+      "init_mse": 82.19170623779297,
+      "final_mse": 81.1408087348938,
+      "mse_gain": 1.0508975028991698,
+      "rel_gain": 0.0033396338656444826,
+      "mse_wins": 54,
+      "ssim_gain": -0.00023458003997802734
+    },
+    {
+      "physics_quartile": "Q4-highJ",
+      "n": 100,
+      "physics_J0": 0.018162687569856645,
+      "init_mse": 103.15172428131103,
+      "final_mse": 101.8705298614502,
+      "mse_gain": 1.2811944198608398,
+      "rel_gain": 0.0013574014051572325,
+      "mse_wins": 48,
+      "ssim_gain": -0.0002002406120300293
+    }
+  ],
+  "easy_75_percent": {
+    "n": 300,
+    "initial_mse": 39.977823441823325,
+    "final_mse": 40.100303446451825,
+    "mse_gain": -0.12248000462849935,
+    "relative_gain": -0.007167199970054644,
+    "mse_wins": 83,
+    "mae_gain": -0.06373815735181172,
+    "ssim_gain": -0.0006197802225748698,
+    "physics_drop": 0.005572862911540454
+  },
+  "hard_25_percent": {
+    "n": 100,
+    "initial_mse": 166.3784386444092,
+    "final_mse": 162.98259895324708,
+    "mse_gain": 3.3958396911621094,
+    "relative_gain": 0.020031902996333045,
+    "mse_wins": 100,
+    "mae_gain": -0.020557849407196044,
+    "ssim_gain": 0.0005003565549850464,
+    "physics_drop": 0.004658432157520059
+  },
+  "gain_contribution": {
+    "total_mse_gain_sum": 302.83996772766113,
+    "easy75_gain_sum": -36.744001388549805,
+    "hard25_gain_sum": 339.58396911621094,
+    "hard25_over_total": 1.121331413631615
+  }
+}

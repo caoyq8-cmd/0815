@@ -1,0 +1,29 @@
+{
+  "sample_path": "/home/featurize/work/USCT_repro/USCT_download/formal_test400_physics/cbs8/test_321.npz",
+  "condition_path": "/home/featurize/work/USCT_repro/USCT_download/condition_cache/agr_stable_frozen_test400/test_321.npz",
+  "output_dir": "/home/featurize/work/USCT_repro/USCT_download/gen_pgcr_frozen_test400/agr_stable_frozen_test400/test_321",
+  "num_iters": 1,
+  "step_size_mps": 0.25,
+  "prior_tether": 0.0,
+  "step_factors": [
+    1.0
+  ],
+  "direction_mode": "minus",
+  "candidate_validation": "none",
+  "include_no_update": false,
+  "try_both_signs": false,
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "adjoint_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "smooth_kernel": 9,
+  "shrink_theta": 1.0,
+  "softcap_tau": 0.75,
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "device": "cuda:0",
+  "save_every": 1,
+  "skip_initial_vis": true
+}

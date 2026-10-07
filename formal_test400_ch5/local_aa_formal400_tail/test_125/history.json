@@ -1,0 +1,148 @@
+[
+  {
+    "iter": 0,
+    "selected_direction": "init",
+    "selected_factor": 0.0,
+    "true_cbs_mse": 0.0004916142788715661,
+    "true_cbs_mae": 0.015217267908155918,
+    "true_cbs_rrmse": 0.2124069780111313,
+    "selection_loss": 0.0004916142788715661,
+    "image_mse_240": 106.21886444091797,
+    "image_mae_240": 2.855778217315674,
+    "image_psnr_240": 25.97306067936307,
+    "image_ssim_240": 0.9060073979592073,
+    "image_mse_480": 106.48096466064453,
+    "image_mae_480": 2.8962323665618896,
+    "image_psnr_480": 25.962357451511117,
+    "image_ssim_480": 0.9156614597950928,
+    "candidate_records": []
+  },
+  {
+    "iter": 1,
+    "neural_loss": 0.0003129222895950079,
+    "grad_rms": 4.872179354550172e-11,
+    "selected_direction": "-",
+    "selected_factor": 0.5,
+    "updated": 1,
+    "true_cbs_mse": 0.0004909353447146714,
+    "true_cbs_mae": 0.015245556831359863,
+    "true_cbs_rrmse": 0.21226024627685547,
+    "selection_loss": 0.0004909353447146714,
+    "image_mse_240": 106.05841827392578,
+    "image_mae_240": 2.964669942855835,
+    "image_psnr_240": 25.97962576229095,
+    "image_ssim_240": 0.9059270348299386,
+    "image_mse_480": 106.32819366455078,
+    "image_mae_480": 3.006662130355835,
+    "image_psnr_480": 25.968592860975438,
+    "image_ssim_480": 0.9156683319744672,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "selection_loss": 0.0004916142788715661,
+        "true_mse": 0.0004916142788715661
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "selection_loss": 0.0004917901242151856,
+        "true_mse": 0.0004917901242151856
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "selection_loss": 0.0004909353447146714,
+        "true_mse": 0.0004909353447146714
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "selection_loss": 0.0004910831921733916,
+        "true_mse": 0.0004910831921733916
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "selection_loss": 0.0004913560696877539,
+        "true_mse": 0.0004913560696877539
+      }
+    ]
+  },
+  {
+    "iter": 2,
+    "neural_loss": 0.00031227173167280853,
+    "grad_rms": 4.526158692789786e-11,
+    "selected_direction": "zero",
+    "selected_factor": 0.0,
+    "updated": 0,
+    "true_cbs_mse": 0.0004909353447146714,
+    "true_cbs_mae": 0.015245556831359863,
+    "true_cbs_rrmse": 0.21226024627685547,
+    "selection_loss": 0.0004909353447146714,
+    "image_mse_240": 106.05841827392578,
+    "image_mae_240": 2.964669942855835,
+    "image_psnr_240": 25.97962576229095,
+    "image_ssim_240": 0.9059270348299386,
+    "image_mse_480": 106.32819366455078,
+    "image_mae_480": 3.006662130355835,
+    "image_psnr_480": 25.968592860975438,
+    "image_ssim_480": 0.9156683319744672,
+    "candidate_records": [
+      {
+        "direction": "zero",
+        "factor": 0.0,
+        "selection_loss": 0.0004909353447146714,
+        "true_mse": 0.0004909353447146714
+      },
+      {
+        "direction": "-",
+        "factor": 1.0,
+        "selection_loss": 0.0004941748920828104,
+        "true_mse": 0.0004941748920828104
+      },
+      {
+        "direction": "-",
+        "factor": 0.5,
+        "selection_loss": 0.000491796643473208,
+        "true_mse": 0.000491796643473208
+      },
+      {
+        "direction": "-",
+        "factor": 0.25,
+        "selection_loss": 0.0004911758005619049,
+        "true_mse": 0.0004911758005619049
+      },
+      {
+        "direction": "-",
+        "factor": 0.1,
+        "selection_loss": 0.0004909859271720052,
+        "true_mse": 0.0004909859271720052
+      },
+      {
+        "direction": "+",
+        "factor": 1.0,
+        "selection_loss": 0.0004937711055390537,
+        "true_mse": 0.0004937711055390537
+      },
+      {
+        "direction": "+",
+        "factor": 0.5,
+        "selection_loss": 0.0004915955942124128,
+        "true_mse": 0.0004915955942124128
+      },
+      {
+        "direction": "+",
+        "factor": 0.25,
+        "selection_loss": 0.0004910754505544901,
+        "true_mse": 0.0004910754505544901
+      },
+      {
+        "direction": "+",
+        "factor": 0.1,
+        "selection_loss": 0.0004909457638859749,
+        "true_mse": 0.0004909457638859749
+      }
+    ]
+  }
+]

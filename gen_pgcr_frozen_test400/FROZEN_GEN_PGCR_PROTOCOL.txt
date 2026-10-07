@@ -1,0 +1,50 @@
+GEN-PGCR FINAL FROZEN PROTOCOL
+Date: 2026-10-05
+
+Selection dataset:
+  Formal VAL400 only
+
+Selected initializer:
+  AGR-Stable frozen C4
+
+Selection evidence on VAL400:
+  Initial MSE = 71.577977
+  Final MSE   = 70.820877
+  Mean MSE gain = +0.757100 (+1.0577%)
+  MSE gain bootstrap 95% CI = [+0.583302, +0.937113]
+  Physics descent = 400/400
+
+Observed tradeoff:
+  MSE wins = 183/400
+  MAE degrades on average
+  SSIM slightly degrades on average
+  Benefit is concentrated in hard cases:
+    Q4-hard MSE wins = 100/100
+    Q4-hard relative MSE gain = +2.0032%
+
+PGCR parameters:
+  num_iters = 1
+  step_size_mps = 0.25
+  prior_tether = 0
+  step_factors = 1.0
+  direction_mode = minus
+  candidate_validation = none
+  include_no_update = false
+
+  frequency = 500000
+  forward_iters = 80
+  adjoint_iters = 80
+  boundary_type = PML3
+  boundary_width = 300
+  boundary_strength = 225
+
+  smooth_kernel = 9
+  shrink_theta = 1.0
+  softcap_tau = 0.75
+
+  speed_min = 1400
+  speed_max = 1605
+
+IMPORTANT:
+  TEST400 is one-shot final evaluation.
+  No parameter tuning or method selection is permitted after inspecting TEST400.

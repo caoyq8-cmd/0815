@@ -1,0 +1,29 @@
+{
+  "data_root": "./formal_test400_local_aa_adapter",
+  "split": "test",
+  "output_dir": "./formal_test400_ch5/full_cbs_formal400",
+  "max_base": 400,
+  "init_alpha": 0.0,
+  "gt_alpha": 1.0,
+  "image_size": 240,
+  "num_steps": 8,
+  "base_step_mps": 0.5,
+  "step_factors": [
+    1.0,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "speed_min": 1400.0,
+  "speed_max": 1605.0,
+  "smooth_kernel": 9,
+  "fallback_opposite": true,
+  "stop_on_no_update": true,
+  "frequency": 500000.0,
+  "forward_iters": 80,
+  "adjoint_iters": 80,
+  "boundary_width": 300,
+  "boundary_strength": 225.0,
+  "boundary_type": "PML3",
+  "device": "cuda:0"
+}
